@@ -1,4 +1,3 @@
-library(hunspell)
 library(wordVectors)
 suppressMessages(library(tm))
 suppressMessages(library(tidyverse))
@@ -87,14 +86,14 @@ create_query <- function(inp) {
     for(i in c(1:length(comb))) {
       if(!is.null(ncol(comb[[i]]))) {
         for(x in c(1:(ncol(comb[[i]])))) {
-          temp <- permn(comb[[i]][,x])
+          temp <- combinat::permn(comb[[i]][,x])
           for(h in c(1:length(temp))) {
             bigrams <- paste(temp[[h]], collapse="_")
             ngrams[length(ngrams) +1] <- bigrams
           }
         }
       } else {
-        temp <- permn(comb[[i]])
+        temp <- combinat::permn(comb[[i]])
         for(h in c(1:length(temp))) {
           bigrams <- paste(temp[[h]], collapse="_")
           ngrams[length(ngrams) +1] <- bigrams
@@ -117,17 +116,17 @@ create_query <- function(inp) {
 
 run_query <- function(x, input) {
   vector <- unlist(locations[x])
-  cosineSimilarity(t(as.matrix(vector)), as.matrix(input))
+  wordVectors::cosineSimilarity(t(as.matrix(vector)), as.matrix(input))
 }
 
 create_docmap <- function(thresh, inp_country) {
   topn <- data %>%
-    arrange(desc(results)) %>%
-    select(name, country, legible, results) %>%
-    filter(results > thresh) %>%
-    filter(country == inp_country) %>%
-    group_by(name) %>%
-    summarise(density=n())
+    dplyr::arrange(desc(results)) %>%
+    dplyr::select(name, country, legible, results) %>%
+    dplyr::filter(results > thresh) %>%
+    dplyr::filter(country == inp_country) %>%
+    dplyr::group_by(name) %>%
+    dplyr::summarise(density=n())
   
   topn$name <- gsub("stm-documents/Rwanda/", "", topn$name)
   topn$name <- gsub("stm-documents/Malawi/", "", topn$name)
@@ -144,7 +143,7 @@ create_docmap <- function(thresh, inp_country) {
   allnames$name <- gsub("stm-documents/Kenya/", "", allnames$name)
   allnames$name <- gsub("[.]txt", "", allnames$name)
   
-  topn <- left_join(allnames, topn, by = "name")
+  topn <- dplyr::left_join(allnames, topn, by = "name")
   topn$density[is.na(topn$density)] <- 0
   topn$yes <- 0
   topn$density2 <- (topn$density)/sqrt(topn$total)
@@ -224,12 +223,12 @@ create_report <- function(target_country) {
   }
   
   topn <- data %>%
-    arrange(desc(results)) %>%
-    select(name, country, legible, results) %>%
-    filter(country==target_country) %>%
-    #    top_n(40) %>%
-    filter(results > 0.45) %>%
-    arrange(name, desc(results))
+    dplyr::arrange(desc(results)) %>%
+    dplyr::select(name, country, legible, results) %>%
+    dplyr::filter(country==target_country) %>%
+    dplyr::top_n(40) %>%
+    dplyr::filter(results > 0.45) %>%
+    dplyr::arrange(name, desc(results))
   
   topn$legible <- gsub("^([0-9])[.]", "\\1", topn$legible)
   topn$legible <- gsub("^[A-Z]{1}\\s+", "", topn$legible)
@@ -251,7 +250,7 @@ create_report <- function(target_country) {
   title <- gsub("^([a-z])", "\\U\\1", perl=T, title)
   title <- paste(title, collapse = " ")
   cat("---", paste0('title: ', title), paste0('subtitle: Text extracted from ', target_country, ' Policy Documents'), "output:", "pdf_document:", "fig_caption: yes", "---", "!['Why won't this caption show up?'](plot1.png)", my_text, sep="  \n", file=filename)
-  render(filename, pdf_document(), quiet=T)
+  rmarkdown::render(filename, pdf_document(), quiet=T)
   file.remove(filename) #cleanup
 }
 
@@ -260,7 +259,7 @@ query_vector <- create_point(query)
 cat("\n")
 cat("Top 50 related words \n")
 cat("If some are not relevant, add one or two of the relevant ones to the query \n\n")
-unname(unlist(wv1 %>% closest_to(as.matrix(query_vector), n=50) %>% select(word)))
+unname(unlist(wv1 %>% wordVectors::closest_to(as.matrix(query_vector), n=50) %>% dplyr::select(word)))
 cat("\n\n")
 
 create_results <- function() {
@@ -269,7 +268,7 @@ create_results <- function() {
   run_query2 <- function(x, input) {
     setTxtProgressBar(pb, x)
     vector <- unlist(locations[x])
-    cosineSimilarity(t(as.matrix(vector)), as.matrix(input))
+    wordVectors::cosineSimilarity(t(as.matrix(vector)), as.matrix(input))
   }
   results <- lapply(c(1:length(locations)), run_query2, query_vector)
   cat("\n")
@@ -297,10 +296,10 @@ testing <- lapply(seq(0.45,0.55, 0.05), create_docmap, country)
 testing <- do.call("rbind", testing)
 testing <- testing[,-c(1,3,4,5)]
 testing$thresh <- as.factor(testing$thresh)
-testing <- gather(testing, key = name, value = amount, -thresh, -density2)
+testing <- tidyr::gather(testing, key = name, value = amount, -thresh, -density2)
 colnames(testing) <- c("density2", "thresh", "name2", "name")
 testing$yes <- 0
-ggplot(data=testing, aes(x=reorder(name,density2), y=yes))+
+ggplot2::ggplot(data=testing, aes(x=reorder(name,density2), y=yes))+
   geom_tile(aes(fill=density2))+
   coord_flip()+
   scale_fill_distiller(palette="BuPu", direction=1)+
@@ -314,7 +313,7 @@ ggplot(data=testing, aes(x=reorder(name,density2), y=yes))+
                                                                                                       0, 0, 0), "lines"), complete = TRUE)
 
 wd <- getwd()
-ggsave(filename=paste0(wd, "/plot1.png"), last_plot(), width=7, height=5, units="in")
+ggplot2::ggsave(filename=paste0(wd, "/plot1.png"), last_plot(), width=7, height=5, units="in")
 
 cat(paste0("\n", "Creating ", paste(query, collapse="_"), ".pdf", "\n"))
 suppressWarnings(create_report(country))

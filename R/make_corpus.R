@@ -1,7 +1,4 @@
-library(hunspell)
-library(tm)
-library(corpus)
-suppressMessages(library(tidyverse))
+library(magrittr)
 
 added_words <- c("rangelands", "ers", "sra", "reverse", "operationalize", "operationalized", "pastoralism", "hydropower", "landuse", "smallscale", "largescale", "percent",
                  "underexploited", "agroforestry", "siltation", "intergovernmental", "subsector", "subsectors", "rainfall", "rangeland", "agribusiness", "flr", "landscape", "cop", "agroforest", "kenya", "malawi", "rwanda", "programmes", "programme", "fuelwood", "ngos", "kenyas", "kigali", "slm", "africa", "ghg", "sectoral", "kenyan", "malawis", "african", "longterm", "woodfuels", "timeframe", "nairobi", "fao","sdg", "sdgs", "agro", "npv", "rainfed", "streambank", "cookstoves", "transboundary", "anthropogenic", "manmade", "geospatial", "subcomponent", "nontimber", "agroprocessing", "multicriteria", "crossectoral", "microfinance", "evapotranspiration", "silviculture", "nonforested", "eutrophication", "sociocultural", "gdp", "usd", "hiv", "womens", "un", "uk", "eu")
@@ -101,7 +98,6 @@ create_df <- function(ind) {
     file <- file[digs < 80]
     length_post <- length(file)
     length_removed <- length_pre-length_post
-    #cat("Removed ", length_removed, "lines with tables or only numbers \n")
 
     # Group up lines between empty lines (paragraphs) and pastes them together
     na_loc <- file == ""
@@ -220,7 +216,7 @@ create_df <- function(ind) {
   f1 <- do.call("rbind", f1)
   f1$country <- rep(folders[ind], nrow(f1))
   f1$sentences <- as.character(f1$sentences)
-  pagenames <- str_match(f1$name, "[0-9]{1,}[.]txt")
+  pagenames <- stringr::str_match(f1$name, "[0-9]{1,}[.]txt")
   f1$page <- gsub("[.]txt", "", pagenames)
   return(f1)
 }
@@ -254,11 +250,8 @@ check_bad <- function(id, in_dict) {
   setTxtProgressBar(pb, id)
   sentence <- test2$sentences[id]
   sentence <- tolower(sentence)
-  bad_words <- hunspell_find(sentence, ignore = added_words, dict = dictionary(in_dict))
+  bad_words <- hunspell::hunspell_find(sentence, ignore = added_words, dict = hunspell::dictionary(in_dict))
   bad_words <- unlist(bad_words)
-  #for(i in seq_along(bad_words)) {
-  #  bad_words[i] <- paste("\\s+", bad_words[i], "\\s+", sep="")
-  #}
   return(bad_words)
 }
 
@@ -267,10 +260,10 @@ check_spelling <- function(id) {
   setTxtProgressBar(pb, id)
   sentence <- test2$sentences[id]
   sentence <- tolower(sentence)
-  bad_words <- hunspell_find(sentence, ignore = added_words)
+  bad_words <- hunspell::hunspell_find(sentence, ignore = added_words)
   bad_words <- unlist(bad_words)
   if(length(bad_words) > 0) {
-    suggested <- hunspell_suggest(bad_words)
+    suggested <- hunspell::hunspell_suggest(bad_words)
     for(i in seq_along(bad_words)) {
       bad_words[i] <- paste("\\s+", bad_words[i], "\\s+", sep="")
     }
@@ -297,10 +290,10 @@ check_spelling <- function(id) {
 # the title of the document. 
 
 calcbigram <- function(input) {
-  corpus <- Corpus(VectorSource(input))
-  ngrams <- term_stats(corpus, ngrams=6:12)
+  corpus <- tm::Corpus(tm::VectorSource(input))
+  ngrams <- corpus::term_stats(corpus, ngrams=6:12)
   ngrams <- ngrams %>%
-    arrange(desc(count))
+    dplyr::arrange(desc(count))
   ngrams <- ngrams[1:3000,]
   return(ngrams)
 }
@@ -324,7 +317,6 @@ remove_names <- function() {
 }
 
 total_data <- lapply(c(1:length(subfolders)), create_df)
-#total_data <- lapply(c(1:20), create_df)
 total_data <- do.call("rbind", total_data)
 total_data <- total_data[nchar(total_data$sentences) > 70,]
 total_data <- total_data[!is.na(total_data$sentences),]
@@ -369,20 +361,20 @@ close(pb)
 
 bad_words_en <- data.frame(bad_words_en)
 bad_words_en <- bad_words_en %>%
-  group_by(bad_words_en) %>%
-  summarise(n=n()) %>%
-  arrange(desc(n)) %>%
-  mutate(bad_words_en = as.character(bad_words_en)) %>%
-  filter(nchar(bad_words_en) > 2)
+  dplyr::group_by(bad_words_en) %>%
+  dplyr::summarise(n=n()) %>%
+  dplyr::arrange(desc(n)) %>%
+  dplyr::mutate(bad_words_en = as.character(bad_words_en)) %>%
+  dplyr::filter(nchar(bad_words_en) > 2)
   #filter(n >= 10)
 
 bad_words_gb <- data.frame(bad_words_gb)
 bad_words_gb <- bad_words_gb %>%
-  group_by(bad_words_gb) %>%
-  summarise(n=n()) %>%
-  arrange(desc(n)) %>%
-  mutate(bad_words_gb = as.character(bad_words_gb)) %>%
-  filter(nchar(bad_words_gb) > 2)
+  dplyr::group_by(bad_words_gb) %>%
+  dplyr::summarise(n=n()) %>%
+  dplyr::arrange(desc(n)) %>%
+  dplyr::mutate(bad_words_gb = as.character(bad_words_gb)) %>%
+  dplyr::filter(nchar(bad_words_gb) > 2)
 
 british_words <- bad_words_en$bad_words_en[!bad_words_en$bad_words_en %in% bad_words_gb$bad_words_gb]
 added_words <- append(added_words, british_words)
@@ -433,7 +425,6 @@ citation2 <- grepl("\\&", test2$sentences) & grepl("\\s+[a-z]{1}[.]", test2$sent
 
 if(sum(citation2 == T) > 0) {
   test2 <- test2[-which(citation2 == T),]
-  cat("removed", sum(citation), "files")
 }
 
 test2 <- test2[-grepl(",\\s+[a-z]{1}[.]", test2$sentences),]
@@ -446,3 +437,4 @@ test2$sentences <- gsub("\\s+[bcdefghijklmnopqrstuvwxyz]{1}\\s+", "", test2$sent
 
 # Write cleaned-up dataframe to a CSV for further analysis
 write.csv(test2, "full_corpus.csv")
+cat("Wrote the corpus as full_corpus.csv")

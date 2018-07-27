@@ -1,19 +1,4 @@
-library(tm)
-suppressMessages(library(stm))
-library(SnowballC)
-library(textcat)
-library(cld2)
-library(hunspell)
-library(qdap)
-library(LSAfun)
-library(pbapply)
-suppressMessages(library(tidyverse))
-library(quanteda)
-library(corpus)
-library(stringr)
-
-
-
+library(magrittr)
 
 folder <- 'background-texts'
 folders <- list.files(path=folder, pattern=".txt")
@@ -71,23 +56,6 @@ create_df <- function(ind) {
       }
       return(consec)
     }
-    
-    # Remove all empty lines preceded by at least 4 empty lines
-    #breaks <- find.dup(file) # Create a list of sequential empty lines
-    #to.rm <- rep(FALSE, length(breaks))
-    #for(i in c(1:length(breaks))) {
-    #  if(breaks[i] > 4) {
-    #    to.rm[i] <- TRUE
-    #  }
-    #}
-    #file <- file[!to.rm]
-
-
-    # I'm pretty sure that this next section is not needed
-    #breaks <- find.dup(file)
-    #tosplit <- rep(FALSE, length(breaks))
-    #tosplit[breaks == 0] <- T
-    #ids <- which(tosplit == T)
     
     # Group up lines between empty lines (paragraphs) and pastes them together
     length_pre <- length(file)
@@ -253,7 +221,7 @@ check_bad <- function(id, in_dict) {
   setTxtProgressBar(pb, id)
   sentence <- test2$sentences[id]
   sentence <- tolower(sentence)
-  bad_words <- hunspell_find(sentence, ignore = added_words, dict = hunspell::dictionary(in_dict))
+  bad_words <- hunspell::hunspell_find(sentence, ignore = added_words, dict = hunspell::dictionary(in_dict))
   bad_words <- unlist(bad_words)
   #for(i in seq_along(bad_words)) {
   #  bad_words[i] <- paste("\\s+", bad_words[i], "\\s+", sep="")
@@ -265,10 +233,10 @@ check_spelling <- function(id) {
   setTxtProgressBar(pb, id)
   sentence <- test2$sentences[id]
   sentence <- tolower(sentence)
-  bad_words <- hunspell_find(sentence, ignore = added_words)
+  bad_words <- hunspell::hunspell_find(sentence, ignore = added_words)
   bad_words <- unlist(bad_words)
   if(length(bad_words) > 0) {
-    suggested <- hunspell_suggest(bad_words)
+    suggested <- hunspell::hunspell_suggest(bad_words)
     for(i in seq_along(bad_words)) {
       bad_words[i] <- paste("\\s+", bad_words[i], "\\s+", sep="")
     }
@@ -332,20 +300,20 @@ close(pb)
 
 bad_words_en <- data.frame(bad_words_en)
 bad_words_en <- bad_words_en %>%
-  group_by(bad_words_en) %>%
-  summarise(n=n()) %>%
-  arrange(desc(n)) %>%
-  mutate(bad_words_en = as.character(bad_words_en)) %>%
-  filter(nchar(bad_words_en) > 2)
+  dplyr::group_by(bad_words_en) %>%
+  dplyr::summarise(n=n()) %>%
+  dplyr::arrange(desc(n)) %>%
+  dplyr::mutate(bad_words_en = as.character(bad_words_en)) %>%
+  dplyr::filter(nchar(bad_words_en) > 2)
   #filter(n >= 10)
 
 bad_words_gb <- data.frame(bad_words_gb)
 bad_words_gb <- bad_words_gb %>%
-  group_by(bad_words_gb) %>%
-  summarise(n=n()) %>%
-  arrange(desc(n)) %>%
-  mutate(bad_words_gb = as.character(bad_words_gb)) %>%
-  filter(nchar(bad_words_gb) > 2)
+  dplyr::group_by(bad_words_gb) %>%
+  dplyr::summarise(n=n()) %>%
+  dplyr::arrange(desc(n)) %>%
+  dplyr::mutate(bad_words_gb = as.character(bad_words_gb)) %>%
+  dplyr::filter(nchar(bad_words_gb) > 2)
 
 british_words <- bad_words_en$bad_words_en[!bad_words_en$bad_words_en %in% bad_words_gb$bad_words_gb]
 added_words <- append(added_words, british_words)
@@ -378,18 +346,18 @@ test2 <- test2[,1]
 #cat("Text chunked to 7 sentences", "\n")
 
 calcbigram <- function(input) {
-  corpus <- Corpus(VectorSource(input))
-  corpus <- tm_map(corpus, removePunctuation)
-  corpus <- tm_map(corpus, removeNumbers)
-  ngrams <- term_stats(corpus, ngrams=2:4)
+  corpus <- tm::Corpus(tm::VectorSource(input))
+  corpus <- tm::tm_map(corpus, removePunctuation)
+  corpus <- tm::tm_map(corpus, removeNumbers)
+  ngrams <- tm::term_stats(corpus, ngrams=2:4)
   ngrams <- ngrams %>%
-    arrange(desc(count))
+    dplyr::arrange(desc(count))
   ngrams <- ngrams[1:25000,]
   return(ngrams)
 }
 
 bgrams <- calcbigram(test2)
-bgrams$word <- str_count(bgrams$term, " ")
+bgrams$word <- stringr::str_count(bgrams$term, " ")
 bgrams <- bgrams %>%
   group_by(term) %>%
   arrange(desc(word))

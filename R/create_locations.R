@@ -1,11 +1,4 @@
-suppressMessages(library(stm))
-library(hunspell)
-library(wordVectors)
-library(pbapply)
-suppressMessages(library(tm))
-suppressMessages(library(tidyverse))
-library(corpus)
-library(rmarkdown)
+library(magrittr)
 
 cat("\nReading in data", "\n")
 
@@ -49,51 +42,40 @@ nopunc <- paste(nopunc, collapse=" ")
 nopunc <- strsplit(nopunc, split=" ")
 nopunc <- do.call("rbind", nopunc)
 list_of_words <- as.data.frame(t(nopunc)) %>%
-  group_by(V1) %>%
-  summarise(n=n())
+  dplyr::group_by(V1) %>%
+  dplyr::summarise(n=n())
 
 
 cat("Calculating paragraph-level neural embeddings \n")
 
 pb <- txtProgressBar(min = 0, max = nrow(data), style = 3)
 create_point <- function(id) {
-  setTimerProgressBar(pb, id)
+  setTxtProgressBar(pb, id)
   query <- data$sentences[id]
   query <- unlist(strsplit(query, " "))
-  query <- query[!query %in% stopwords_en]
+  query <- query[!query %in% corpus::stopwords_en]
   query <- gsub("[0-9]", "", query)
   query <- gsub("[,.!?:;$%]", "", query)
   query <- query[!query == ""]
   query <- data.frame(query = as.character(query)) %>%
-    group_by(query) %>%
-    summarise(n=n()) %>%
-    mutate(query = as.character(query))
+    dplyr::group_by(query) %>%
+    dplyr::summarise(n=n()) %>%
+    dplyr::mutate(query = as.character(query))
   query <- query[query$query %in% rownames(df1),]
   norm_vec <- function(x) sqrt(sum(x^2))
-  #vecs <- query$n / norm_vec(query$n)
   embeds <- df1[rownames(df1) %in% query$query,]
   embeds <- embeds[order(rownames(embeds)),]
   
   tf <- list_of_words[list_of_words$V1 %in% rownames(embeds),]
   idf <- log(nrow(data)/(tf$n))
-  print(idf)
   vecs <- (idf*query$n)/norm_vec(idf*query$n)
-  #print(vecs)
-
   sentence_embedding <- t(as.matrix(vecs)) %*% as.matrix(embeds)
-  #print(unname(unlist(wv1 %>% closest_to(sentence_embedding, n = 10) %>% select(word))))
-  #vecs <- query$n / norm_vec(query$n)
-  #sentence_embedding <- t(as.matrix(vecs)) %*% as.matrix(embeds)
-  #cat("\n")
-  #print(unname(unlist(wv1 %>% closest_to(sentence_embedding, n = 10) %>% select(word))))
   return(sentence_embedding)
 }
 
 locations <- lapply(c(1:nrow(data)), create_point)
 close(pb)
 
-cat("Saving the word embeddings to 'embeddings.rds'\n")
-saveRDS(locations, "embeddings.rds")
 cat("Saving the word embeddings to 'embeddings.rds'\n")
 saveRDS(locations, "embeddings.rds")
 
