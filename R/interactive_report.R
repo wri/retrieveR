@@ -338,6 +338,8 @@ interactive_report <- function(country, query, data, embeddings, locations) {
     subs <- subs %>%
       dplyr::group_by(sentences) %>%
       dplyr::arrange(dplyr::desc(results))
+
+    cat("The highest similarity is", subs$thresh[1], "and there are", nrow(subs), "paragraphs", "\n")
     for(i in c(1:2)) {
       cat(subs$legible[i], "\n\n")
     }
