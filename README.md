@@ -50,18 +50,18 @@ The format for querying the corpus and generating a report is interactive and it
 After running the above code, retrieveR prompts the user with a set of words and phrases that are determined as relevant. The ones for "barriers to restoration", for instance, are as follows:
 
 ```r
- [1] barriers                     restoration                  obstacles                    overcome                    
- [5] restoration"                 ecological_restoration       restoring                    opportunities               
- [9] restoration_projects         forest_restoration           constraints                  bottlenecks                 
-[13] interventions                ecological                   restoration_activities       incentives                  
-[17] flr                          forest_landscape             forest_landscape_restoration landscape_restoration       
-[21] identifying                  restoration_interventions    barrier                      restoration_at              
-[25] successful                   restoration_efforts          impediments                  options                     
-[29] approaches                   key_success_factors          overcoming                   streambank                  
-[33] projects                     economic_incentives          enabling_conditions          strategies                  
-[37] landscapes                   barriers                     successful_restoration       forest_and_landscape        
-[41] landscape                    challenges                   scale_up                     passive                     
-[45] solutions                    potential                    aronson                      scaling_up                  
-[49] removing                     identify                    
+barriers                     restoration                  obstacles                    overcome                    
+restoration"                 ecological_restoration       restoring                    opportunities               
+restoration_projects         forest_restoration           constraints                  bottlenecks                 
+interventions                ecological                   restoration_activities       incentives                  
+flr                          forest_landscape             forest_landscape_restoration landscape_restoration       
+identifying                  restoration_interventions    barrier                      restoration_at              
+successful                   restoration_efforts          impediments                  options                     
+approaches                   key_success_factors          overcoming                   streambank                  
+projects                     economic_incentives          enabling_conditions          strategies                  
+landscapes                   barriers                     successful_restoration       forest_and_landscape        
+landscape                    challenges                   scale_up                     passive                     
+solutions                    potential                    aronson                      scaling_up                  
+removing                     identify                    
 ```
 
