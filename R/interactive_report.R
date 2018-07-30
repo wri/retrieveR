@@ -339,7 +339,7 @@ interactive_report <- function(country, query, data, embeddings, locations) {
       dplyr::group_by(sentences) %>%
       dplyr::arrange(dplyr::desc(results))
 
-    cat("The highest similarity is", subs$thresh[1], "and there are", nrow(subs), "paragraphs", "\n")
+    cat(thresh, "-- The highest similarity is", subs$results[1], "and there are", nrow(subs), "paragraphs", "\n\n")
     for(i in c(1:2)) {
       cat(subs$legible[i], "\n\n")
     }
@@ -357,7 +357,6 @@ interactive_report <- function(country, query, data, embeddings, locations) {
     }
     if(id == "Yes") {
       thresh <- thresh - 0.01
-      cat(thresh, "\n")
       print_margin(thresh, country)
     }
   }
