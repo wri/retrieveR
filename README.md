@@ -59,9 +59,9 @@ After running the above code, retrieveR prompts the user with a set of words and
 [25] successful                   restoration_efforts          impediments                  options                     
 [29] approaches                   key_success_factors          overcoming                   streambank                  
 [33] projects                     economic_incentives          enabling_conditions          strategies                  
-[37] landscapes                   "barriers                    successful_restoration       forest_and_landscape        
+[37] landscapes                   barriers                     successful_restoration       forest_and_landscape        
 [41] landscape                    challenges                   scale_up                     passive                     
 [45] solutions                    potential                    aronson                      scaling_up                  
 [49] removing                     identify                    
 ```
-```
+
