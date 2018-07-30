@@ -333,13 +333,14 @@ interactive_report <- function(country, query, data, embeddings, locations) {
   cat("If the two sentences below are relevant, enter 'Yes' to expand the results", "\n\n")
   cat("----------------------------------", "\n")
 
-  print_margin <- function(thresh, country) {
-    subs <- data[data$results < thresh && data$country == country,]
+  print_margin <- function(thresh, input_country) {
+    subs <- data[data$results < thresh,]
+    subs <- subs[subs$country == input_country,]
     subs <- subs %>%
       dplyr::group_by(sentences) %>%
       dplyr::arrange(dplyr::desc(results))
 
-    cat(thresh, "-- The highest similarity is", subs$results[1], "and there are", nrow(subs), "paragraphs", "\n\n")
+    cat(input_country, ":", thresh, "-- The highest similarity is", subs$results[1], "and there are", nrow(subs), "paragraphs", "\n\n")
     for(i in c(1:2)) {
       cat(subs$legible[i], "\n\n")
     }
@@ -373,6 +374,7 @@ interactive_report <- function(country, query, data, embeddings, locations) {
   testing <- tidyr::gather(testing, key = name, value = amount, -thresh, -density2)
   colnames(testing) <- c("density2", "thresh", "name2", "name")
   testing$yes <- 0
+  library(ggplot2)
   ggplot2::ggplot(data=testing, ggplot2::aes(x=reorder(name,density2), y=yes))+
     ggplot2::geom_tile(ggplot2::aes(fill=density2))+
     ggplot2::coord_flip()+
@@ -383,8 +385,7 @@ interactive_report <- function(country, query, data, embeddings, locations) {
     ggplot2::theme(line = ggplot2::element_blank(), rect = ggplot2::element_blank(), axis.title = ggplot2::element_blank(), 
           legend.text = ggplot2::element_text(size = ggplot2::rel(0.8)), legend.title = ggplot2::element_text(hjust = 0), 
           legend.position="none",
-          strip.text = ggplot2::element_text(size = ggplot2::rel(0.7)), axis.text.x=ggplot2::element_blank(), plot.margin = ggplot2::unit(c(0, 
-                                                                                                        0, 0, 0), "lines"), complete = TRUE)
+          strip.text = ggplot2::element_text(size = ggplot2::rel(0.7)), axis.text.x=ggplot2::element_blank(), complete = FALSE)
 
   wd <- getwd()
   ggplot2::ggsave(filename=paste0(wd, "/plot1.png"), ggplot2::last_plot(), width=7, height=5, units="in")
