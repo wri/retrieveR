@@ -1,9 +1,20 @@
-Package: retrievR
-Title: Automate information retrieval, summarization, and analysis of documents.
-Version: 0.0.0.9000
+Package: retrieveR
+Title: Automate information retrieval and analysis of documents
+Version: 1.0.0.0000
 Authors@R: person("John", "Brandt", email = "john.brandt@yale.edu", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Description: A start-to-finish information-retrieval system designed to aid in policy analysis but applicable to any set of documents. Automatically chunks texts by paragraph, fixes spelling errors, cleans text, and projects paragraphs in space with neural word embeddings. Allows users to query the corpus for any topic or question, and generates a report analyzing and summarizing the relevant paragraphs.
 Depends: R (>= 3.5.0)
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 6.1.0
+Imports:
+	ggplot2,
+	dplyr,
+	wordVectors,
+	tm,
+	corpus,
+	stringr,
+	combinat,
+	magrittr,
+	rmarkdown
