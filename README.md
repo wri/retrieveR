@@ -7,15 +7,16 @@ retrieveR is a system for automating information retrieval from a corpus of docu
 ## Installation
 
 ```r
+library(devtools)
 install_github("wri/retrieveR")
 ```
 
 
 ## Usage
 
-There are three main functions that comprise the bulk of the functionality of retrieveR.
+There are three main functions that comprise the bulk of the functionality of retrieveR: `make_corpus`, `create_locations`, and `interactive_report`. 
 
-### make_corpus.R
+### make_corpus
 
 ```r
 corpus <- make_corpus("path/to/folder")
@@ -31,7 +32,7 @@ This function wraps a number of helper functions that serve to accomplish the fo
 + Extract page number from each paragraph
 + Assemble a dataframe specifying the paragraph and any relevant metadata
 
-### create_locations.R
+### create_locations
 
 ```r
 locations <- create_locations(corpus, "path/to/embeddings.bin")
@@ -39,7 +40,7 @@ locations <- create_locations(corpus, "path/to/embeddings.bin")
 
 This function uses a pre-trained neural embedding to calculate weights for each paragraph in the corpus. Calling `download_embeddings()` will download a pre-trained embedding to the working directory as `embeddings.bin`. This pre-trained embedding was trained on over 1,000 environmental policy documents from more than 40 nations and 50 NGOs and development aid agencies. The `prep_wordvec` and `create_wordvec` functions may be used to create your own neural embedding.
 
-### interactive_report.R
+### interactive_report
 
 ```
 interactive_report(country = "Kenya", query = "barriers to restoration",
