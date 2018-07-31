@@ -2,6 +2,7 @@
 
 export(create_df)
 export(create_locations)
+export(download_embeddings)
 export(interactive_report)
 export(make_corpus)
 export(prep_wordvec)
