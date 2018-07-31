@@ -73,3 +73,7 @@ After finalizing a query, the function returns all paragraphs ranked by their co
 To do this, the algorithm begins with a high threshold (only retaining very similar paragraphs). The user is presented with the two paragraphs that are just barely not retained, and then prompted to determine whether they are relevant. If they are, the threshold is lowered and the process is repeated until no relevant paragraphs are missed.
 
 Finally, `interactive_report` makes use of `rmarkdown` and `ggplot2` to create a heatmap of topic density by document and a report listing each relevant paragraph sorted by document and labelled with its page number. 
+
+## Examples
+
+See the vignette here.
