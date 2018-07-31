@@ -7,15 +7,16 @@ retrieveR is a system for automating information retrieval from a corpus of docu
 ## Installation
 
 ```r
+library(devtools)
 install_github("wri/retrieveR")
 ```
 
 
 ## Usage
 
-There are three main functions that comprise the bulk of the functionality of retrieveR.
+There are three main functions that comprise the bulk of the functionality of retrieveR: `make_corpus`, `create_locations`, and `interactive_report`. 
 
-### make_corpus.R
+### make_corpus
 
 ```r
 corpus <- make_corpus("path/to/folder")
@@ -31,7 +32,7 @@ This function wraps a number of helper functions that serve to accomplish the fo
 + Extract page number from each paragraph
 + Assemble a dataframe specifying the paragraph and any relevant metadata
 
-### create_locations.R
+### create_locations
 
 ```r
 locations <- create_locations(corpus, "path/to/embeddings.bin")
@@ -39,7 +40,7 @@ locations <- create_locations(corpus, "path/to/embeddings.bin")
 
 This function uses a pre-trained neural embedding to calculate weights for each paragraph in the corpus. Calling `download_embeddings()` will download a pre-trained embedding to the working directory as `embeddings.bin`. This pre-trained embedding was trained on over 1,000 environmental policy documents from more than 40 nations and 50 NGOs and development aid agencies. The `prep_wordvec` and `create_wordvec` functions may be used to create your own neural embedding.
 
-### interactive_report.R
+### interactive_report
 
 ```
 interactive_report(country = "Kenya", query = "barriers to restoration",
@@ -68,3 +69,11 @@ removing                     identify
 At this stage, you can add or remove words that you find relevant or not-relevant to your query. It is important to note that adding words to your query at this point will help the algorithm better understand what you are looking for. It is easier to draw a plane in 300 dimensional space with 6 points than it is with 2 or 1.
 
 After finalizing a query, the function returns all paragraphs ranked by their cosine similarity. The final step is to determine the cutoff threshold for inclusion. This varies widely between queries - broad queries have a lower threshold than narrow queries - and thus requires user input. 
+
+To do this, the algorithm begins with a high threshold (only retaining very similar paragraphs). The user is presented with the two paragraphs that are just barely not retained, and then prompted to determine whether they are relevant. If they are, the threshold is lowered and the process is repeated until no relevant paragraphs are missed.
+
+Finally, `interactive_report` makes use of `rmarkdown` and `ggplot2` to create a heatmap of topic density by document and a report listing each relevant paragraph sorted by document and labelled with its page number. 
+
+## Examples
+
+See the vignette here.
