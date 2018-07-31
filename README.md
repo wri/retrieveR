@@ -76,4 +76,4 @@ Finally, `interactive_report` makes use of `rmarkdown` and `ggplot2` to create a
 
 ## Examples
 
-See the vignette here.
+See the vignette [here](https://github.com/wri/retrieveR/blob/master/vignettes/example.md)
