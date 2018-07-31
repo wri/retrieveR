@@ -1,7 +1,9 @@
-# Overview
+## Overview
 
 In this example, we analyze 63 policy documents from Kenya, Rwanda, and Malawi to see where and how public participation in governance is supported.
 
+
+#### Code
 ```r
 library(devtools)
 install_github("wri/retrieveR")
@@ -19,4 +21,8 @@ interactive_report(country = "Kenya",
                    embeddings = "embeddings.bin",
                    locations = locations)
 ```
+
+#### Interim results
+
+#### Results
 
