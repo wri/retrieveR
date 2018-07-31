@@ -34,10 +34,10 @@ This function wraps a number of helper functions that serve to accomplish the fo
 ### create_locations.R
 
 ```r
-locations <- create_locations(corpus, "path/to/embedding")
+locations <- create_locations(corpus, "path/to/embeddings.bin")
 ```
 
-This function uses a pre-trained neural embedding to calculate weights for each paragraph in the corpus. Functions will be included in future versions to download pre-trained embeddings. Currently, the `prep_wordvec` and `create_wordvec` functions must be used to create an embedding.
+This function uses a pre-trained neural embedding to calculate weights for each paragraph in the corpus. Calling `download_embeddings()` will download a pre-trained embedding to the working directory as `embeddings.bin`. This pre-trained embedding was trained on over 1,000 environmental policy documents from more than 40 nations and 50 NGOs and development aid agencies. The `prep_wordvec` and `create_wordvec` functions may be used to create your own neural embedding.
 
 ### interactive_report.R
 
@@ -50,18 +50,21 @@ The format for querying the corpus and generating a report is interactive and it
 After running the above code, retrieveR prompts the user with a set of words and phrases that are determined as relevant. The ones for "barriers to restoration", for instance, are as follows:
 
 ```r
-barriers                     restoration                  obstacles                    overcome                    
-restoration"                 ecological_restoration       restoring                    opportunities               
-restoration_projects         forest_restoration           constraints                  bottlenecks                 
-interventions                ecological                   restoration_activities       incentives                  
-flr                          forest_landscape             forest_landscape_restoration landscape_restoration       
-identifying                  restoration_interventions    barrier                      restoration_at              
-successful                   restoration_efforts          impediments                  options                     
-approaches                   key_success_factors          overcoming                   streambank                  
-projects                     economic_incentives          enabling_conditions          strategies                  
-landscapes                   barriers                     successful_restoration       forest_and_landscape        
-landscape                    challenges                   scale_up                     passive                     
-solutions                    potential                    aronson                      scaling_up                  
+barriers                     restoration                  obstacles                            
+restoration"                 ecological_restoration       restoring                          
+restoration_projects         forest_restoration           constraints                        
+interventions                ecological                   restoration_activities                  
+flr                          forest_landscape             forest_landscape_restoration       
+identifying                  restoration_interventions    barrier                        
+bottlenecks                  restoration_efforts          impediments                      
+approaches                   key_success_factors          overcoming                 
+projects                     economic_incentives          enabling_conditions              
+landscapes                   barriers                     successful_restoration            
+landscape                    challenges                   scale_up                     
+solutions                    landscape_restoration        overcome                            
 removing                     identify                    
 ```
 
+At this stage, you can add or remove words that you find relevant or not-relevant to your query. It is important to note that adding words to your query at this point will help the algorithm better understand what you are looking for. It is easier to draw a plane in 300 dimensional space with 6 points than it is with 2 or 1.
+
+After finalizing a query, the function returns all paragraphs ranked by their cosine similarity. The final step is to determine the cutoff threshold for inclusion. This varies widely between queries - broad queries have a lower threshold than narrow queries - and thus requires user input. 
