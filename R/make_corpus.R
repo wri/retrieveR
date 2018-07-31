@@ -20,8 +20,8 @@ make_corpus <- function(folder) {
   subfolders <- unlist(allfiles)
 
   count_dig <- function(s) {
-      s2 <- gsub("[0-9]","", test2$sentences[s])
-      perc <- round(((1-(nchar(s2)/nchar(test2$sentences[s])))*100),1)
+      s2 <- gsub("[0-9]","", df$sentences[s])
+      perc <- round(((1-(nchar(s2)/nchar(df$sentences[s])))*100),1)
       return(perc)
   }
 
@@ -45,36 +45,31 @@ make_corpus <- function(folder) {
 
   # Use the cld2 package to determine whether paragraphs are english
   detect_language <- function(n) {
-    lang <- cld2::detect_language(as.character(test[n, 1]))
+    lang <- cld2::detect_language(as.character(df[n, 1]))
     return(lang)
   }
 
   check_bad <- function(id, in_dict) {
     setTxtProgressBar(pb, id)
-    sentence <- test2$sentences[id]
-    sentence <- tolower(sentence)
-    bad_words <- hunspell::hunspell_find(sentence, ignore = added_words, dict = hunspell::dictionary(in_dict))
-    bad_words <- unlist(bad_words)
+    sentence <- tolower(df$sentences[id])
+    bad_words <- unlist(hunspell::hunspell_find(sentence, ignore = added_words,
+      dict = hunspell::dictionary(in_dict)))
     return(bad_words)
   }
 
   # Use the hunspell package to automatically fix mispelled words
   check_spelling <- function(id) {
     setTxtProgressBar(pb, id)
-    sentence <- test2$sentences[id]
-    sentence <- tolower(sentence)
-    bad_words <- hunspell::hunspell_find(sentence, ignore = added_words)
-    bad_words <- unlist(bad_words)
+    sentence <- tolower(df$sentences[id])
+    bad_words <- unlist(hunspell::hunspell_find(sentence, ignore = added_words))
     if(length(bad_words) > 0) {
       suggested <- hunspell::hunspell_suggest(bad_words)
       for(i in seq_along(bad_words)) {
         bad_words[i] <- paste("\\s+", bad_words[i], "\\s+", sep="")
       }
-      #cat("Suggested: ", unlist(suggested), "\n")
       replacements <- rep(NA, length(suggested))
       for(i in c(1:length(suggested))) {
-        replacements[i] <- suggested[[i]][1]
-        replacements[i] <- paste(" ", replacements[i], " ", sep="")
+        replacements[i] <- paste0(" ",suggested[[i]][1], " ")
       }
       for(i in c(1:length(bad_words))) {
         if(replacements[i] != " NA ") {
@@ -102,7 +97,7 @@ make_corpus <- function(folder) {
   }
 
   remove_names <- function() {
-    bigrams <- calcbigram(test2$sentences)
+    bigrams <- calcbigram(df$sentences)
     toremove <- bigrams$term[1:100]
     
     if(length(which(grepl("\\[|\\+", toremove))) > 0) {
@@ -110,7 +105,7 @@ make_corpus <- function(folder) {
       toremove <- toremove[-which(grepl("\\[|\\+", toremove))]
     }
     
-    res <- test2$sentences
+    res <- df$sentences
     for(i in seq_along(toremove)) {
       remove <- gsub(" ", "\\\\s+", toremove[i])
       print(sum(grepl(remove, res)))
@@ -120,8 +115,7 @@ make_corpus <- function(folder) {
   }
 
   total_data <- create_df(subfolders, main=T)
-  total_data <- total_data[nchar(total_data$sentences) > 70,]
-  total_data <- total_data[!is.na(total_data$sentences),]
+  total_data <- total_data[nchar(total_data$sentences) > 70 & !is.na(total_data$sentences),]
   cat("\nData loaded", "\n")
 
   # Remove extra spaces
@@ -134,30 +128,29 @@ make_corpus <- function(folder) {
   pb <- txtProgressBar(min = 0, max=nrow(total_data), style=3)
   total_data$sentences <- unlist(lapply(c(1:nrow(total_data)), clean_data, total_data))
   close(pb)
-  test <- total_data
+  df <- total_data
   cat("Text cleaned", "\n")
 
   # Subset to english
-  test$languages <- rep(NA, nrow(test))
-  test <- test[!is.na(test$sentences),]
-  test <- test[!duplicated(test$sentences),]
-  test$languages <- unlist(lapply(c(1:nrow(test)), detect_language))
-  test <- test[test$languages == "en",]
-  test <- test[!duplicated(test$sentences),]
+  df$languages <- rep(NA, nrow(df))
+  df <- df[!is.na(df$sentences),]
+  df <- df[!duplicated(df$sentences),]
+  df$languages <- unlist(lapply(c(1:nrow(df)), detect_language))
+  df <- df[df$languages == "en",]
+  df <- df[!duplicated(df$sentences),]
   cat("Text subsetted to english", "\n")
-  test2 <- test
 
-  test2$sentences <- gsub("([A-z])-\\s+([a-z])", "\\1\\2", test2$sentences)
-  test2$sentences <- gsub("([A-z])\\s+-([a-z])", "\\1\\2", test2$sentences)
+  df$sentences <- gsub("([A-z])-\\s+([a-z])", "\\1\\2", df$sentences)
+  df$sentences <- gsub("([A-z])\\s+-([a-z])", "\\1\\2", df$sentences)
 
   # Fix spelling errors
   cat("Beginning spelling correction, this may take awhile!", "\n")
   cat("\nCreating dictionary", "\n")
-  pb <- txtProgressBar(min = 0, max=nrow(test2), style=3)
-  bad_words_en <- unlist(lapply(1:nrow(test2), check_bad, "en_US"))
+  pb <- txtProgressBar(min = 0, max=nrow(df), style=3)
+  bad_words_en <- unlist(lapply(1:nrow(df), check_bad, "en_US"))
   close(pb)
-  pb <- txtProgressBar(min = 0, max=nrow(test2), style=3)
-  bad_words_gb <- unlist(lapply(1:nrow(test2), check_bad, "en_GB"))
+  pb <- txtProgressBar(min = 0, max=nrow(df), style=3)
+  bad_words_gb <- unlist(lapply(1:nrow(df), check_bad, "en_GB"))
   close(pb)
 
   bad_words_en <- data.frame(bad_words_en)
@@ -185,47 +178,45 @@ make_corpus <- function(folder) {
 
   #write.table(bad_words, "bad_words.csv")
   cat("\nCorrecting spelling errors", "\n")
-  pb <- txtProgressBar(min = 0, max=nrow(test2), style=3)
-  corrected <- unlist(lapply(1:nrow(test2), check_spelling))
+  pb <- txtProgressBar(min = 0, max=nrow(df), style=3)
+  corrected <- unlist(lapply(1:nrow(df), check_spelling))
   close(pb)
   cat("\n")
-  test2$sentences <- corrected
-  test2$sentences <- enc2utf8(test2$sentences)
-  test2$sentences <- unlist(lapply(c(1:nrow(test2)), function(x) tolower(test2$sentences[x])))
-  test2$sentences <-gsub(":", "", test2$sentences)
-  test2$sentences <- as.character(test2$sentences)
-  test2 <- test2[!is.na(test2$sentences),]
-  test2 <- test2[!duplicated(test2$sentences),]
+  df$sentences <- corrected
+  df$sentences <- enc2utf8(df$sentences)
+  df$sentences <- unlist(lapply(c(1:nrow(df)), function(x) tolower(df$sentences[x])))
+  df$sentences <-gsub(":", "", df$sentences)
+  df$sentences <- as.character(df$sentences)
+  df <- df[!is.na(df$sentences),]
+  df <- df[!duplicated(df$sentences),]
 
 
-  test2 <- test2[nchar(test2$sentences) > 50,]
-  perc <- unlist(lapply(c(1:nrow(test2)), count_dig))
-  test2 <- test2[perc < 10,]
+  df <- df[nchar(df$sentences) > 50,]
+  perc <- unlist(lapply(c(1:nrow(df)), count_dig))
+  df <- df[perc < 10,]
 
-  citation <- grepl("\\.,", test2$sentences)
-  eg <- grepl("e\\.g\\.", test2$sentences)
-  etal <- grepl("et al\\.,", test2$sentences)
-  etal2 <- grepl("et\\. al\\.,", test2$sentences)
-  citation[eg == T] <- F
-  citation[etal == T] <- F
-  citation[etal2 == T] <- F
+  citation <- grepl("\\.,", df$sentences)
+  eg <- grepl("e\\.g\\.", df$sentences)
+  etal <- grepl("et al\\.,", df$sentences)
+  etal2 <- grepl("et\\. al\\.,", df$sentences)
+  citation[eg == T | etal == T | etal2 == T] <- F
 
   if(sum(citation == T) > 0) {
-    test2 <- test2[-which(citation == T),]
+    df <- df[-which(citation == T),]
     cat("removed", sum(citation), "files")
   }
 
-  citation2 <- grepl("\\&", test2$sentences) & grepl("\\s+[a-z]{1}[.]", test2$sentences) 
+  citation2 <- grepl("\\&", df$sentences) & grepl("\\s+[a-z]{1}[.]", df$sentences) 
 
   if(sum(citation2 == T) > 0) {
-    test2 <- test2[-which(citation2 == T),]
+    df <- df[-which(citation2 == T),]
   }
 
-  test2 <- test2[-grepl(",\\s+[a-z]{1}[.]", test2$sentences),]
-  test2$sentences <- gsub("\\s+[bcdefghijklmnopqrstuvwxyz]{1}\\s+", "", test2$sentences)
+  df <- df[-grepl(",\\s+[a-z]{1}[.]", df$sentences),]
+  df$sentences <- gsub("\\s+[bcdefghijklmnopqrstuvwxyz]{1}\\s+", "", df$sentences)
 
   # Write cleaned-up dataframe to a CSV for further analysis
-  write.csv(test2, "full_corpus.csv")
-  return(test2)
+  write.csv(df, "full_corpus.csv")
+  return(df)
   cat("Wrote the corpus as full_corpus.csv")
 }
