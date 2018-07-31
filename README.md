@@ -56,7 +56,7 @@ restoration_projects         forest_restoration           constraints
 interventions                ecological                   restoration_activities                  
 flr                          forest_landscape             forest_landscape_restoration       
 identifying                  restoration_interventions    barrier                        
-bottlenecks                   restoration_efforts         impediments                      
+bottlenecks                  restoration_efforts          impediments                      
 approaches                   key_success_factors          overcoming                 
 projects                     economic_incentives          enabling_conditions              
 landscapes                   barriers                     successful_restoration            
@@ -67,4 +67,4 @@ removing                     identify
 
 At this stage, you can add or remove words that you find relevant or not-relevant to your query. It is important to note that adding words to your query at this point will help the algorithm better understand what you are looking for. It is easier to draw a plane in 300 dimensional space with 6 points than it is with 2 or 1.
 
-After finalizing a query, the function returns all paragraphs ranked by their cosine similarity.
+After finalizing a query, the function returns all paragraphs ranked by their cosine similarity. The final step is to determine the cutoff threshold for inclusion. This varies widely between queries - broad queries have a lower threshold than narrow queries - and thus requires user input. 
