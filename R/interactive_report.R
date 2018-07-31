@@ -17,6 +17,7 @@ interactive_report <- function(country, query, data, embeddings, locations) {
     return(perc)
   }
 
+  # Calculate weights for an input using l2 norm
   create_point <- function(query) {
     query <- unlist(strsplit(query, " "))
     query <- query[!query %in% corpus::stopwords_en]
@@ -44,6 +45,8 @@ interactive_report <- function(country, query, data, embeddings, locations) {
     #unlist the input and remove stopwords
     inp <- unlist(stringr::str_split(inp, " "))
     inp <- inp[!inp %in% corpus::stopwords_en]
+    # calculate all permutations and combinations of query
+    # and check for n-grams
     if(length(inp) > 1) {
       ngrams <- list()
       comb <- lapply(c(2:length(inp)), function(y) combn(inp, y))
@@ -327,7 +330,6 @@ interactive_report <- function(country, query, data, embeddings, locations) {
     subs <- subs %>%
       dplyr::group_by(sentences) %>%
       dplyr::arrange(dplyr::desc(results))
-
     cat(input_country, ":", thresh, "-- The highest similarity is", subs$results[1], "and there are", nrow(subs), "paragraphs", "\n\n")
     for(i in c(1:2)) {
       cat(subs$legible[i], "\n\n")
@@ -357,7 +359,6 @@ interactive_report <- function(country, query, data, embeddings, locations) {
   testing$thresh[testing$thresh == unique(testing$thresh)[1]] <- "Related topics"
   testing$thresh[testing$thresh == unique(testing$thresh)[2]] <- "Indirect references"
   testing$thresh[testing$thresh == unique(testing$thresh)[3]] <- "Direct references"
-
   testing$thresh <- as.factor(testing$thresh)
   testing <- tidyr::gather(testing, key = name, value = amount, -thresh, -density2)
   colnames(testing) <- c("density2", "thresh", "name2", "name")
