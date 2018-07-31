@@ -44,13 +44,10 @@ create_locations <- function(corpus, embedding) {
 
   cat("Calculating idf", "\n")
   nopunc <- gsub("[!.,%0-9:;]", "", data$sentences)
-  nopunc <- paste(nopunc, collapse=" ")
-  nopunc <- strsplit(nopunc, split=" ")
-  nopunc <- do.call("rbind", nopunc)
+  nopunc <- do.call("rbind", strsplit(paste(nopunc, collapse=" "), split = " "))
   list_of_words <- as.data.frame(t(nopunc)) %>%
     dplyr::group_by(V1) %>%
     dplyr::summarise(n=n())
-
 
   cat("Calculating paragraph-level neural embeddings \n")
   pb <- txtProgressBar(min = 0, max = nrow(data), style = 3)

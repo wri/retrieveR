@@ -46,13 +46,13 @@ prep_wordvec <- function(x) {
   }
 
   detect_language <- function(n) {
-    lang <- cld2::detect_language(as.character(test[n, 1]))
+    lang <- cld2::detect_language(as.character(df[n, 1]))
     return(lang)
   }
 
   check_bad <- function(id, in_dict) {
     setTxtProgressBar(pb, id)
-    sentence <- test2$sentences[id]
+    sentence <- df2$sentences[id]
     sentence <- tolower(sentence)
     bad_words <- hunspell::hunspell_find(sentence, ignore = added_words, dict = hunspell::dictionary(in_dict))
     bad_words <- unlist(bad_words)
@@ -61,7 +61,7 @@ prep_wordvec <- function(x) {
 
   check_spelling <- function(id) {
     setTxtProgressBar(pb, id)
-    sentence <- tolower(test2$sentences[id])
+    sentence <- tolower(df2$sentences[id])
     bad_words <- unlist(hunspell_find(sentence, ignore = added_words))
     if(length(bad_words) > 0) {
       suggested <- hunspell_suggest(bad_words)
@@ -93,28 +93,27 @@ prep_wordvec <- function(x) {
   total_data$text <- gsub("(\\d+)(\\w)", "\\1 \\2", total_data$text)
 
   cat("Text cleaned", "\n")
-  test <- data.frame(sentences = total_data$text)
+  df <- data.frame(sentences = total_data$text)
 
-  cat("There are ", nrow(test), " documents", "\n")
-  test$language <- rep(NA, nrow(test))
-  test <- test[!is.na(test$sentences),]
-  test <- test[!duplicated(test$sentences),]
-  test$languages <- unlist(lapply(c(1:nrow(test)), detect_language))
-  test <- test[test$languages == "en",]
-  test <- test[!duplicated(test$sentences),]
+  cat("There are ", nrow(df), " documents", "\n")
+  df$language <- rep(NA, nrow(df))
+  df <- df[!is.na(df$sentences),]
+  df <- df[!duplicated(df$sentences),]
+  df$languages <- unlist(lapply(c(1:nrow(df)), detect_language))
+  df <- df[df$languages == "en",]
+  df <- df[!duplicated(df$sentences),]
 
   cat("Text subsetted to english", "\n")
-  test2 <- test
-  test2$sentences <- as.character(test2$sentences)
-  bf <- nrow(test2)
-  test2 <- test2[nchar(as.character(test2$sentences)) > 150,]
-  test2 <- test2[nchar(as.character(test2$sentences)) < 10000,]
-  af <- bf - nrow(test2)
+  df$sentences <- as.character(df$sentences)
+  bf <- nrow(df)
+  df <- df[nchar(as.character(df$sentences)) > 150,]
+  df <- df[nchar(as.character(df$sentences)) < 10000,]
+  af <- bf - nrow(df)
   cat("Removed ", af, "documents for length issues", "\n")
 
   cat("Beginning spelling correction, this may take awhile!", "\n")
-  pb <- txtProgressBar(min = 0, max=nrow(test2), style=3)
-  bad_words_en <- unlist(lapply(1:nrow(test2), check_bad, "en_US"))
+  pb <- txtProgressBar(min = 0, max=nrow(df), style=3)
+  bad_words_en <- unlist(lapply(1:nrow(df), check_bad, "en_US"))
   close(pb)
 
   bad_words_en <- enc2utf8(bad_words_en)
@@ -128,8 +127,8 @@ prep_wordvec <- function(x) {
     dplyr::mutate(bad_words_en = as.character(bad_words_en)) %>%
     dplyr::filter(nchar(bad_words_en) > 2)
 
-  pb <- txtProgressBar(min = 0, max=nrow(test2), style=3)
-  bad_words_gb <- unlist(lapply(1:nrow(test2), check_bad, "en_GB"))
+  pb <- txtProgressBar(min = 0, max=nrow(df), style=3)
+  bad_words_gb <- unlist(lapply(1:nrow(df), check_bad, "en_GB"))
   close(pb)
 
   bad_words_gb <- bad_words_gb[duplicated(bad_words_gb)]
@@ -148,21 +147,21 @@ prep_wordvec <- function(x) {
   added_words <- unique(added_words)
 
   cat("\nCorrecting spelling errors", "\n")
-  pb <- txtProgressBar(min = 0, max=nrow(test2), style=3)
-  corrected <- unlist(lapply(1:nrow(test2), check_spelling))
+  pb <- txtProgressBar(min = 0, max=nrow(df), style=3)
+  corrected <- unlist(lapply(1:nrow(df), check_spelling))
   close(pb)
   cat("\n")
 
-  test2$sentences <- corrected
-  test2$sentences <- lapply(c(1:nrow(test2)), function(x) tolower(test2$sentences[x]))
-  test2$sentences <-gsub(":", "", test2$sentences)
+  df$sentences <- corrected
+  df$sentences <- lapply(c(1:nrow(df)), function(x) tolower(df$sentences[x]))
+  df$sentences <-gsub(":", "", df$sentences)
 
-  test2$sentences <- as.character(test2$sentences)
-  test2 <- test2[!is.na(test2$sentences),]
-  test2 <- test2[!duplicated(test2$sentences),]
-  test2 <- as.data.frame(test2)
-  colnames(test2) <- "sentences"
-  test2 <- test2[,1]
+  df$sentences <- as.character(df$sentences)
+  df <- df[!is.na(df$sentences),]
+  df <- df[!duplicated(df$sentences),]
+  df <- as.data.frame(df)
+  colnames(df) <- "sentences"
+  df <- df[,1]
 
   calcbigram <- function(input) {
     corpus <- tm::Corpus(tm::VectorSource(input))
@@ -175,7 +174,7 @@ prep_wordvec <- function(x) {
     return(ngrams)
   }
 
-  bgrams <- calcbigram(test2)
+  bgrams <- calcbigram(df)
   bgrams$word <- stringr::str_count(bgrams$term, " ")
   bgrams <- bgrams %>%
     dplyr::group_by(term) %>%
@@ -190,7 +189,7 @@ prep_wordvec <- function(x) {
   bgrams_und <- gsub(" ", "_", bgrams$term)
   bgrams_und <- paste0(" ", bgrams_und, " ")
 
-  bundled <- test2
+  bundled <- df
 
   for(i in seq_along(bgrams_bef)) {
     if(i %% 100 == 0) {
@@ -199,16 +198,16 @@ prep_wordvec <- function(x) {
     bundled <<- gsub(bgrams_bef[i], bgrams_und[i], bundled)
   }
 
-  test2 <- bundled
-  test2 <- gsub("[!.,;:%\\$]", "", test2)
-  test2 <- gsub('"\\/|\\\\', "", test2)
-  test2 <- gsub("[0-9]", "", test2)
-  test2 <- gsub("([A-z])-\\s+([a-z])", "\\1\\2", test2)
-  test2 <- gsub("([A-z])\\s+-\\([a-z])", "\\1\\2", test2)
-  test2 <- gsub('\"', "", test2)
-  test2 <- gsub("'", "", test2)
-  test2 <- gsub("-", "", test2)
+  df <- bundled
+  df <- gsub("[!.,;:%\\$]", "", df)
+  df <- gsub('"\\/|\\\\', "", df)
+  df <- gsub("[0-9]", "", df)
+  df <- gsub("([A-z])-\\s+([a-z])", "\\1\\2", df)
+  df <- gsub("([A-z])\\s+-\\([a-z])", "\\1\\2", df)
+  df <- gsub('\"', "", df)
+  df <- gsub("'", "", df)
+  df <- gsub("-", "", df)
 
-  write.csv(test2, "full_lsa_corpus.csv")
-  write.table(test2, "full_lsa_text.txt", row.names=F, col.names=F)
+  write.csv(df, "full_lsa_corpus.csv")
+  write.table(df, "full_lsa_text.txt", row.names=F, col.names=F)
 }

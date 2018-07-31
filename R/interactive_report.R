@@ -192,7 +192,6 @@ interactive_report <- function(country, query, data, embeddings, locations) {
       dplyr::filter(results > thresh) %>%
       dplyr::arrange(name, desc(results))
 
-    
     topn$legible <- gsub("^([0-9])[.]", "\\1", topn$legible)
     topn$legible <- gsub("^[A-Z]{1}\\s+", "", topn$legible)
     topn$legible <- gsub("^([a-z])", "\\U\\1", perl=T, topn$legible)
@@ -265,10 +264,8 @@ interactive_report <- function(country, query, data, embeddings, locations) {
   print(similars, quote=F)
   cat("\n\n")
 
-
   ## Step 2
   ## Query expansion
-
   finalize_query <- function() {
     query_vector <- create_point(query)
     similars <- unname(unlist(wv1 %>% wordVectors::closest_to(as.matrix(query_vector), n=50) %>% dplyr::select(word)))
@@ -276,7 +273,6 @@ interactive_report <- function(country, query, data, embeddings, locations) {
     print(similars, quote=F)
     cat("\n")
   }
-
   finalized <- 0
   while(finalized == 0) {
     cat("\n", "The current query words are", query, "\n")
@@ -293,7 +289,6 @@ interactive_report <- function(country, query, data, embeddings, locations) {
     }
   }
 
-
   create_results <- function() {
     cat(paste0("Running query on ", length(locations), " documents", "\n"))
     pb <- txtProgressBar(min = 0, max=length(locations), style = 3)
@@ -303,27 +298,20 @@ interactive_report <- function(country, query, data, embeddings, locations) {
       wordVectors::cosineSimilarity(t(as.matrix(vector)), as.matrix(input))
     }
     results <- lapply(c(1:length(locations)), run_query2, query_vector)
-    cat("\n")
-    head(results)
+    cat("\n\n")
     return(results)
-    cat("\n")
     close(pb)
   }
 
-
   results <- create_results()
-  #results <- pblapply(c(1:length(locations)), run_query, query_vector)
   data$results <- unlist(results)
-  #data <- data[perc < 15,]
   data <- data[-grep("\\d+$", data$sentences),]
   data <- data[-grep("\\d+\\s+$", data$sentences),]
   citation <- grepl("\\.,", data$sentences)
   eg <- grepl("e\\.g\\.", data$sentences)
   etal <- grepl("et al\\.,", data$sentences)
   etal2 <- grepl("et\\. al\\.,", data$sentences)
-  citation[etal == T] <- F
-  citation[etal2 == T] <- F
-  citation[eg == T] <- F
+  citation[etal == T | etal2 == T | eg == T] <- F
   data <- data[-which(citation == T),]
   data <- data[-grep("[%]\\s+?", data$sentences),]
   data <- data[-grep("\\s+[A-z]{1}\\.\\s+", data$sentences),]
@@ -389,7 +377,6 @@ interactive_report <- function(country, query, data, embeddings, locations) {
 
   wd <- getwd()
   ggplot2::ggsave(filename=paste0(wd, "/plot1.png"), ggplot2::last_plot(), width=7, height=5, units="in")
-
   cat(paste0("\n", "Creating ", paste(query, collapse="_"), ".pdf", "\n"))
   suppressWarnings(create_report(country))
   cat(paste0(paste(query, collapse="_"), ".pdf"), "created", "\n")
