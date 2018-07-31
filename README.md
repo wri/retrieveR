@@ -65,3 +65,6 @@ solutions                    landscape_restoration        overcome
 removing                     identify                    
 ```
 
+At this stage, you can add or remove words that you find relevant or not-relevant to your query. It is important to note that adding words to your query at this point will help the algorithm better understand what you are looking for. It is easier to draw a plane in 300 dimensional space with 6 points than it is with 2 or 1.
+
+After finalizing a query, the function returns all paragraphs ranked by their cosine similarity.
