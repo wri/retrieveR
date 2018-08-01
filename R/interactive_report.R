@@ -11,6 +11,8 @@
 
 interactive_report <- function(country, query, data, embeddings, locations) {
   library(magrittr)
+  data$page <- unname(data$page)
+  data$page <- data$page[,1]
   count_dig <- function(s) {
     s2 <- gsub("[0-9]","", data$legible[s])
     perc <- round(((1-(nchar(s2)/nchar(data$legible[s])))*100),1)
@@ -98,6 +100,7 @@ interactive_report <- function(country, query, data, embeddings, locations) {
     topn$name <- gsub("stm-documents/Malawi/", "", topn$name)
     topn$name <- gsub("stm-documents/Kenya/", "", topn$name)
     topn$name <- gsub("[0-9]{1,}[.]txt", "", topn$name)
+    topn$name <- gsub("[\\.]{1,}", "", topn$name)
     
     allnames <- data %>%
       dplyr::group_by(country, name) %>%
@@ -108,6 +111,7 @@ interactive_report <- function(country, query, data, embeddings, locations) {
     allnames$name <- gsub("stm-documents/Malawi/", "", allnames$name)
     allnames$name <- gsub("stm-documents/Kenya/", "", allnames$name)
     allnames$name <- gsub("[0-9]{1,}[.]txt", "", allnames$name)
+    allnames$name <- gsub("[\\.]{1,}", "", allnames$name)
     
     topn <- dplyr::left_join(allnames, topn, by = "name")
     topn$density[is.na(topn$density)] <- 0
@@ -162,6 +166,7 @@ interactive_report <- function(country, query, data, embeddings, locations) {
       pgraphs_final <- unname(unlist(lapply(c(1:length(pgraphs)), check_prev), recursive=F))
       topn$name <- gsub("[.]txt", "", topn$name)
       topn$name <- gsub("stm-documents", "", topn$name)
+      topn$name <- gsub("[\\.]{1,}", "", topn$name)
       topn$name <- paste0("**", topn$name, "**")
       names <- unique(topn$name)
       names2 <- rep(NA, length(names))
@@ -227,7 +232,7 @@ interactive_report <- function(country, query, data, embeddings, locations) {
 
   cat("\n", paste0("Querying ", country, "'s", " documents for ", paste(query, collapse=" "), "\n"))
   data$sentences <- as.character(data$sentences)
-  data <- data[nchar(data$sentences) > 70,]
+  #data <- data[nchar(data$sentences) > 70,]
   data$legible <- data$sentences
 
   #for(i in c(1:nrow(data))) {
@@ -325,12 +330,13 @@ interactive_report <- function(country, query, data, embeddings, locations) {
   cat("----------------------------------", "\n")
 
   print_margin <- function(thresh, input_country) {
+    change <- sum(data$results < thresh & data$results > thresh - 0.01)
     subs <- data[data$results < thresh,]
     subs <- subs[subs$country == input_country,]
     subs <- subs %>%
       dplyr::group_by(sentences) %>%
       dplyr::arrange(dplyr::desc(results))
-    cat(input_country, ":", thresh, "-- The highest similarity is", subs$results[1], "and there are", nrow(subs), "paragraphs", "\n\n")
+    cat(input_country, ":", thresh, "-- The highest similarity is", subs$results[1], "and including these would add", change, "paragraphs", "\n\n")
     for(i in c(1:2)) {
       cat(subs$legible[i], "\n\n")
     }
@@ -338,6 +344,14 @@ interactive_report <- function(country, query, data, embeddings, locations) {
 
   corrected <- 0
   thresh <- 0.55
+  test_length <- sum(data$results > thresh)
+  while(test_length > 75) {
+    before <- test_length
+    thresh <- thresh + 0.01
+    test_length <- sum(data$results > thresh)
+    change <- test_length - before
+    cat("Increasing threshold to", thresh, "removing", abs(change), "paragraphs", "\n")
+  }
   print_margin(thresh, country)
 
   while(corrected == 0) {
@@ -383,4 +397,5 @@ interactive_report <- function(country, query, data, embeddings, locations) {
   cat(paste0(paste(query, collapse="_"), ".pdf"), "created", "\n")
   file.remove("plot1.png")
   file.remove("toprint.txt")
+  write.csv(data, "data-results.csv")
 }
