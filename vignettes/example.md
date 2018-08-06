@@ -10,6 +10,8 @@ install_github("wri/retrieveR")
 library(retrieveR)
 
 download_embeddings()
+create_virtualenv()
+run_ocr("policy-documents/")
 corpus <- make_corpus("policy-documents/")
 locations <- create_locations(corpus, "embeddings.bin")
 ```
