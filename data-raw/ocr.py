@@ -18,8 +18,8 @@ from tika import parser
 cwd = os.getcwd()
 print(cwd)
 
-begin = cwd + "ocr/begin/"
-path1 = cwd + "ocr/results/"
+begin = cwd + "/ocr/begin/"
+path1 = cwd + "/ocr/results/"
 
 if not os.path.isdir(path1):
 	os.mkdir(path1)
