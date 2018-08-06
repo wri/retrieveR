@@ -11,6 +11,9 @@ library(retrieveR)
 
 download_embeddings()
 create_virtualenv()
+```
+
+```r
 run_ocr("policy-documents/")
 corpus <- make_corpus("policy-documents/")
 locations <- create_locations(corpus, "embeddings.bin")
