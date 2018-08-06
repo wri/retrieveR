@@ -9,5 +9,5 @@ create_virtualenv <- function(name = "RetrieveR") {
   reticulate::virtualenv_create(name)
   reticulate::virtualenv_install(name, "PyPDF2")
   reticulate::virtualenv_install(name, "tika")
-  use_virtualenv(name)
+  reticulate::use_virtualenv(name)
 }
