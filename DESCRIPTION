@@ -1,6 +1,6 @@
 Package: retrieveR
 Title: Automate information retrieval and analysis of documents
-Version: 1.0.1.0000
+Version: 1.0.2.0000
 Authors@R: person("John", "Brandt", email = "john.brandt@yale.edu", role = c("aut", "cre"))
 Description: A start-to-finish information-retrieval system designed to aid in policy analysis but applicable to any set of documents. Automatically chunks texts by paragraph, fixes spelling errors, cleans text, and projects paragraphs in space with neural word embeddings. Allows users to query the corpus for any topic or question, and generates a report analyzing and summarizing the relevant paragraphs.
 Depends: R (>= 3.5.0)
@@ -17,4 +17,5 @@ Imports:
 	stringr,
 	combinat,
 	magrittr,
-	rmarkdown
+	rmarkdown,
+	reticulate

@@ -2,7 +2,9 @@
 
 export(create_df)
 export(create_locations)
+export(create_virtualenv)
 export(download_embeddings)
 export(interactive_report)
 export(make_corpus)
 export(prep_wordvec)
+export(run_ocr)
