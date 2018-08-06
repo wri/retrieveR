@@ -26,7 +26,7 @@ if not os.path.isdir(path1):
 
 if not os.path.isdir(begin):
 	print("Put the source files inside an 'ocr/begin/' folder and try again!")
-	break
+	exit()
 
 init_files = os.listdir(begin)
 pdf_files = []
