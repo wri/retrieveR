@@ -15,8 +15,18 @@ import shutil
 import re
 from tika import parser
 
-begin = '/Users/johnbrandt/Documents/GitHub/wri-text-analysis/ocr/begin/'
-path1 = '/Users/johnbrandt/Documents/GitHub/wri-text-analysis/ocr/results/'
+cwd = os.getcwd()
+print(cwd)
+
+begin = cwd + "ocr/begin/"
+path1 = cwd + "ocr/results/"
+
+if not os.path.isdir(path1):
+	os.mkdir(path1)
+
+if not os.path.isdir(begin):
+	print("Put the source files inside an 'ocr/begin/' folder and try again!")
+	break
 
 init_files = os.listdir(begin)
 pdf_files = []
@@ -24,14 +34,11 @@ pdf_files = []
 for idx in init_files:
 	if "pdf" in idx.lower():
 		pdf_files.append(idx)
-print(pdf_files)
 
 out_folders = lst = [None] * len(pdf_files)
 for idx, file in enumerate(pdf_files):
-	print(idx)
 	out_folders[idx] = re.sub("[.]", "", pdf_files[idx])
 
-print(out_folders)
 for idx, file in enumerate(out_folders):
 	os.mkdir(path1+out_folders[idx])
 
@@ -46,7 +53,6 @@ def convert_pdf(idx):
 def extract_text(idx, resolution=150):
 	files = os.listdir(path1 + out_folders[idx] + "/")
 	for file in range(len(files)):
-		print(files[file])
 		outfile=os.path.splitext(os.path.basename(files[file]))[0]
 		texttemp = parser.from_file(path1 + out_folders[idx] + "/" + files[file])
 		texttemp = texttemp.get('content')
@@ -63,7 +69,7 @@ def extract_text(idx, resolution=150):
 			os.remove(path1 + out_folders[idx] + "/" + i)
 
 for idx in range(len(pdf_files)):
-	print(idx)
+	print(pdf_files[idx])
 	convert_pdf(idx)
 	extract_text(idx)
 

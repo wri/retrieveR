@@ -5,5 +5,7 @@
 #' run_ocr()
 
 run_ocr <- function() {
-  reticulate::source_python("data-raw/ocr.py")
+  download.file("https://raw.githubusercontent.com/wri/retrieveR/master/data-raw/ocr.py", destfile = "ocr.py")
+  reticulate::source_python("ocr.py")
+  file.remove("ocr.py")
 }
