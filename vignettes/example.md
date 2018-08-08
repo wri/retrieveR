@@ -10,7 +10,6 @@ install_github("wri/retrieveR")
 library(retrieveR)
 
 download_embeddings()
-create_virtualenv()
 ```
 
 ```r
@@ -23,7 +22,6 @@ locations <- create_locations(corpus, "embeddings.bin")
 interactive_report(country = "Kenya",
                    query = "public participation in governance",
                    data = corpus,
-                   embeddings = "embeddings.bin",
                    locations = locations)
 ```
 
