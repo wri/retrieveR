@@ -18,5 +18,7 @@ Imports:
 	combinat,
 	magrittr,
 	rmarkdown,
-	reticulate
+	reticulate,
+	pdftools,
+	rtika
 Remotes: brschmidt/wordVectors
