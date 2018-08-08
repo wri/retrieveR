@@ -19,6 +19,6 @@ Imports:
 	magrittr,
 	rmarkdown,
 	reticulate,
-	pdftools,
+	tabulizer,
 	rtika
 Remotes: brschmidt/wordVectors
