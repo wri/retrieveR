@@ -6,6 +6,8 @@ retrieveR is a system for automating information retrieval from a corpus of docu
 
 ## Installation
 
+retrieveR relies on rJava, which requires bit-compability with your Java installation. You need at least `Java 8` or `OpenJDK 1.8`.
+
 If you have not used devtools before in R, you must install it by running
 
 ```r
@@ -19,7 +21,7 @@ library(devtools)
 install_github("wri/retrieveR")
 ```
 
-If the installation of retrieveR fails because R cannot find Rtools, you can force R to find it by running the below code.
+If the installation of retrieveR fails because R cannot find Rtools, try the below:
 
 ```r
 library(devtools)
@@ -29,7 +31,15 @@ assignInNamespace("version_info", c(devtools::version_info, list("3.5" = list(ve
 
 ## Usage
 
-There are three main functions that comprise the bulk of the functionality of retrieveR: `make_corpus`, `create_locations`, and `interactive_report`. 
+There are four main functions that comprise the bulk of the functionality of retrieveR: `run_ocr`, `make_corpus`, `create_locations`, and `interactive_report`. 
+
+### run_ocr
+
+```r
+run_ocr("path/to/folder")
+```
+
+Splits each PDF into separate PDFs by page and then extracts text using the `rtika` interface to the open-source OCR toolkit with embedded page layout analysis.
 
 ### make_corpus
 
@@ -37,7 +47,7 @@ There are three main functions that comprise the bulk of the functionality of re
 corpus <- make_corpus("path/to/folder")
 ```
 
-This function wraps a number of helper functions that serve to accomplish the following:
+This function does the following:
  
 + Split documents by paragraph
 + Remove tables, figures, and citations
@@ -50,20 +60,22 @@ This function wraps a number of helper functions that serve to accomplish the fo
 ### create_locations
 
 ```r
+download_embeddings()
 locations <- create_locations(corpus, "path/to/embeddings.bin")
 ```
 
-This function uses a pre-trained neural embedding to calculate weights for each paragraph in the corpus. Calling `download_embeddings()` will download a pre-trained embedding to the working directory as `embeddings.bin`. This pre-trained embedding was trained on over 1,000 environmental policy documents from more than 40 nations and 50 NGOs and development aid agencies. The `prep_wordvec` and `create_wordvec` functions may be used to create your own neural embedding.
+This uses a pre-trained neural embedding to calculate weights for each paragraph. Calling `download_embeddings()` will download a pre-trained embedding to the working directory as `embeddings.bin`. This pre-trained embedding was trained on over 1,000 environmental policy documents from more than 40 nations and 50 NGOs and development aid agencies. 
+
+The `prep_wordvec` and `create_wordvec` functions may be used to create your own neural embedding, if need be.
 
 ### interactive_report
 
 ```
 interactive_report(country = "Kenya", query = "barriers to restoration",
-  data = corpus, embeddings = "path/to/embedding", locations = locations)
+  data = corpus, locations = locations)
 ```
 
-The format for querying the corpus and generating a report is interactive and iterative.
-After running the above code, retrieveR prompts the user with a set of words and phrases that are determined as relevant. The ones for "barriers to restoration", for instance, are as follows:
+The format for querying the corpus and generating a report is interactive and iterative. RetrieveR prompts the user with a candidate set of relevant words and phrases. The ones for "barriers to restoration", for instance, are:
 
 ```r
 barriers                     restoration                  obstacles                            
@@ -81,7 +93,7 @@ solutions                    landscape_restoration        overcome
 removing                     identify                    
 ```
 
-At this stage, you can add or remove words that you find relevant or not-relevant to your query. It is important to note that adding words to your query at this point will help the algorithm better understand what you are looking for. It is easier to draw a plane in 300 dimensional space with 6 points than it is with 2 or 1.
+At this stage, you can add or remove words that you find relevant or not-relevant to your query. It is important to note that adding words to your query at this point is preferred. It is easier to draw a plane in 300 dimensional space with 6 points than it is with 2 or 1.
 
 After finalizing a query, the function returns all paragraphs ranked by their cosine similarity. The final step is to determine the cutoff threshold for inclusion. This varies widely between queries - broad queries have a lower threshold than narrow queries - and thus requires user input. 
 
