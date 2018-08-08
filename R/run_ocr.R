@@ -15,8 +15,8 @@ run_ocr <- function(file) {
   dir.create(gsub("[.]pdf", "", file))
   dir <- gsub("[.]pdf", "", file)
   for(i in c(1:pages)) {
-    pdftools::pdf_convert(file, format="png", dpi=250, page = i, filenames=paste0(dir, "/", as.character(i), ".png"), verbose=F)
-    output <- rtika::tika_text(paste0(dir, "/", as.character(i), ".png"))
+    pdftools::pdf_convert(file, format="tiff", dpi=250, page = i, filenames=paste0(dir, "/", as.character(i), ".tiff"), verbose=F)
+    output <- rtika::tika_text(paste0(dir, "/", as.character(i), ".tiff"))
     write.table(output, paste0(dir, "/", as.character(i), ".txt"), row.names=F, col.names=F, quote=F)
   }
 }
