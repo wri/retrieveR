@@ -8,12 +8,10 @@
 
 create_locations <- function(corpus, embedding) {
   library(magrittr)
-
   cat("\nReading in data", "\n")
   data <- corpus
   data$sentences <- as.character(data$sentences)
-  data <- data[nchar(data$sentences) > 70,]
-
+  #data <- data[nchar(data$sentences) > 70,]
   wv1 <- wordVectors::read.binary.vectors(embedding)
   df1 <- data.frame(wv1@.Data)
 
@@ -21,7 +19,6 @@ create_locations <- function(corpus, embedding) {
   data$sentences <- gsub("([A-z])-\\s+([a-z])", "\\1\\2", data$sentences)
   data$sentences <- gsub("([A-z])\\s+-([a-z])", "\\1\\2", data$sentences)
   data$sentences <- gsub("-", " ", data$sentences)
-
   cat("Bundling n-grams", "\n")
   bigrams <- rownames(df1)[grepl("_", rownames(df1))]
   bigrams <- bigrams[!(grepl("[0-9]", bigrams))]
@@ -31,7 +28,6 @@ create_locations <- function(corpus, embedding) {
     to_bundle[i] <- paste("\\s+", to_bundle[i], "\\s+", sep="")
     bigrams[i] <- paste(" ", bigrams[i], " ", sep="")
   }
-
   bundled <- data$sentences
 
   pb <- txtProgressBar(min = 0, max = length(to_bundle), style = 3)
@@ -57,7 +53,7 @@ create_locations <- function(corpus, embedding) {
     query <- unlist(strsplit(query, " "))
     query <- query[!query %in% corpus::stopwords_en]
     query <- gsub("[0-9]", "", query)
-    query <- gsub("[,.!?:;$%]", "", query)
+    query <- gsub("|[,.!?:;$%]", "", query)
     query <- query[!query == ""]
     query <- data.frame(query = as.character(query)) %>%
       dplyr::group_by(query) %>%
@@ -74,10 +70,11 @@ create_locations <- function(corpus, embedding) {
     sentence_embedding <- t(as.matrix(vecs)) %*% as.matrix(embeds)
     return(sentence_embedding)
   }
-
   locations <- lapply(c(1:nrow(data)), create_point)
   close(pb)
 
   cat("Saving the word embeddings to 'embeddings.rds'\n")
   saveRDS(locations, "embeddings.rds")
+  cat("There are now", nrow(data), "observations!\n")
+  return(locations)
 }

@@ -13,13 +13,13 @@ create_df <- function(folders, main) {
     files <- list.files(path=folder, pattern=".txt")
     dir <- paste(folder, files, sep="")
 
-    count_dig2 <- function(s, data) {
+    count_dig <- function(s, data) { #calculate % of paragraph that is numeric
       s2 <- gsub("[0-9]","", data[s])
       perc <- round(((1-(nchar(s2)/nchar(data[s])))*100),1)
       return(perc)
     }
 
-    # readtext reads in all the files in the above list
+    # reads in all the files in the above list
     readtext <- function(file){
       cat("Reading", file, "\n")
       .con <- file(description=file)
@@ -35,7 +35,6 @@ create_df <- function(folders, main) {
     # convert_pagraphs removes whitespace (find.dup), pastes together paragraphs,
     # pastes together broken sentences, and removes titles, tables, figures, links,
     # and a lot of noise (paragraphs that aren't real sentences)
-
     convert_paragraphs <- function(input) {
       colname <- as.character(input)
       file <- readtext(input)
@@ -46,7 +45,7 @@ create_df <- function(folders, main) {
         }
       }
 
-      # find.dup just counts the number of consecutive empty lines
+      # find.dup counts the number of consecutive empty lines
       find.dup <- function(x) {
         consec <- rep(0, length(x))
         for(i in 2:length(x)) {
@@ -59,27 +58,22 @@ create_df <- function(folders, main) {
         return(consec)
       }
 
-      # Group up lines between empty lines (paragraphs) and pastes them together
-      length_pre <- length(file)
+      # Removes figures and tables
       rmfigtable <- grepl("^Figure\\s+\\d|^figure\\s+\\d|^Table\\s+\\d|^table\\s+\\d", file)
       file <- file[rmfigtable==F]
-      digs <- unlist(lapply(c(1:length(file)), count_dig2, file))
+      digs <- unlist(lapply(c(1:length(file)), count_dig, file))
       file <- file[digs < 50]
-      length_post <- length(file)
-      length_removed <- length_pre-length_post
-      #cat("Removed ", length_removed, "lines with tables or only numbers \n")
 
-      na_loc <- file == ""
-      l <- which(na_loc == F)
-      groups <- as.vector(l)
-      y <- sort(groups)
+      # Group up lines between empty lines (paragraphs) and paste them together
+      l <- which(file != "")
+      y <- sort(as.vector(l))
+      #y <- sort(groups)
       g <- cumsum(c(1, abs(y[-length(y)] - y[-1]) > 1))
       paragraphs <- by(y, g, identity)
       pgraphs <- rep(NA, length(paragraphs)) # Paste together paragraphs
       for(i in c(1:length(pgraphs))) {
         pgraphs[i] <- paste(file[unlist(paragraphs[i])], collapse = " ")
       }
-
       for(i in c(1:length(pgraphs))) { # Some paragraphs got missed and this fixes that
         if(grepl("   ", pgraphs[i])) {
           pgraphs[i] <- strsplit(unlist(pgraphs[i]), "   ")
@@ -90,8 +84,7 @@ create_df <- function(folders, main) {
       pgraphs <- unlist(pgraphs, recursive=F)
       pgraphs <- pgraphs[pgraphs != ""]
       pgraphs <- na.omit(pgraphs)
-      pgraphs <- pgraphs[nchar(pgraphs) > 20]
-      pgraphs <- pgraphs[nchar(pgraphs) < 5000]
+      pgraphs <- pgraphs[nchar(pgraphs) > 20 & nchar(pgraphs) < 5000]
       pgraphs <- data.frame(sentences = pgraphs)
       pgraphs$name <- rep(colname, nrow(pgraphs))
       pgraphs$sentences <- as.character(pgraphs$sentences)
@@ -107,8 +100,7 @@ create_df <- function(folders, main) {
       pgraphs$sentences <- gsub("[A-Z]{5,}\\s+[A-Z]{5,}", " ", pgraphs$sentences)
       haswords <- grepl("[A-z]{5}|[a-z]{5}", pgraphs$sentences)
       haslower <- grepl("\\s+[a-z]{5,30}\\s+", pgraphs$sentences)
-      pgraphs <- pgraphs[haswords ==T,]
-      pgraphs <- pgraphs[haslower == T,]
+      pgraphs <- pgraphs[haswords ==T & haslower == T,]
 
       # Paste together lines that do not start with a capital letter
       # under the assumption that such lines are broken sentences
@@ -141,10 +133,8 @@ create_df <- function(folders, main) {
         pgraphs$sentences <- unlist(pgraphs$sentences)
       }
 
-
       # Paste together lines that end with a word without punctuation,
       # or that end with a : or a - under the assumption that such lines are broken sentences
-
       d <- grepl("[a-z]$|[a-z]\\s+$|,$|,\\s+$|:$|:\\s+$|—$|—\\s+$|;$|;\\s+", pgraphs$sentences)
       d <- which(d == T)
       if(length(d) > 0) {
