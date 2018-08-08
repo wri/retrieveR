@@ -6,9 +6,24 @@ retrieveR is a system for automating information retrieval from a corpus of docu
 
 ## Installation
 
+If you have not used devtools before in R, you must install it by running
+
+```r
+install.packages("devtools")
+```
+
+Devtools relies on the most current version of Rtools to also be [installed](https://cran.r-project.org/bin/windows/Rtools/). I am currently working on a release update that will not depend on Rtools. 
+
 ```r
 library(devtools)
 install_github("wri/retrieveR")
+```
+
+If the installation of retrieveR fails because R cannot find Rtools, you can force R to find it by running the below code.
+
+```r
+library(devtools)
+assignInNamespace("version_info", c(devtools::version_info, list("3.5" = list(version_min = "3.3.0", version_max = "99.99.99", path = "bin"))), "devtools")
 ```
 
 
