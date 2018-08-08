@@ -9,7 +9,7 @@
 #' @examples
 #' interactive_report()
 
-interactive_report <- function(country, query, data, embeddings, locations) {
+interactive_report <- function(country, query, data, embeddings = "embeddings.bin", locations) {
   library(magrittr)
   data$page <- unname(data$page)
   data$page <- data$page[,1]
