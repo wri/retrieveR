@@ -7,11 +7,23 @@
 #' prep_wordvec()
 
 
-prep_wordvec <- function(x) {
+prep_wordvec <- function(folder) {
   library(magrittr)
   library(hunspell)
-
-  folder <- 'background-texts'
+  if(is.na(rtika::tika_jar())){
+    rtika::install_tika()
+  }
+  ocr <- function(name) {
+    pages <- list.files(name)
+    dir <- gsub("[0-9][.]pdf", "", name)
+    for(i in c(1:length(pages))) {
+      output <- rtika::tika_text(paste0(name, "/", pages[i]))
+      file.remove(paste0(name, "/", pages[i]))
+      write.table(output, paste0(name, "/", as.character(i), ".txt"), row.names=F, col.names=F, quote=F)
+    }
+  }
+  folders <- list.files(path=folder, pattern=".pdf")
+  l <- lapply(folders, ocr)
   folders <- list.files(path=folder, pattern=".txt")
   full_folders <- paste(folder, folders, sep="/")
   added_words <- c("rangelands", "ers", "sra", "reverse", "operationalize", "operationalized", "pastoralism", "hydropower", "landuse", "smallscale", "largescale", "percent",
@@ -52,7 +64,7 @@ prep_wordvec <- function(x) {
 
   check_bad <- function(id, in_dict) {
     setTxtProgressBar(pb, id)
-    sentence <- df2$sentences[id]
+    sentence <- df$sentences[id]
     sentence <- tolower(sentence)
     bad_words <- hunspell::hunspell_find(sentence, ignore = added_words, dict = hunspell::dictionary(in_dict))
     bad_words <- unlist(bad_words)
@@ -61,7 +73,7 @@ prep_wordvec <- function(x) {
 
   check_spelling <- function(id) {
     setTxtProgressBar(pb, id)
-    sentence <- tolower(df2$sentences[id])
+    sentence <- tolower(df$sentences[id])
     bad_words <- unlist(hunspell_find(sentence, ignore = added_words))
     if(length(bad_words) > 0) {
       suggested <- hunspell_suggest(bad_words)
