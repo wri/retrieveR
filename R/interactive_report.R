@@ -18,7 +18,7 @@ interactive_report <- function(country, query, data, embeddings = "embeddings.bi
     perc <- round(((1-(nchar(s2)/nchar(data$legible[s])))*100),1)
     return(perc)
   }
-
+  
   # Calculate weights for an input using l2 norm
   create_point <- function(query) {
     query <- unlist(strsplit(query, " "))
@@ -42,7 +42,7 @@ interactive_report <- function(country, query, data, embeddings = "embeddings.bi
     rownames(d) <- 1
     return(d)
   }
-
+  
   create_query <- function(inp) {
     #unlist the input and remove stopwords
     inp <- unlist(stringr::str_split(inp, " "))
@@ -81,12 +81,12 @@ interactive_report <- function(country, query, data, embeddings = "embeddings.bi
       return(inp)
     }
   }
-
+  
   run_query <- function(x, input) {
     vector <- unlist(locations[x])
     wordVectors::cosineSimilarity(t(as.matrix(vector)), as.matrix(input))
   }
-
+  
   create_docmap <- function(thresh, inp_country) {
     topn <- data %>%
       dplyr::arrange(desc(results)) %>%
@@ -96,9 +96,6 @@ interactive_report <- function(country, query, data, embeddings = "embeddings.bi
       dplyr::group_by(name) %>%
       dplyr::summarise(density=n())
     
-    topn$name <- gsub("stm-documents/Rwanda/", "", topn$name)
-    topn$name <- gsub("stm-documents/Malawi/", "", topn$name)
-    topn$name <- gsub("stm-documents/Kenya/", "", topn$name)
     topn$name <- gsub("[0-9]{1,}[.]txt", "", topn$name)
     topn$name <- gsub("[\\.]{1,}", "", topn$name)
     
@@ -107,9 +104,7 @@ interactive_report <- function(country, query, data, embeddings = "embeddings.bi
       dplyr::filter(country==inp_country) %>%
       dplyr::summarise(total=n())
     
-    allnames$name <- gsub("stm-documents/Rwanda/", "", allnames$name)
-    allnames$name <- gsub("stm-documents/Malawi/", "", allnames$name)
-    allnames$name <- gsub("stm-documents/Kenya/", "", allnames$name)
+    
     allnames$name <- gsub("[0-9]{1,}[.]txt", "", allnames$name)
     allnames$name <- gsub("[\\.]{1,}", "", allnames$name)
     
@@ -121,7 +116,7 @@ interactive_report <- function(country, query, data, embeddings = "embeddings.bi
     topn$thresh <- thresh
     return(topn)
   }
-
+  
   create_report <- function(target_country) {
     calc_append <- function() {
       grouped <- rep(NA, length(topn$name))
@@ -165,7 +160,6 @@ interactive_report <- function(country, query, data, embeddings = "embeddings.bi
       
       pgraphs_final <- unname(unlist(lapply(c(1:length(pgraphs)), check_prev), recursive=F))
       topn$name <- gsub("[.]txt", "", topn$name)
-      topn$name <- gsub("stm-documents", "", topn$name)
       topn$name <- gsub("[\\.]{1,}", "", topn$name)
       topn$name <- paste0("**", topn$name, "**")
       names <- unique(topn$name)
@@ -199,7 +193,7 @@ interactive_report <- function(country, query, data, embeddings = "embeddings.bi
       dplyr::filter(country==target_country) %>%
       dplyr::filter(results > thresh) %>%
       dplyr::arrange(name, desc(results))
-
+    
     topn$legible <- gsub("^([0-9])[.]", "\\1", topn$legible)
     topn$legible <- gsub("^[A-Z]{1}\\s+", "", topn$legible)
     topn$legible <- gsub("^([a-z])", "\\U\\1", perl=T, topn$legible)
@@ -213,7 +207,7 @@ interactive_report <- function(country, query, data, embeddings = "embeddings.bi
     topn$legible <- gsub("^[.][0-9]{1,}", "", topn$legible)
     topn$legible <- gsub("^[.]", "", topn$legible)
     topn$legible <- paste0(topn$legible, " ", "**", topn$page, "**")
-
+    
     toprint <- calc_append()
     write.table(toprint, "toprint.txt", row.names=F, col.names=F, quote=F)
     my_text <- readLines("toprint.txt")
@@ -229,12 +223,12 @@ interactive_report <- function(country, query, data, embeddings = "embeddings.bi
     file.remove(filename) #cleanup
     write.csv(topn, paste0(country, ".csv"))
   }
-
+  
   cat("\n", paste0("Querying ", country, "'s", " documents for ", paste(query, collapse=" "), "\n"))
   data$sentences <- as.character(data$sentences)
   #data <- data[nchar(data$sentences) > 70,]
   data$legible <- data$sentences
-
+  
   #for(i in c(1:nrow(data))) {
   #  data$country[i] <- unlist(strsplit(as.character(data$name[i]), "/"))[2]
   #}
@@ -249,20 +243,20 @@ interactive_report <- function(country, query, data, embeddings = "embeddings.bi
   data$legible <- gsub("\\?\\s+([a-z])", "\\? \\U\\1", data$legible, perl=TRUE)
   data$legible <- gsub("([A-z])-\\s+([a-z])", "\\1\\2", data$legible)
   data$legible <- gsub("([A-z])\\s+-([a-z])", "\\1\\2", data$legible)
+  data$name <- stringr::str_match(data$name, "[^/][A-z 0-9]{1,}/[0-9]{1,}[.]txt$")
+  data$name <- data$name[,1]
   data$name <- gsub("[0-9]{1,}[.]txt", "", data$name)
-  data$name <- gsub("results", "", data$name)
-  data$name <- gsub("pdf/", "", data$name)
-  data$name <- gsub("/[^>]+/", "", data$name)
-
+  data$name <- gsub("/", "", data$name)
+  
   perc <- unlist(lapply(c(1:nrow(data)), count_dig))
   wv1 <- wordVectors::read.binary.vectors(embeddings)
   df1 <- data.frame(wv1@.Data)
-
+  
   bigrams_full <- rownames(df1)[grepl("_", rownames(df1))]
   bigrams_full <- bigrams_full[!(grepl("[0-9]", bigrams_full))]
   locations <- readRDS(locations)
   data$sentences <- gsub("-", " ", data$sentences)
-
+  
   query <- create_query(query)
   query_vector <- create_point(query)
   cat("\n")
@@ -271,7 +265,7 @@ interactive_report <- function(country, query, data, embeddings = "embeddings.bi
   similars <- unname(unlist(wv1 %>% wordVectors::closest_to(as.matrix(query_vector), n=50) %>% dplyr::select(word)))
   print(similars, quote=F)
   cat("\n\n")
-
+  
   ## Step 2
   ## Query expansion
   finalize_query <- function() {
@@ -296,7 +290,7 @@ interactive_report <- function(country, query, data, embeddings = "embeddings.bi
       finalized <- 0
     }
   }
-
+  
   create_results <- function() {
     cat(paste0("Running query on ", length(locations), " documents", "\n"))
     pb <- txtProgressBar(min = 0, max=length(locations), style = 3)
@@ -310,17 +304,23 @@ interactive_report <- function(country, query, data, embeddings = "embeddings.bi
     return(results)
     close(pb)
   }
-
+  
   results <- create_results()
   data$results <- unlist(results)
   data <- data[-grep("\\d+$", data$sentences),]
   data <- data[-grep("\\d+\\s+$", data$sentences),]
+  print(nrow(data))
+  
   citation <- grepl("\\.,", data$sentences)
   eg <- grepl("e\\.g\\.", data$sentences)
   etal <- grepl("et al\\.,", data$sentences)
   etal2 <- grepl("et\\. al\\.,", data$sentences)
   citation[etal == T | etal2 == T | eg == T] <- F
-  data <- data[-which(citation == T),]
+  torm <- which(citation == T)
+  if(length(torm) > 0) {
+    data <- data[-torm,]
+  }
+
   data <- data[-grep("[%]\\s+?", data$sentences),]
   data <- data[-grep("\\s+[A-z]{1}\\.\\s+", data$sentences),]
 
@@ -328,7 +328,7 @@ interactive_report <- function(country, query, data, embeddings = "embeddings.bi
   cat("We need to decide the boundary between relevance and non-relevance", "\n")
   cat("If the two sentences below are relevant, enter 'Yes' to expand the results", "\n\n")
   cat("----------------------------------", "\n")
-
+  
   print_margin <- function(thresh, input_country) {
     change <- sum(data$results < thresh & data$results > thresh - 0.01)
     subs <- data[data$results < thresh,]
@@ -341,7 +341,7 @@ interactive_report <- function(country, query, data, embeddings = "embeddings.bi
       cat(subs$legible[i], "\n\n")
     }
   }
-
+  
   corrected <- 0
   thresh <- 0.55
   test_length <- sum(data$results > thresh)
@@ -353,7 +353,7 @@ interactive_report <- function(country, query, data, embeddings = "embeddings.bi
     cat("Increasing threshold to", thresh, "removing", abs(change), "paragraphs", "\n")
   }
   print_margin(thresh, country)
-
+  
   while(corrected == 0) {
     cat("\n")
     id <- readline(prompt = "Are these relevant? (Yes / No) ")
@@ -365,7 +365,7 @@ interactive_report <- function(country, query, data, embeddings = "embeddings.bi
       print_margin(thresh, country)
     }
   }
-
+  
   multi_thresh <- c(thresh - 0.05, thresh, thresh + 0.05)
   testing <- lapply(multi_thresh, create_docmap, country)
   testing <- do.call("rbind", testing)
@@ -386,10 +386,10 @@ interactive_report <- function(country, query, data, embeddings = "embeddings.bi
     ggplot2::ylab("")+
     ggplot2::facet_grid(.~thresh)+
     ggplot2::theme(line = ggplot2::element_blank(), rect = ggplot2::element_blank(), axis.title = ggplot2::element_blank(), 
-          legend.text = ggplot2::element_text(size = ggplot2::rel(0.8)), legend.title = ggplot2::element_text(hjust = 0), 
-          legend.position="none",
-          strip.text = ggplot2::element_text(size = ggplot2::rel(0.7)), axis.text.x=ggplot2::element_blank(), complete = FALSE)
-
+                   legend.text = ggplot2::element_text(size = ggplot2::rel(0.8)), legend.title = ggplot2::element_text(hjust = 0), 
+                   legend.position="none",
+                   strip.text = ggplot2::element_text(size = ggplot2::rel(0.7)), axis.text.x=ggplot2::element_blank(), complete = FALSE)
+  
   wd <- getwd()
   ggplot2::ggsave(filename=paste0(wd, "/plot1.png"), ggplot2::last_plot(), width=7, height=5, units="in")
   cat(paste0("\n", "Creating ", paste(query, collapse="_"), ".pdf", "\n"))
