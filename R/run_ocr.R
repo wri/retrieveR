@@ -5,8 +5,8 @@
 #' run_ocr()
 
 run_ocr <- function(path) {
-  if(is.na(tika_jar())){
-    install_tika()
+  if(is.na(rtika::tika_jar())){
+    rtika::install_tika()
   }
   files <- list.files(path)
   files <- files[grepl("pdf", files)]
