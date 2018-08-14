@@ -24,7 +24,27 @@ This vignette walks the user through applying the neural embedding NLP approach 
 ## Downloading data
 
 ```{r}
-#code to download data
+download_example <- function() {
+  dir.create("pdfs")
+  download.file("https://github.com/wri/retrieveR/raw/master/data-raw/pdfs/Collective%20action%20for%20poverty%20reduction.pdf",
+                destfile="pdfs/Collective action for poverty reduction.pdf")
+  download.file("https://github.com/wri/retrieveR/raw/master/data-raw/pdfs/Collective%20action%20for%20sustainable%20development.pdf",
+                destfile="pdfs/Collective action for sustainable development.pdf")
+  download.file("https://github.com/wri/retrieveR/raw/master/data-raw/pdfs/Guidlines%20on%20land%20policy%20in%20africa.pdf",
+                destfile = "pdfs/Guidelines on land policy in africa.pdf")
+  download.file("https://github.com/wri/retrieveR/raw/master/data-raw/pdfs/Markets%20to%20leverage%20investment%20in%20restoration.pdf",
+                destfile = "pdfs/Markets to leverage investment in restoration.pdf")
+  download.file("https://github.com/wri/retrieveR/raw/master/data-raw/pdfs/Network%20approach%20to%20social%20capacity.pdf",
+                destfile = "pdfs/Network approach to social capacity.pdf")
+  download.file("https://github.com/wri/retrieveR/raw/master/data-raw/pdfs/Political%20economy%20of%20reforestation.pdf",
+                destfile = "pdfs/Political economy of reforestation.pdf")
+  download.file("https://github.com/wri/retrieveR/raw/master/data-raw/pdfs/Public-private%20partnership%20for%20restoration.pdf",
+                destfile = "pdfs/Public-private partnership for restoration.pdf")
+  download.file("https://github.com/wri/retrieveR/raw/master/data-raw/pdfs/Scaling%20biomass%20monitoring.pdf",
+                destfile = "pdfs/Scaling biomass monitoring.pdf")
+}
+
+download_example()
 ```
 
 
@@ -34,8 +54,36 @@ The figure sizes have been customised so that you can easily put two images side
 
 ```{r}
 library(retrieveR)
-download_embeddings()
-#run_ocr("path-to-ducments")
+run_ocr("pdfs")
+```
+
+
+```{r}
+ocr <- function(name) {
+    pages <- list.files(name)
+    dir <- gsub("[0-9][.]pdf", "", name)
+    for(i in c(1:length(pages))) {
+      output <- rtika::tika_text(paste0(name, "/", pages[i]))
+      file.remove(paste0(name, "/", pages[i]))
+      write.table(output, paste0(name, "/", as.character(i), ".txt"), row.names=F, col.names=F, quote=F)
+    }
+}
+
+ocr <- function(name) {
+    pages <- list.files(name)
+    pages <- paste0(name, "/", pages)
+    print(pages)
+    dir <- gsub("[0-9][.]pdf", "", name)
+    item <- rtika::tika_text(pages)
+    for(i in c(1:length(item))) {
+      file.remove(pages[i])
+      write.table(item[i], paste0(name, "/", as.character(i), ".txt"), row.names=F,
+                  col.names=F, quote=F)
+    }
+}
+
+ocr("pdfs/Collective action for poverty reduction")
+
 ```
 
 
