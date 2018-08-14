@@ -22,3 +22,6 @@ Imports:
 	tabulizer,
 	rtika
 Remotes: brschmidt/wordVectors
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
