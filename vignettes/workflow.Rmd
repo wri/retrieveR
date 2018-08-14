@@ -1,10 +1,10 @@
 ---
-title: "Example workflow for using the retrieveR package"
+title: "Workflow for using retrieveR"
 author: "John Brandt"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteIndexEntry{Workflow}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

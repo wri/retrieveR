@@ -4,7 +4,7 @@
 \alias{run_ocr}
 \title{Runs OCR on the input corpus}
 \usage{
-run_ocr()
+run_ocr(path)
 }
 \description{
 Runs OCR on the input corpus

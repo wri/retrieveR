@@ -4,7 +4,8 @@
 \alias{interactive_report}
 \title{Query a corpus for a topic and create a report summarizing and containing the results}
 \usage{
-interactive_report(country, query, data, embeddings, locations)
+interactive_report(country, query, data, embeddings = "embeddings.bin",
+  locations)
 }
 \arguments{
 \item{country}{Country, must match the groupings from folders}

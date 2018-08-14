@@ -4,7 +4,7 @@
 \alias{prep_wordvec}
 \title{Corpus creating and data cleaning to create a .csv that can be fed into create_wordvec}
 \usage{
-prep_wordvec(x)
+prep_wordvec(folder)
 }
 \arguments{
 \item{corpus}{Dataframe returned from make_corpus}

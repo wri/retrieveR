@@ -4,7 +4,7 @@
 \alias{create_virtualenv}
 \title{Creates a Python 2.7 virtual environment for running OCR}
 \usage{
-create_virtualenv(name = "RetrieveR")
+create_virtualenv(name = "RetrieveR", type = "conda")
 }
 \arguments{
 \item{name}{Name for the virtual environment, defaults to RetrieveR}
