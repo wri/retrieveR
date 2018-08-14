@@ -41,7 +41,6 @@ run_ocr("pdfs")
 
 ```{r}
 corpus <- make_corpus("pdfs")
-corpus$country <- as.character(length(unique(gsub("[0-9]{1,}[.]txt", "", corpus$name))))
 ```
 
 
@@ -51,6 +50,6 @@ locations <- create_locations(corpus, "embeddings.bin")
 ```
 
 ```{r}
-interactive_report(query="climate change", locations="embeddings.rds", data=corpus)
+interactive_report(query="market risks", locations="embeddings.rds", data=corpus)
 ```
 

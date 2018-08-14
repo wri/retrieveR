@@ -20,7 +20,9 @@ Imports:
 	rmarkdown,
 	reticulate,
 	tabulizer,
-	rtika
+	rtika,
+	cld2,
+	hunspell
 Remotes: brschmidt/wordVectors
 Suggests: knitr,
     rmarkdown

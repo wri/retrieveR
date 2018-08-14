@@ -41,6 +41,7 @@ interactive_report <- function(country=NULL, query, data, embeddings = "embeddin
       d <- d + x
     }
     d <- d/(length(query) - numb)
+    str(d)
     d <- d[1,]
     rownames(d) <- 1
     return(d)
