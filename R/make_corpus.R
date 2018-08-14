@@ -215,6 +215,9 @@ make_corpus <- function(folder) {
 
   df <- df[-grepl(",\\s+[a-z]{1}[.]", df$sentences),]
   df$sentences <- gsub("\\s+[bcdefghijklmnopqrstuvwxyz]{1}\\s+", "", df$sentences)
+  if(is.na(df$country)) {
+    df$country <- as.character(length(unique(gsub("[0-9]{1,}[.]txt", "", df$name))))
+  }
 
   # Write cleaned-up dataframe to a CSV for further analysis
   write.csv(df, "full_corpus.csv")

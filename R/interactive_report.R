@@ -9,8 +9,11 @@
 #' @examples
 #' interactive_report()
 
-interactive_report <- function(country, query, data, embeddings = "embeddings.bin", locations) {
+interactive_report <- function(country=NULL, query, data, embeddings = "embeddings.bin", locations) {
   library(magrittr)
+  if(is.null(country) & length(unique(data$country)) == 1) {
+    country <- data$country[1]
+  }
   data$page <- unname(data$page)
   data$page <- data$page[,1]
   count_dig <- function(s) {
@@ -218,7 +221,7 @@ interactive_report <- function(country, query, data, embeddings = "embeddings.bi
     title <- paste(unique(unlist(strsplit(title, " "))), collapse = " ")
     title <- gsub("^([a-z])", "\\U\\1", perl=T, title)
     title <- paste(title, collapse = " ")
-    cat("---", paste0('title: ', title), paste0('subtitle: Text extracted from ', target_country, ' Policy Documents'), "output:", "pdf_document:", "fig_caption: yes", "---", "!['Why won't this caption show up?'](plot1.png)", my_text, sep="  \n", file=filename)
+    cat("---", paste0('title: ', title), paste0('subtitle: Text extracted from ', target_country, ' documents'), "output:", "pdf_document:", "fig_caption: yes", "---", "!['Why won't this caption show up?'](plot1.png)", my_text, sep="  \n", file=filename)
     rmarkdown::render(filename, rmarkdown::pdf_document(), quiet=T)
     file.remove(filename) #cleanup
     write.csv(topn, paste0(country, ".csv"))
