@@ -21,7 +21,6 @@ create_df <- function(folders, main) {
 
     # reads in all the files in the above list
     readtext <- function(file){
-      cat("Reading", file, "\n")
       .con <- file(description=file)
       .text <- readLines(file)
       close(.con)

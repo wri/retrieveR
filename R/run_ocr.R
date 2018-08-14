@@ -10,15 +10,19 @@ run_ocr <- function(path) {
   }
   files <- list.files(path)
   files <- files[grepl("pdf", files)]
+  dir.create(paste0(path, "/results"))
+  output <- paste0(path, "/results")
+
   split_files <- function(file) {
     id <- which(files == file)
     setTxtProgressBar(pb, id)
     dir <- gsub("[.]pdf", "", file)
-    dir.create(paste0(path, "/", dir))
+    dir.create(paste0(output, "/", dir))
     file <- paste0(path, "/", file)
-    tabulizer::split_pdf(file, outdir=paste0(path, "/", dir))
+    tabulizer::split_pdf(file, outdir=paste0(output, "/", dir))
     gc()
   }
+
   ocr <- function(name) {
     id <- which(results == name)
     setTxtProgressBar(pb, id)
@@ -37,8 +41,8 @@ run_ocr <- function(path) {
   pb <- txtProgressBar(min=0, max=length(files), style=3)
   l <- lapply(files, split_files)
   close(pb)
-  results <- list.dirs(path)
-  results <- results[grepl("/", results)]
+  results <- list.dirs(output)
+  results <- results[-1]
   cat("Running OCR on the corpus \n")
   pb <- txtProgressBar(min=0, max=length(results), style=3)
   l <- lapply(results, ocr)
