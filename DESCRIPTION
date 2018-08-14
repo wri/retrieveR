@@ -22,7 +22,8 @@ Imports:
 	tabulizer,
 	rtika,
 	cld2,
-	hunspell
+	hunspell,
+	tidyr
 Remotes: brschmidt/wordVectors
 Suggests: knitr,
     rmarkdown

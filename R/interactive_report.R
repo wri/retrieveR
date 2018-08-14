@@ -9,7 +9,7 @@
 #' @examples
 #' interactive_report()
 
-interactive_report <- function(country=NULL, query, data, embeddings = "embeddings.bin", locations) {
+interactive_report <- function(country=NULL, query, data, embeddings = "embeddings.bin", locations, type="html") {
   library(magrittr)
   if(is.null(country) & length(unique(data$country)) == 1) {
     country <- data$country[1]
@@ -221,8 +221,14 @@ interactive_report <- function(country=NULL, query, data, embeddings = "embeddin
     title <- paste(unique(unlist(strsplit(title, " "))), collapse = " ")
     title <- gsub("^([a-z])", "\\U\\1", perl=T, title)
     title <- paste(title, collapse = " ")
+    if(type == "html") {
+      rend_type <- rmarkdown::pdf_document()
+    }
+    if(type == "pdf") {
+      rend_type <- rmarkdown::html_document()
+    }
     cat("---", paste0('title: ', title), paste0('subtitle: Text extracted from ', target_country, ' documents'), "output:", "pdf_document:", "fig_caption: yes", "---", "!['Why won't this caption show up?'](plot1.png)", my_text, sep="  \n", file=filename)
-    rmarkdown::render(filename, rmarkdown::pdf_document(), quiet=T)
+    rmarkdown::render(filename, rend_type, quiet=T)
     file.remove(filename) #cleanup
     write.csv(topn, paste0(country, ".csv"))
   }
