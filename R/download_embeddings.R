@@ -6,5 +6,5 @@
 #' download_embeddings()
 
 download_embeddings <- function(path = "embeddings.bin") {
-	download.file("https://github.com/wri/retrieveR/raw/master/data-raw/embeddings.bin", destfile = path)
+	download.file("https://github.com/wri/retrieveR/raw/master/data-raw/embeddings.bin", destfile = path, mode="wb")
 }

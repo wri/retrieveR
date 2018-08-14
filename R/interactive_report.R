@@ -41,7 +41,6 @@ interactive_report <- function(country=NULL, query, data, embeddings = "embeddin
       d <- d + x
     }
     d <- d/(length(query) - numb)
-    str(d)
     d <- d[1,]
     rownames(d) <- 1
     return(d)
@@ -51,7 +50,6 @@ interactive_report <- function(country=NULL, query, data, embeddings = "embeddin
     #unlist the input and remove stopwords
     inp <- unlist(stringr::str_split(inp, " "))
     inp <- inp[!inp %in% corpus::stopwords_en]
-    print(inp)
     # calculate all permutations and combinations of query
     # and check for n-grams
     if(length(inp) > 1) {
@@ -261,10 +259,7 @@ interactive_report <- function(country=NULL, query, data, embeddings = "embeddin
   bigrams_full <- bigrams_full[!(grepl("[0-9]", bigrams_full))]
   locations <- readRDS(locations)
   data$sentences <- gsub("-", " ", data$sentences)
-  str(data)
   query <- create_query(query)
-  print(query)
-  str(query)
   query_vector <- create_point(query)
   cat("\n")
   cat("Top 50 related words \n")

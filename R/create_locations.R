@@ -13,14 +13,12 @@ create_locations <- function(corpus, embedding) {
   data$sentences <- as.character(data$sentences)
   #data <- data[nchar(data$sentences) > 70,]
   wv1 <- wordVectors::read.binary.vectors(embedding)
-  str(wv1)
   df1 <- data.frame(wv1@.Data)
 
   data$sentences <- gsub("([A-z])-([A-z])", "\\1 \\2", data$sentences)
   data$sentences <- gsub("([A-z])-\\s+([a-z])", "\\1\\2", data$sentences)
   data$sentences <- gsub("([A-z])\\s+-([a-z])", "\\1\\2", data$sentences)
   data$sentences <- gsub("-", " ", data$sentences)
-  str(data)
   cat("Bundling n-grams", "\n")
   bigrams <- rownames(df1)[grepl("_", rownames(df1))]
   bigrams <- bigrams[!(grepl("[0-9]", bigrams))]
@@ -39,7 +37,6 @@ create_locations <- function(corpus, embedding) {
   }
   close(pb)
   data$sentences <- bundled
-  print(data$sentences[1:20])
   cat("Calculating idf", "\n")
   nopunc <- gsub("[!.,%0-9:;]", "", data$sentences)
   nopunc <- do.call("rbind", strsplit(paste(nopunc, collapse=" "), split = " "))
