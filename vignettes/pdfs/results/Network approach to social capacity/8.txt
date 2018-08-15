@@ -1,0 +1,288 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+A network approach to assessing social capacity for landscape planning: The case of fire-prone forests in Oregon, USA
+
+
+d Urb
+
+o
+t
+r
+b
+o
+
+d
+2
+f
+f
+i
+a
+1
+t
+R
+t
+e
+m
+p
+e
+a
+(
+p
+t
+c
+
+a
+p
+g
+t
+m
+n
+&
+Z
+l
+i
+z
+t
+m
+i
+g
+t
+s
+o
+t
+A
+i
+s
+t
+
+5
+
+o
+d
+i
+l
+a
+i
+w
+a
+c
+t
+m
+
+A.P. Fischer et al. / Landscape an
+
+ur findings, arguably has led to a disconnect between the spa-
+ial scale of an ecological problem and the spatial scale of human
+esponse (Kondolf & Podolak, 2014). Despite increasing wildfire risk
+eing an ecoregion-scale problem, we see little evidence of social
+rganization for addressing the problem at this scale.
+
+While it generally takes situations of stress or scarcity to compel
+ifferent interests to forge alliances (Benjamin et al., 2011; Wolf,
+011), network governance institutions can create opportunities
+or building shared cognition, group membership, and legitimacy
+or landscape management (Powell, 2010). A variety of initiatives
+n recent years have promoted cooperation on landscape man-
+gement in the U.S. (Butler & Goldstein, 2010; Knight & Landres,
+998; Laven, Jewiss, & Mitchell, 2012), including the aforemen-
+ioned Fire Learning Network and Collaborative Forest Landscape
+estoration Program. The networks formed through these initia-
+ives plan natural resource management at scales much finer than
+coregions, however. The National Cohesive Wildland Fire Manage-
+ent Strategy, on the other hand, still in its early stages, aims to
+
+romote collaborative processes at multiple scales, involving gov-
+rnment and non-governmental organizations and the public in
+n “all lands” approach to forest restoration and fire protection
+Wildland Fire Leadership Council, 2011). These initiatives could
+lay a bigger role in building connectivity among stakeholders in
+he management of large fire-prone landscapes and encouraging
+ooperation across geographic and ideological boundaries.
+
+The question remains, however: What is the appropriate bal-
+nce between bonding and bridging structure for landscape-scale
+lanning, and at what scale? Excessive bonding social capital can
+ive rise to homogeneity, jeopardizing a network’s ability to main-
+ain a diverse knowledge base, and too much bridging social capital
+
+ay  make it difficult to build the trust and norms of reciprocity
+eeded to efficiently communicate and act on new ideas (Borgatti
+
+ Cross, 2003; Burt, 2004; Reagans & McEvily, 2003; Reagans &
+uckerman, 2001; Ruef, 2002). To effectively address the prob-
+em of increasing wildfire risk policies must encourage sufficient
+nteraction between forest restoration and fire protection organi-
+ations to foster complex problem-solving without compromising
+he social cohesion within these subnetworks that allows for com-
+
+unication and coordination. Moreover, policies should encourage
+nteraction between organizations in different geographic subre-
+ions to the extent that it is practical and does not divert resources
+hat could otherwise be invested in management at smaller land-
+cape scales. At the spatial scale of ecoregions, which are composed
+f multiple, more coherent social territories, weak bridging struc-
+ure may  be sufficient for planning and joint problem-solving.
+ssuming the number of relationships organizations can enter into
+
+s limited, it may  be more important for parties to invest in relation-
+hips at scales at which work (e.g., implementing fuels reduction
+reatments) can be coordinated.
+
+. Conclusions
+
+Management of ecological conditions and processes in multi-
+wnership landscapes requires cooperative planning among
+iverse stakeholder groups. This is especially true in arid human-
+
+nhabited forested landscapes of the world, where increasingly
+arge and intense wildfires burn irrespective of property bound-
+ries and land designations. In these areas, organizations involved
+n the restoration of forests and the protection of property from
+
+ildfire could benefit from working together to share information
+
+nd coordinate strategies. The structure of organizational networks
+an indicate potential opportunities for communication, coordina-
+ion and joint implementation of landscape-scale natural resource
+
+anagement plans.
+an Planning 147 (2016) 18–27 25
+
+We investigated patterns of interaction among organizations
+concerned with increasing wildfire risk in Oregon’s ECE for
+evidence of structural conditions that create opportunity for
+cooperation. Social network analysis enabled us to quantitatively
+characterize the bonding and bridging social capital among these
+organizations. We  found that despite sharing concern about wild-
+fire risk in an area with a common set of ecological conditions,
+organizations with forest restoration and fire protection goals com-
+prised distinct homophilous networks, as did organizations that
+focused on different geographic areas of the ecoregion. At the sub-
+regional scale, however, we  found that social network ties were
+stronger, suggesting that social structure may  be in place locally for
+cooperative planning. When interpreted through the lens of social
+capital and network theory these findings raise questions about the
+extent to which the overall structure of the organizational network
+reflects capacity to address wildfire risk in fire-prone forests on the
+ecoregion scale.
+
+For natural resource planning to occur on large spatial scales
+and across boundaries, the social organization for cooperation
+must be built. Our research results validate and suggest continued
+need for network governance institutions to provide connectivity
+across geographic and social boundaries. An important step for
+research on stakeholder networks and landscape planning is to
+better understand the implications of different network structures
+for accomplishing different types of objectives relating to natural
+resource planning. The appropriate scale at which to foster bridging
+and bonding social capital among organizations will vary depend-
+ing on the goals and objectives for landscape management. We
+suggest that combining network analysis with qualitative data from
+stakeholder interviews may  be a useful way to explore the relation-
+ship between network structure and social capacity for landscape
+planning and consider how to strengthen social networks at the
+ecoregion-scale.
+
+Our study contributes to scholarly literature by investigating
+whether shared concern about a pressing landscape-scale prob-
+lem such as wildfire could counter homophily as an influence on
+the structure of a large organizational network. We  confirm that
+homophily is a powerful influence on social organization even
+in cases of shared concern about pressing natural resource prob-
+lems. Our research also provides an empirical example of how
+network analysis can illuminate opportunities and constraints for
+cooperative natural resource planning among organizations oper-
+ating in the same landscape or ecoregion. It provides a method for
+assessing capacity for landscape planning through quantification of
+the bonding and bridging social capital in a network. By testing the
+differences between observed bonding and bridging social capital
+and what would be expected by chance in a network of organiza-
+tions concerned about wildfire, this study provides insights on the
+utility of a structural approach for investigating human capacity for
+landscape-scale planning. The social network analysis methods we
+use to assess social capacity for landscape planning in Oregon can be
+replicated in other regions of the USA and the world where diverse
+sets of stakeholder organizations seek to address natural resource
+problems that operate on large spatial scales and where recognition
+of the importance of cooperation across ownerships on manage-
+ment is growing; for example in Australia, where landscape-scale
+planning is gaining traction (Brunckhorst, 2011) including on the
+problem of wildfire.
+
+Acknowledgements
+National Science Foundation’s Coupled Human and Natural
+Systems Program (NSF Grant CNH-1013296) and the USDA For-
+est Service PNW Research Station provided the funding for this
+research. The authors would like to acknowledge all the interview
+
+acer
+Highlight
+
+
+

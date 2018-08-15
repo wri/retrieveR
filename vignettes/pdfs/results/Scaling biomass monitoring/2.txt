@@ -1,0 +1,218 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Propagating uncertainty to estimates of above-ground biomass for Kenyan mangroves: A scaling procedure from tree to landscape level
+
+
+R. Cohen et al. / Forest Ecology and Management 310 (2013) 968–982 969
+(Kirui et al., 2012). Continued degradation and loss of mangrove
+cover not only represents a loss of future C sequestration potential
+but could result in significant release into the atmosphere of C cur-
+rently being stored by mangroves (Pendleton et al., 2012).
+
+An estimated 8–20% of annual global anthropogenic CO2 emis-
+sions result from land-use changes occurring primarily in the tro-
+pics (van der Werf et al., 2009). This realisation has led to proposals
+for forest-based climate change mitigation strategies such as Re-
+duced Emissions from Deforestation and Degradation (REDD+). In
+essence REDD+ envisages achieving CO2 emissions reductions, for-
+est conservation and sustainable development by placing an eco-
+nomic value on forest carbon storage and facilitating the transfer
+of funds from developed to developing nations through interna-
+tional trade in carbon credits. Details of how REDD+ will operate
+at the national and international level under the United Nations
+Framework Convention for Climate Change (UNFCCC) are still un-
+der debate. However many developing nations (including Kenya)
+are already in the process of formulating national REDD+ readiness
+strategies in partnership with the World Bank’s Forest Carbon Part-
+nership Facility (FCPF). There is definite scope for mangroves to be
+included in national and/or local scale forest carbon projects oper-
+ating either under existing voluntary or future compliance carbon
+markets. Indeed, a recent study by Siikamaki et al. (2012) sug-
+gested that at the global scale reducing CO2 emissions by avoiding
+further loss of mangroves could prove to be an economically viable
+option in comparison with the cost of reducing emissions from
+other sources (e.g. industry) even under scenarios of low mangrove
+carbon offset supply.
+
+Participation in REDD+ (under the UNFCCC) will require coun-
+tries to produce accurate estimates of their forest carbon stocks
+and stock changes through robust Measurement, Reporting and
+Verification (MRV) programs. The most recent Intergovernmental
+Panel on Climate Change (IPCC) Guidelines for National Green-
+house Gas Inventories (IPCC, 2006) provide the current methodo-
+logical framework for REDD+ MRV requirements (Maniatis and
+Mollicone, 2010). In accordance with these guidelines all estimates
+should be accompanied by an appropriate measure of uncertainty
+(95% confidence interval) and should account for and reduce all
+known sources of uncertainty as far as is possible (IPCC, 2006).
+Above-ground biomass (AGB) is one of five forest carbon pools
+(identified by the IPCC) which will be estimable and reportable
+for REDD+. Providing robust estimates of AGB is important both
+in terms of future REDD+ reporting but also in providing the link
+between ground and remote sensing efforts to monitor changes
+in forest biomass and land cover at local, regional and global scales.
+
+The above-ground biomass of trees is commonly estimated by
+the use of allometric equations (derived using regression analysis)
+which relate one or more easily measurable tree variables (e.g.,
+stem diameter at breast height (DBH)) to total above-ground bio-
+mass. These equations are then applied to forest inventory data
+in order to estimate biomass at larger spatial scales. Allometric
+equations have been developed for a variety of mangrove species
+occurring across a broad geographical range (Clough and Scott,
+1989; Kairo et al., 2009; Komiyama et al., 2005; Poungparn et al.,
+2002; Soares and Schaeffer-Novelli, 2005). However, African man-
+groves are under-represented in the current literature with pub-
+lished equations existing for Kenya (Kairo et al., 2009; Kairo
+et al., 2008; Kirui et al., 2006; Slim et al., 1996; Tamooh et al.,
+2009) and South Africa (Steinke et al., 1995) only.
+
+Allometric relationships in trees are generally considered to be
+both species and site-specific. However, the infeasibility of con-
+structing a new allometric equation for every species encountered
+at every new site has led to increasing interest in the development
+of generic equations for biomass estimation (Brown et al., 1989;
+Chave et al., 2005; Zianis and Mencuccini, 2004). Existing generic
+equations for mangroves have used wood density as the
+species-specific component of the relationship (Chave et al., 2005;
+Komiyama et al., 2005). The generic equation developed by Komiy-
+ama et al. (2005) was deemed to perform within acceptable levels
+of precision (as measured by the relative error) in comparison with
+site-specific equations for selected species (Komiyama et al., 2008).
+
+Uncertainties are introduced at all stages of the biomass estima-
+tion process (from single tree to landscape level). Total uncertainty
+at the single tree level is comprised of uncertainty in the measure-
+ment of tree variables (measurement uncertainty) and uncertainty
+due to the use of the allometric model for predicting the biomass
+of a new individual (predictive uncertainty) (Chave et al., 2004;
+Zianis, 2008). These uncertainties are, in turn, propagated to plot
+and landscape level biomass estimates. Failing to account for uncer-
+tainty during the biomass estimation process ultimately leads to an
+underestimation of the uncertainty on final predictions (Dietze et al.,
+2008).
+
+Accounting for predictive uncertainty is particularly important in
+biomass estimation as allometric equations are often applied out-
+with the data range for which they were originally intended (Chave
+et al., 2005) and are always applied outside the particular trees (and
+often sites) from which they were developed. Uncertainty in the
+parameters of a regression model is often represented by simply
+quoting the standard error of the allometric constants whilst the
+coefficient of determination (R2) is the usual means by which to
+evaluate both the ‘fit’ of the model and its predictive power (e.g.
+Komiyama et al., 2005; Soares and Schaeffer-Novelli, 2005). How-
+ever, over reliance on the use of R2 in regression analysis as a mea-
+sure of model predictive accuracy and for model comparison
+(between datasets) has been criticised in recent years (Gelman
+and Pardoe, 2006; Johnson and Omland, 2004). In contrast to model
+selection criteria such as the Akaike Information Criteria (AIC)
+(Akaike, 1987) the R2 statistic is not a direct measure of model pre-
+dictive accuracy and model selection made solely on the basis of
+maximising the R2 statistic can lead to imprecise predictions as no
+account is taken of model complexity (Johnson and Omland, 2004).
+
+The issue of uncertainty in biomass estimation has been ad-
+dressed in the literature for forests in general (Brown, 2002; Chave
+et al., 2004; Ketterings et al., 2001; Parresol, 1999; Phillips et al.,
+2000; Zianis, 2008). Methodologies for propagating uncertainty
+have been presented based on summing the variances of compo-
+nent sources of uncertainty (see Chave et al., 2004; Ketterings
+et al., 2001; Phillips et al., 2000) and simulation techniques such
+as Monte Carlo (Heath and Smith, 2000; Ryan, 2009). To the best
+of our knowledge such methodologies have never been applied
+for the purpose of propagating uncertainty to biomass estimates
+in mangroves. With this in mind and in the context of future
+REDD+ requirements for biomass/carbon accounting this study fo-
+cused on: (1) the development of new allometric equations to esti-
+mate the above-ground biomass of Kenyan mangroves using linear
+mixed-effects models and based on a meta-analysis of all the avail-
+able harvest data for Kenyan mangrove species (2) demonstrating a
+simulation based methodology for propagating uncertainty during
+the biomass estimation process and (3) demonstrating the practi-
+cal application of said equations and simulations to a large forest
+inventory dataset spanning the entire Kenyan coastline for the pur-
+pose of producing estimates of above-ground biomass at different
+spatial scales (tree, plot, region and landscape) with an appropriate
+measure of uncertainty.
+2. Methods
+
+2.1. Harvest dataset – model development and validation
+
+The harvest data used in this study is detailed in Table 1 and
+represents the largest dataset compiled to date for African
+
+acer
+Highlight
+
+acer
+Highlight
+
+
+

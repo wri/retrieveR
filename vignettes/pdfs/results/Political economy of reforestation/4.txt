@@ -1,0 +1,205 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The political economy of reforestation and forest restoration in Asiaâ€“Pacific: Critical issues for REDD+
+
+
+12 C.M. Barr, J.A. Sayer / Biological Conservation 154 (2012) 9–19
+3.3. Capital subsidies
+
+As in other regions, many Asia–Pacific governments have also
+provided substantial direct and indirect capital subsidies to pro-
+mote reforestation and plantation development. Depending on
+the country, direct subsidies have included cash grants, discounted
+loans from state banks, tax breaks, and subsidized seedlings, fertil-
+izer, and other inputs. In addition, plantation companies have also
+frequently benefitted from government fuel subsidies, infrastruc-
+ture development linking rural areas to markets, and investments
+in research and development (to improve, for instance, the quality
+of the genetic material available for tree-planting initiatives).
+
+In China, for instance, the national government has allocated
+some US$ 8.6 billion (RMB 71.8 billion) in financial subsidies to
+support the development of 13.3 million ha of commercial tree
+plantations during the period 2001–2015 (AF&PA, 2004).2 Under
+this plan, the State Forest Administration has identified 99 priority
+plantation projects to be carried out by state forest farms, private
+companies, and farmers’ cooperatives which are eligible to receive
+discounted financing (Barr and Cossalter, 2004). Program subsidies
+are structured as follows:
+
+� State policy banks provide 70% the program’s total financing
+through the provision of loans with reduced interest rates and
+extended repayment periods (10–15 years).
+� The Ministry of Finance distributes 20% of program financing
+
+through loan interest subsidies.
+� Local governments cover 3% of program costs.
+� Entities receiving government financial subsidies are expected
+
+to cover 7% of program costs through commercial loans or
+equity contributions.
+
+Governments providing subsidies for reforestation and planta-
+tion development have offered various rationales to justify the
+use of public funds in this way. They have frequently claimed that
+forestry companies require incentives to carry out tree-planting
+activities on degraded lands and that subsidies help forestry com-
+panies to reduce economic risk by lowering capital costs (Bull et al.,
+2006). They have also argued that private sector financial institu-
+tions are often reluctant to finance reforestation and forest restora-
+tion activities on a commercial basis, and state assistance is,
+therefore, necessary to catalyze investments in such projects.
+
+Meanwhile, critics argue that government subsidies distort
+markets by artificially reducing the cost of capital, giving subsidy
+recipients an unfair advantage over plantation companies or other
+land-users who do not have access to such support (Bull et al.,
+2006). Not infrequently, reforestation and plantation subsidies
+have been allocated disproportionately to companies with close
+connections to state elites, thereby reinforcing existing patronage
+structures and exacerbating inequities within the forestry sector
+(Barr et al., 2010). In some cases, the allocation of subsidies to pro-
+mote reforestation and plantation development has been accom-
+panied by a significant degree of moral hazard, as companies
+receiving support apparently have less incentive to ensure their
+sites are managed productively, as less of their own money is at
+risk. Moreover, as described below, the allocation of capital subsi-
+dies to forestry and plantation companies can also result in sub-
+stantial losses of public funds when effective mechanisms to
+ensure financial accountability are not in place.
+2 Although this figure is quite substantial, it must be noted that it represents only a
+fraction of the US$ 30 billion that the Chinese government has budgeted for
+reforestation and afforestation under its Sloping Land Conversion Program (Grossjean
+and Kontoleon, 2009).
+4. Corruption and financial fraud
+
+In forest-rich countries of Asia–Pacific, as in other regions, weak
+legal-regulatory institutions coupled with the availability of lucra-
+tive resource rents have facilitated widespread corruption and
+fraud within the sector. In many countries, forest-related corrup-
+tion is prevalent at all levels, ranging from a Minister receiving
+bribes to allocate timber concession licenses (‘grand corruption’)
+to local forestry officials accepting payments to turn a blind eye
+to timber harvesting in protected areas (‘petty corruption’). In
+the absence of effective law enforcement, forestry companies also
+sometimes engage in fraudulent practices to secure illicit profits
+well above the legal earnings from their operations. Under-report-
+ing of harvested volumes, transfer pricing, and a broad array of
+other practices are widely used to capture rents that would other-
+wise accrue to the state.
+
+The considerable financial and material incentives that govern-
+ments have mobilized to promote reforestation and forest restora-
+tion activities‘ have frequently made these initiatives particularly
+susceptible to corruption and fraud. In many countries, govern-
+ments have established national forestry funds dedicated to
+financing reforestation and other aspects of sectoral development,
+and these have generally been placed under the administrative
+control of forestry ministries or their functional equivalents. A re-
+view of 40 national forest funds conducted by the UN Food and
+Agricultural Organization (FAO) in 2001 found, however, that for-
+estry departments frequently have only limited capacity for finan-
+cial governance and that such funds are often administered with
+low levels of transparency and external accountability (Rosenbaum
+and Lindsay, 2001).
+
+In some cases, poor accounting practices and weak financial
+oversight have meant that funds earmarked for reforestation and
+forest restoration have not been used for their intended purpose
+(cf. Barr et al., 2010). Forestry departments have sometimes di-
+verted these funds to cover other priorities within their own bud-
+gets, while in other cases they have channeled reforestation
+revenues to support projects and political activities outside the for-
+estry sector. More commonly, perhaps, senior forestry officials
+have often been able to exercise high levels of discretionary control
+over how such funds are allocated. This has enabled them to chan-
+nel disbursements to companies with close ties to state elites and
+has made such funds vulnerable to misappropriation by corrupt
+officials.
+
+The scope and dynamics of reforestation-related corruption and
+fraud are illustrated by the cases of Indonesia’s Reforestation Fund
+and recent regulatory actions taken against Sino-Forest Corpora-
+tion, a Toronto-listed plantation company with forestry holdings
+in China.
+4.1. Indonesia’s Reforestation Fund3
+
+The Government of Indonesia established the nation’s Refores-
+tation Fund (Dana Reboisasi) in 1989 with the stated mandate of
+financing reforestation and rehabilitation of degraded forest lands.
+Funded by a volume-based levy on selective-logging timber con-
+cessions, the fund quickly emerged as the largest source of state
+revenues from Indonesia’s forestry sector. At its peak in the mid-
+1990s, receipts from the Reforestation Fund amounted to over
+US$ 500 million annually, and the fund continues to generate
+3 This section’s summary of Indonesia’s experience with its Reforestation Fund has
+been adapted from Barr et al. (2010). Financial Governance and Indonesia’s
+Reforestation Fund during the Soeharto and Post-Soeharto Periods, 1989–2009: A
+Political Economic Analysis of Lessons for REDD+, Center for International Forestry
+Research, Bogor, Indonesia. Any citation of the material presented in this section
+should reference the original study.
+
+
+

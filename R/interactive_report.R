@@ -87,7 +87,7 @@ interactive_report <- function(country=NULL, query, data, embeddings = "embeddin
   
   run_query <- function(x, input) {
     vector <- unlist(locations[x])
-    wordVectors::cosineSimilarity(t(as.matrix(vector)), as.matrix(input))
+    cosineSimilarity(t(as.matrix(vector)), as.matrix(input))
   }
   
   create_docmap <- function(thresh, inp_country) {
@@ -230,7 +230,7 @@ interactive_report <- function(country=NULL, query, data, embeddings = "embeddin
     print(rend_type)
     cat("---", paste0('title: ', title), paste0('subtitle: Text extracted from ', target_country, ' documents'), "output:", "pdf_document:", "fig_caption: yes", "---", "!['Why won't this caption show up?'](plot1.png)", my_text, sep="  \n", file=filename)
     rmarkdown::render(filename, rend_type, quiet=T)
-    file.remove(filename) #cleanup
+    #file.remove(filename) #cleanup
     write.csv(topn, paste0(country, ".csv"))
   }
   
@@ -259,7 +259,7 @@ interactive_report <- function(country=NULL, query, data, embeddings = "embeddin
   data$name <- gsub("/", "", data$name)
   
   perc <- unlist(lapply(c(1:nrow(data)), count_dig))
-  wv1 <- wordVectors::read.binary.vectors(embeddings)
+  wv1 <- read.binary.vectors(embeddings)
   df1 <- data.frame(wv1@.Data)
   
   bigrams_full <- rownames(df1)[grepl("_", rownames(df1))]
@@ -271,7 +271,7 @@ interactive_report <- function(country=NULL, query, data, embeddings = "embeddin
   cat("\n")
   cat("Top 50 related words \n")
   cat("If some are not relevant, add one or two of the relevant ones to the query \n\n")
-  similars <- unname(unlist(wv1 %>% wordVectors::closest_to(as.matrix(query_vector), n=50) %>% dplyr::select(word)))
+  similars <- unname(unlist(wv1 %>% closest_to(as.matrix(query_vector), n=50) %>% dplyr::select(word)))
   print(similars, quote=F)
   cat("\n\n")
   
@@ -279,7 +279,7 @@ interactive_report <- function(country=NULL, query, data, embeddings = "embeddin
   ## Query expansion
   finalize_query <- function() {
     query_vector <- create_point(query)
-    similars <- unname(unlist(wv1 %>% wordVectors::closest_to(as.matrix(query_vector), n=50) %>% dplyr::select(word)))
+    similars <- unname(unlist(wv1 %>% closest_to(as.matrix(query_vector), n=50) %>% dplyr::select(word)))
     cat("\n")
     print(similars, quote=F)
     cat("\n")
@@ -306,7 +306,7 @@ interactive_report <- function(country=NULL, query, data, embeddings = "embeddin
     run_query2 <- function(x, input) {
       setTxtProgressBar(pb, x)
       vector <- unlist(locations[x])
-      wordVectors::cosineSimilarity(t(as.matrix(vector)), as.matrix(input))
+      cosineSimilarity(t(as.matrix(vector)), as.matrix(input))
     }
     results <- lapply(c(1:length(locations)), run_query2, query_vector)
     cat("\n\n")
@@ -404,7 +404,7 @@ interactive_report <- function(country=NULL, query, data, embeddings = "embeddin
   cat(paste0("\n", "Creating ", paste(query, collapse="_"), ".", as.character(type)), "\n")
   suppressWarnings(create_report(country))
   cat(paste0(paste(query, collapse="_"), ".", as.character(type)), " created", "\n")
-  file.remove("plot1.png")
+  #file.remove("plot1.png")
   file.remove("toprint.txt")
   write.csv(data, "data-results.csv")
 }

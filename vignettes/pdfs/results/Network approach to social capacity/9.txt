@@ -1,0 +1,1171 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+A network approach to assessing social capacity for landscape planning: The case of fire-prone forests in Oregon, USA
+
+
+2 d Urb
+
+i
+s
+f
+i
+m
+
+R
+
+A
+
+B
+
+B
+
+B
+
+B
+
+B
+
+B
+
+B
+
+B
+
+B
+
+B
+
+B
+
+B
+
+B
+
+C
+
+C
+
+C
+
+D
+
+D
+
+D
+
+D
+
+F
+
+F
+
+G
+
+G
+
+6 A.P. Fischer et al. / Landscape an
+
+nformants who generously gave their time to participate in the
+tudy. They authors would also like to acknowledge Orian Bodin
+or reviewing the study plan for the research, Emily Platt for assist-
+ng with data collection, and Maribel Vidrio for assisting with data
+
+anagement.
+
+eferences
+
+ger, A. A., Vaillant, N. M.,  Finney, M.  A., & Preisler, H. K. (2012). Analyzing wildfire
+exposure and source–sink relationships on a fire prone forest landscape. Forest
+Ecology and Management, 267(1), 271–283. http://dx.doi.org/10.1016/j.foreco.
+2011.11.021
+
+enjamin, C. E., Brechin, S. R., & Thoms, C. A. (2011). Introduction to the special
+issue: Organizational networks and environmental governance. Journal of
+Natural Resources Policy Research, 3(3), 211–222. http://dx.doi.org/10.1080/
+19390459.2011.591748
+
+odin, Ö., Crona, B., & Ernstson, H. (2006). Social networks in natural resource
+management – What is there to learn from a structural perspective? Ecology
+and Society,  11(2).
+
+odin, Ö., & Crona, B. I. (2009). The role of social networks in natural resource
+governance – What relational patterns make a difference? Global
+Environmental Change, 19(3), 366–374. http://dx.doi.org/10.1016/j.gloenvcha.
+2009.05.002
+
+odin, Ö., & Tengö, M.  (2012). Disentangling intangible social–ecological systems.
+Global Environmental Change, 22(2), 430–439. http://dx.doi.org/10.1016/j.
+gloenvcha.2012.01.005
+
+orgatti, S. P., & Cross, R. (2003). A relational view of information seeking and
+learning in social networks. Management Science, 49(4), 432–445.
+
+orgatti, S. P., Everett, M.  G., & Freeman, L. C. (2002). Ucinet for windows – Software
+for  social network analysis. Harvard, MA:  Analytic Technologies.
+
+orgatti, S. P., Jones, C., & Everett, M.  G. (1998). Network measures of social capital.
+Connections,  21(2), 27–36.
+
+ouas, K. S., & Komorita, S. S. (1996). Group discussion and cooperation in social
+dilemmas. Personality and Social Psychology Bulletin, 22(11), 1144–1150. http://
+dx.doi.org/10.1177/01461672962211005
+
+runckhorst, D. (2011). Ecological restoration across landscapes of politics, policy,
+and property. In D. Egan, E. Hjerpe, & J. Abrams (Eds.), Human dimensions of
+ecological restoration (pp. 149–161). Washington, DC: Island Press.
+
+urt, R. S. (2000). The network structure of social capital. In R. I. Sutton, & B. M.
+Staw (Eds.), Research in organizational behavior (pp. 345–423). Greenwich,
+Conn: JAI Press.
+
+urt, Ronald S. (2004). Structural holes and good ideas. American Journal of
+Sociology,  110(2), 349–399.
+
+utler, W.  H., & Goldstein, B. E. (2010). The US Fire Learning Network – Springing a
+rigidity trap through multiscalar collaborative networks. Ecology and Society,
+15(3),  21.
+
+utts, C. T. (2008). Social network analysis with SNA. Journal of Statistical Software,
+24(6),  1–51.
+
+oleman, J. S. (1990). Foundations of social theory.  Cambridge, MA:  Harvard
+University Press.
+
+ook, E. A. (2002). Landscape structure indices for assessing urban ecological
+networks. Landscape and Urban Planning, 58(2–4), 269–280. http://dx.doi.org/
+10.1016/S0169-2046(01)00226-2
+
+umming, G. S., Bodin, Ö., Ernstson, H., & Elmqvist, T. (2010). Network analysis in
+conservation biogeography – Challenges and opportunities. Diversity and
+Distributions,  16(3), 414–425. http://dx.doi.org/10.1111/j.1472-4642.2010.
+00651.x
+
+avis, E. J., Moseley, C., Evers, C., McFarland, K., Neilsen-Pincus, M., Pomeroy, A.,
+et  al. (2012). Community-based natural resource management in Oregon – A
+profile of organizational capacity. Eugene, OR: University of Oregon Ecosystem
+Workforce Program (Working Paper Number 39) Retrieved September 30,
+2014 from – http//ewp.uoregon.edu/sites/ewp.uoregon.edu/files/WP 39.pdf.
+
+ellaSala, D. A., Martin, A., Spivak, R., Schulke, T., Bird, B., Criley, M., et al. (2003). A
+citizens’ call for ecological forest restoration – Forest restoration principles and
+criteria. Ecological Restoration, 21(1), 14–23.
+
+ombeck, M.  P., Williams, J. E., & Wood, C. A. (2004). Wildfire policy and public
+lands – Integrating scientific understanding with social concerns across
+landscapes. Conservation Biology, 18(4), 883–889. http://dx.doi.org/10.1111/j.
+1523-1739.2004.00491.x
+
+oreian, P., & Woodard, K. L. (1992). Fixed list vs. snowball selection of social
+networks. Social Science Research, 21,  216–233.
+
+all, J. J. (2003). Planning protected areas across boundaries. Journal of Sustainable
+Forestry,  17(1–2), 81–102. http://dx.doi.org/10.1300/J091v17n01 06
+
+ischer, A. P., & Charnley, S. (2012). Risk and cooperation – Managing hazardous
+fuel in mixed ownership landscapes. Environmental Management, 49(6),
+
+1192–1207. http://dx.doi.org/10.1007/s00267-012-9848-z
+
+ass, R., Rickenbach, M.,  Schulte, L., & Zeuli, K. (2009). Cross-boundary
+coordination on forested landscapes – Investigating alternatives for
+implementation. Environmental Management, 43(1), 107–117. http://dx.doi.
+org/10.1007/s00267-008-9195-2
+
+ranovetter, M.  S. (1973). The strength of weak ties. The American Journal of
+Sociology,  78(6), 1360–1380.
+an Planning 147 (2016) 18–27
+
+Guerrero, A. M.,  McAllister, R. R. J., Corcoran, J., & Wilson, K. A. (2013). Scale
+mismatches, conservation planning, and the value of social-network analyses.
+Conservation Biology, 27(1), 35–44. http://dx.doi.org/10.1111/j.1523-1739.
+2012.01964.x
+
+Hessburg, P. F., Agee, J. K., & Franklin, J. F. (2005). Dry forests and wildland fires of
+the inland Northwest USA – Contrasting the landscape ecology of the
+pres-settlement and modern eras. Forest Ecology and Management, 211(1–2),
+117–139.
+
+Jongman, R. H. G., Külvik, M.,  & Kristiansen, I. (2004). European ecological
+networks and greenways. Landscape and Urban Planning, 68(2–3), 305–319.
+http://dx.doi.org/10.1016/S0169-2046(03)00163-4
+
+Knight, R. L., & Landres, P. B. (1998). Stewardship across boundaries. Washington,
+DC:  Island Press.
+
+Kondolf, G. M.,  & Podolak, K. (2014). Space and time scales in human-landscape
+systems. Environmental Management, 53(1), 76–87. http://dx.doi.org/10.1007/
+s00267-013-0078-9
+
+Kong, F., Yin, H., Nakagoshi, N., & Zong, Y. (2010). Urban green space network
+development for biodiversity conservation: Identification based on graph
+theory and gravity modeling. Landscape and Urban Planning, 95(1–2), 16–27.
+http://dx.doi.org/10.1016/j.landurbplan.2009.11.001
+
+Landres, P. B., Knight, R. L., Pickett, S. T. A., & Cadenasso, M.  L. (1998). Ecological
+effects of administrative boundaries. In R. L. Knight, & P. B. Landres (Eds.),
+Stewardship across boundaries (pp. 39–64). Washington, DC: Island Press.
+
+Laven, D. N., Jewiss, J. L., & Mitchell, N. J. (2012). Toward landscape-scale
+stewardship and development – A theoretical framework of United States
+National Heritage Areas. Society & Natural Resources,  26(7), 762–777. http://dx.
+doi.org/10.1080/08941920.2012.723304
+
+Lin, N. (1999). Building a network theory of social capital. Connections, 22(1),
+28–51.
+
+McPherson, M.,  Smith-Lovin, L., & Cook, J. M. (2001). Birds of a feather: Homophily
+in  social networks. Annual Review of Sociology, 27,  415–444.
+
+Mills, M.,  Álvarez-Romero, J. G., Vance-Borland, K., Cohen, P., Pressey, R. L.,
+Guerrero, A. M.,  et al. (2014). Linking regional planning and local action:
+Towards using social network analysis in systematic conservation planning.
+Biological Conservation, 169(0), 6–13. http://dx.doi.org/10.1016/j.biocon.2013.
+10.015
+
+Minor, E. S., & Urban, D. L. (2008). A graph-theory framework for evaluating
+landscape connectivity and conservation planning. Conservation Biology, 22(2),
+297–307. http://dx.doi.org/10.1111/j.1523-1739.2007.00871.x
+
+Newig, J., Günther, D., & Pahl-Wostl, C. (2010). Synapses in the network: Learning
+in governance networks in the context of environmental management. Ecology
+and Society,  15(4), 24.
+
+Omernik, J. M.  (1987). Ecoregions of the conterminous United States. Annals of the
+Association of American Geographers, 77(1), 118–125. http://dx.doi.org/10.1111/
+j.1467-8306.1987.tb00149.x
+
+Opdam, P., Steingröver, E., & Rooij, S. v. (2006). Ecological networks: A spatial
+concept for multi-actor planning of sustainable landscapes. Landscape and
+Urban Planning, 75(3–4), 322–332. http://dx.doi.org/10.1016/j.landurbplan.
+2005.02.015
+
+Oregon and Solutions. (2013). Oregon forest collaboratives: Statewide inventory.,.
+Retrieved 18.07.14 from – http//orsolutions.org/osproject/federal-forestlands.
+
+Ostrom, E. (1990). Governing the commons: The evolution of institutions for collective
+action. Cambridge: Cambridge University Press.
+
+Powell, R. B. (2010). Developing institutions to overcome governance barriers to
+ecoregional conservation. In S. C. Trombulak, & R. F. Baldwin (Eds.),
+Landscape-scale conservation planning (pp. 53–66). Netherlands: Springer.
+
+R. Development Core Team. (2013). R – A language and environment for statistical
+computing.  Vienna, Austria: R Foundation for Statistical Computing.
+
+Reagans, R., & McEvily, B. (2003). Network structure and knowledge transfer – The
+effects of cohesion and range. Administrative Science Quarterly, 48(2),
+240–267.
+
+Reagans, R., & Zuckerman, E. W.  (2001). Networks, diversity, and productivity –
+The  social capital of corporate R&D teams. Organization Science, 12(4),
+502–517.
+
+Rhodes, M., Wardell-Johnson, G. W.,  Rhodes, M.  P., & Raymond, B. (2006). Applying
+network analysis to the conservation of habitat trees in urban environments –
+A  case study from Brisbane, Australia. Conservation Biology, 20(3), 861–870.
+http://dx.doi.org/10.1111/j.1523-1739.2006.00415.x
+
+Rickenbach, M. G., & Reed, A. S. (2002). Cross-boundary cooperation in a watershed
+context – The sentiments of private forest landowners. Environmental
+Management,  30(4), 584–594.
+
+Rogers, E. (1983). Diffusion of innovations. New York: Free Press.
+Ruef, M.  (2002). Strong ties, weak ties and islands – Structural and cultural
+
+predictors of organizational innovation. Industrial and Corporate Change, 11(3),
+427–449. http://dx.doi.org/10.1093/icc/11.3.427
+
+Saura, S., & Pascual-Hortal, L. (2007). A new habitat availability index to integrate
+connectivity in landscape conservation planning: Comparison with existing
+indices and application to a case study. Landscape and Urban Planning, 83(2–3),
+91–103. http://dx.doi.org/10.1016/j.landurbplan.2007.03.005
+
+Steelman, T. A., & Burke, C. A. (2007). Is wildfire policy in the United States
+sustainable? Journal of Forestry, 105(2), 67–72.
+Summers, B. M.  (2014). The effectiveness of forest collaborative groups at reducing the
+likelihood of project appeals and objections in eastern Oregon. (M.S.), Portland:
+Portland State University.
+
+Swaab, R., Postmes, T., van Beest, I., & Spears, R. (2007). Shared cognition as a
+product of, and precursor to, shared identity in negotiations. Personality and
+
+dx.doi.org/10.1016/j.foreco.2011.11.021
+dx.doi.org/10.1016/j.foreco.2011.11.021
+dx.doi.org/10.1016/j.foreco.2011.11.021
+dx.doi.org/10.1016/j.foreco.2011.11.021
+dx.doi.org/10.1016/j.foreco.2011.11.021
+dx.doi.org/10.1016/j.foreco.2011.11.021
+dx.doi.org/10.1016/j.foreco.2011.11.021
+dx.doi.org/10.1016/j.foreco.2011.11.021
+dx.doi.org/10.1016/j.foreco.2011.11.021
+dx.doi.org/10.1016/j.foreco.2011.11.021
+dx.doi.org/10.1016/j.foreco.2011.11.021
+dx.doi.org/10.1080/19390459.2011.591748
+dx.doi.org/10.1080/19390459.2011.591748
+dx.doi.org/10.1080/19390459.2011.591748
+dx.doi.org/10.1080/19390459.2011.591748
+dx.doi.org/10.1080/19390459.2011.591748
+dx.doi.org/10.1080/19390459.2011.591748
+dx.doi.org/10.1080/19390459.2011.591748
+dx.doi.org/10.1080/19390459.2011.591748
+dx.doi.org/10.1080/19390459.2011.591748
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0015
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0015
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0015
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0015
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0015
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0015
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0015
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0015
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0015
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0015
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0015
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0015
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0015
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0015
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0015
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0015
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0015
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0015
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0015
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0015
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0015
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0015
+dx.doi.org/10.1016/j.gloenvcha.2009.05.002
+dx.doi.org/10.1016/j.gloenvcha.2009.05.002
+dx.doi.org/10.1016/j.gloenvcha.2009.05.002
+dx.doi.org/10.1016/j.gloenvcha.2009.05.002
+dx.doi.org/10.1016/j.gloenvcha.2009.05.002
+dx.doi.org/10.1016/j.gloenvcha.2009.05.002
+dx.doi.org/10.1016/j.gloenvcha.2009.05.002
+dx.doi.org/10.1016/j.gloenvcha.2009.05.002
+dx.doi.org/10.1016/j.gloenvcha.2009.05.002
+dx.doi.org/10.1016/j.gloenvcha.2009.05.002
+dx.doi.org/10.1016/j.gloenvcha.2009.05.002
+dx.doi.org/10.1016/j.gloenvcha.2012.01.005
+dx.doi.org/10.1016/j.gloenvcha.2012.01.005
+dx.doi.org/10.1016/j.gloenvcha.2012.01.005
+dx.doi.org/10.1016/j.gloenvcha.2012.01.005
+dx.doi.org/10.1016/j.gloenvcha.2012.01.005
+dx.doi.org/10.1016/j.gloenvcha.2012.01.005
+dx.doi.org/10.1016/j.gloenvcha.2012.01.005
+dx.doi.org/10.1016/j.gloenvcha.2012.01.005
+dx.doi.org/10.1016/j.gloenvcha.2012.01.005
+dx.doi.org/10.1016/j.gloenvcha.2012.01.005
+dx.doi.org/10.1016/j.gloenvcha.2012.01.005
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0030
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0030
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0030
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0030
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0030
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0030
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0030
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0030
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0030
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0030
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0030
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0030
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0030
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0030
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0030
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0030
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0030
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0030
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0030
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0035
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0035
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0035
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0035
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0035
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0035
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0035
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0035
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0035
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0035
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0035
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0035
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0035
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0035
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0040
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0040
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0040
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0040
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0040
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0040
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0040
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0040
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0040
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0040
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0040
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0040
+dx.doi.org/10.1177/01461672962211005
+dx.doi.org/10.1177/01461672962211005
+dx.doi.org/10.1177/01461672962211005
+dx.doi.org/10.1177/01461672962211005
+dx.doi.org/10.1177/01461672962211005
+dx.doi.org/10.1177/01461672962211005
+dx.doi.org/10.1177/01461672962211005
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0050
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0050
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0050
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0050
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0050
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0050
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0050
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0050
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0050
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0050
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0050
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0050
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0050
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0050
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0050
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0050
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0050
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0050
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0050
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0050
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0050
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0050
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0050
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0050
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0050
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0050
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0050
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0050
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0050
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0050
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0050
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0055
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0055
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0055
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0055
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0055
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0055
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0055
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0055
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0055
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0055
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0055
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0055
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0055
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0055
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0055
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0055
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0055
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0055
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0055
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0055
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0055
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0055
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0055
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0055
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0055
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0055
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0055
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0060
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0060
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0060
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0060
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0060
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0060
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0060
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0060
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0060
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0060
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0060
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0060
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0060
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0060
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0060
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0065
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0065
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0065
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0065
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0065
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0065
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0065
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0065
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0065
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0065
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0065
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0065
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0065
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0065
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0065
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0065
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0065
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0065
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0065
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0065
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0065
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0070
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0070
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0070
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0070
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0070
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0070
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0070
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0070
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0070
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0070
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0070
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0070
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0070
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0070
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0070
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0075
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0075
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0075
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0075
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0075
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0075
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0075
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0075
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0075
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0075
+dx.doi.org/10.1016/S0169-2046(01)00226-2
+dx.doi.org/10.1016/S0169-2046(01)00226-2
+dx.doi.org/10.1016/S0169-2046(01)00226-2
+dx.doi.org/10.1016/S0169-2046(01)00226-2
+dx.doi.org/10.1016/S0169-2046(01)00226-2
+dx.doi.org/10.1016/S0169-2046(01)00226-2
+dx.doi.org/10.1016/S0169-2046(01)00226-2
+dx.doi.org/10.1016/S0169-2046(01)00226-2
+dx.doi.org/10.1016/S0169-2046(01)00226-2
+dx.doi.org/10.1111/j.1472-4642.2010.00651.x
+dx.doi.org/10.1111/j.1472-4642.2010.00651.x
+dx.doi.org/10.1111/j.1472-4642.2010.00651.x
+dx.doi.org/10.1111/j.1472-4642.2010.00651.x
+dx.doi.org/10.1111/j.1472-4642.2010.00651.x
+dx.doi.org/10.1111/j.1472-4642.2010.00651.x
+dx.doi.org/10.1111/j.1472-4642.2010.00651.x
+dx.doi.org/10.1111/j.1472-4642.2010.00651.x
+dx.doi.org/10.1111/j.1472-4642.2010.00651.x
+dx.doi.org/10.1111/j.1472-4642.2010.00651.x
+dx.doi.org/10.1111/j.1472-4642.2010.00651.x
+dx.doi.org/10.1111/j.1472-4642.2010.00651.x
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0090
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0090
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0090
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0090
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0090
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0090
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0090
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0090
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0090
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0090
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0090
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0090
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0090
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0090
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0090
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0090
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0090
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0090
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0090
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0090
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0090
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0090
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0090
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0090
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0090
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0090
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0090
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0090
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0090
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0090
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0090
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0090
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0090
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0095
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0095
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0095
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0095
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0095
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0095
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0095
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0095
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0095
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0095
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0095
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0095
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0095
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0095
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0095
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0095
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0095
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0095
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0095
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0095
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0095
+dx.doi.org/10.1111/j.1523-1739.2004.00491.x
+dx.doi.org/10.1111/j.1523-1739.2004.00491.x
+dx.doi.org/10.1111/j.1523-1739.2004.00491.x
+dx.doi.org/10.1111/j.1523-1739.2004.00491.x
+dx.doi.org/10.1111/j.1523-1739.2004.00491.x
+dx.doi.org/10.1111/j.1523-1739.2004.00491.x
+dx.doi.org/10.1111/j.1523-1739.2004.00491.x
+dx.doi.org/10.1111/j.1523-1739.2004.00491.x
+dx.doi.org/10.1111/j.1523-1739.2004.00491.x
+dx.doi.org/10.1111/j.1523-1739.2004.00491.x
+dx.doi.org/10.1111/j.1523-1739.2004.00491.x
+dx.doi.org/10.1111/j.1523-1739.2004.00491.x
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0105
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0105
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0105
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0105
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0105
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0105
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0105
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0105
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0105
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0105
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0105
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0105
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0105
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0105
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0105
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0105
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0105
+dx.doi.org/10.1300/J091v17n01_06
+dx.doi.org/10.1300/J091v17n01_06
+dx.doi.org/10.1300/J091v17n01_06
+dx.doi.org/10.1300/J091v17n01_06
+dx.doi.org/10.1300/J091v17n01_06
+dx.doi.org/10.1300/J091v17n01_06
+dx.doi.org/10.1300/J091v17n01_06
+dx.doi.org/10.1300/J091v17n01_06
+dx.doi.org/10.1007/s00267-012-9848-z
+dx.doi.org/10.1007/s00267-012-9848-z
+dx.doi.org/10.1007/s00267-012-9848-z
+dx.doi.org/10.1007/s00267-012-9848-z
+dx.doi.org/10.1007/s00267-012-9848-z
+dx.doi.org/10.1007/s00267-012-9848-z
+dx.doi.org/10.1007/s00267-012-9848-z
+dx.doi.org/10.1007/s00267-012-9848-z
+dx.doi.org/10.1007/s00267-012-9848-z
+dx.doi.org/10.1007/s00267-012-9848-z
+dx.doi.org/10.1007/s00267-008-9195-2
+dx.doi.org/10.1007/s00267-008-9195-2
+dx.doi.org/10.1007/s00267-008-9195-2
+dx.doi.org/10.1007/s00267-008-9195-2
+dx.doi.org/10.1007/s00267-008-9195-2
+dx.doi.org/10.1007/s00267-008-9195-2
+dx.doi.org/10.1007/s00267-008-9195-2
+dx.doi.org/10.1007/s00267-008-9195-2
+dx.doi.org/10.1007/s00267-008-9195-2
+dx.doi.org/10.1007/s00267-008-9195-2
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0125
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0125
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0125
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0125
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0125
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0125
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0125
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0125
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0125
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0125
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0125
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0125
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0125
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0125
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0125
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0125
+dx.doi.org/10.1111/j.1523-1739.2012.01964.x
+dx.doi.org/10.1111/j.1523-1739.2012.01964.x
+dx.doi.org/10.1111/j.1523-1739.2012.01964.x
+dx.doi.org/10.1111/j.1523-1739.2012.01964.x
+dx.doi.org/10.1111/j.1523-1739.2012.01964.x
+dx.doi.org/10.1111/j.1523-1739.2012.01964.x
+dx.doi.org/10.1111/j.1523-1739.2012.01964.x
+dx.doi.org/10.1111/j.1523-1739.2012.01964.x
+dx.doi.org/10.1111/j.1523-1739.2012.01964.x
+dx.doi.org/10.1111/j.1523-1739.2012.01964.x
+dx.doi.org/10.1111/j.1523-1739.2012.01964.x
+dx.doi.org/10.1111/j.1523-1739.2012.01964.x
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0135
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0135
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0135
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0135
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0135
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0135
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0135
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0135
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0135
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0135
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0135
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0135
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0135
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0135
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0135
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0135
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0135
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0135
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0135
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0135
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0135
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0135
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0135
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0135
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0135
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0135
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0135
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0135
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0135
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0135
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0135
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0135
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0135
+dx.doi.org/10.1016/S0169-2046(03)00163-4
+dx.doi.org/10.1016/S0169-2046(03)00163-4
+dx.doi.org/10.1016/S0169-2046(03)00163-4
+dx.doi.org/10.1016/S0169-2046(03)00163-4
+dx.doi.org/10.1016/S0169-2046(03)00163-4
+dx.doi.org/10.1016/S0169-2046(03)00163-4
+dx.doi.org/10.1016/S0169-2046(03)00163-4
+dx.doi.org/10.1016/S0169-2046(03)00163-4
+dx.doi.org/10.1016/S0169-2046(03)00163-4
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0145
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0145
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0145
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0145
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0145
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0145
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0145
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0145
+dx.doi.org/10.1007/s00267-013-0078-9
+dx.doi.org/10.1007/s00267-013-0078-9
+dx.doi.org/10.1007/s00267-013-0078-9
+dx.doi.org/10.1007/s00267-013-0078-9
+dx.doi.org/10.1007/s00267-013-0078-9
+dx.doi.org/10.1007/s00267-013-0078-9
+dx.doi.org/10.1007/s00267-013-0078-9
+dx.doi.org/10.1007/s00267-013-0078-9
+dx.doi.org/10.1007/s00267-013-0078-9
+dx.doi.org/10.1007/s00267-013-0078-9
+dx.doi.org/10.1016/j.landurbplan.2009.11.001
+dx.doi.org/10.1016/j.landurbplan.2009.11.001
+dx.doi.org/10.1016/j.landurbplan.2009.11.001
+dx.doi.org/10.1016/j.landurbplan.2009.11.001
+dx.doi.org/10.1016/j.landurbplan.2009.11.001
+dx.doi.org/10.1016/j.landurbplan.2009.11.001
+dx.doi.org/10.1016/j.landurbplan.2009.11.001
+dx.doi.org/10.1016/j.landurbplan.2009.11.001
+dx.doi.org/10.1016/j.landurbplan.2009.11.001
+dx.doi.org/10.1016/j.landurbplan.2009.11.001
+dx.doi.org/10.1016/j.landurbplan.2009.11.001
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0165
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0165
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0165
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0165
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0165
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0165
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0165
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0165
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0165
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0165
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0165
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0165
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0165
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0165
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0165
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0165
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0165
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0165
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0165
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0165
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0165
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0165
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0165
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0165
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0165
+dx.doi.org/10.1080/08941920.2012.723304
+dx.doi.org/10.1080/08941920.2012.723304
+dx.doi.org/10.1080/08941920.2012.723304
+dx.doi.org/10.1080/08941920.2012.723304
+dx.doi.org/10.1080/08941920.2012.723304
+dx.doi.org/10.1080/08941920.2012.723304
+dx.doi.org/10.1080/08941920.2012.723304
+dx.doi.org/10.1080/08941920.2012.723304
+dx.doi.org/10.1080/08941920.2012.723304
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0175
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0175
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0175
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0175
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0175
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0175
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0175
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0175
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0175
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0175
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0175
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0175
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0175
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0175
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0180
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0180
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0180
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0180
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0180
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0180
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0180
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0180
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0180
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0180
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0180
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0180
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0180
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0180
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0180
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0180
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0180
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0180
+dx.doi.org/10.1016/j.biocon.2013.10.015
+dx.doi.org/10.1016/j.biocon.2013.10.015
+dx.doi.org/10.1016/j.biocon.2013.10.015
+dx.doi.org/10.1016/j.biocon.2013.10.015
+dx.doi.org/10.1016/j.biocon.2013.10.015
+dx.doi.org/10.1016/j.biocon.2013.10.015
+dx.doi.org/10.1016/j.biocon.2013.10.015
+dx.doi.org/10.1016/j.biocon.2013.10.015
+dx.doi.org/10.1016/j.biocon.2013.10.015
+dx.doi.org/10.1016/j.biocon.2013.10.015
+dx.doi.org/10.1016/j.biocon.2013.10.015
+dx.doi.org/10.1111/j.1523-1739.2007.00871.x
+dx.doi.org/10.1111/j.1523-1739.2007.00871.x
+dx.doi.org/10.1111/j.1523-1739.2007.00871.x
+dx.doi.org/10.1111/j.1523-1739.2007.00871.x
+dx.doi.org/10.1111/j.1523-1739.2007.00871.x
+dx.doi.org/10.1111/j.1523-1739.2007.00871.x
+dx.doi.org/10.1111/j.1523-1739.2007.00871.x
+dx.doi.org/10.1111/j.1523-1739.2007.00871.x
+dx.doi.org/10.1111/j.1523-1739.2007.00871.x
+dx.doi.org/10.1111/j.1523-1739.2007.00871.x
+dx.doi.org/10.1111/j.1523-1739.2007.00871.x
+dx.doi.org/10.1111/j.1523-1739.2007.00871.x
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0195
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0195
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0195
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0195
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0195
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0195
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0195
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0195
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0195
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0195
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0195
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0195
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0195
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0195
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0195
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0195
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0195
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0195
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0195
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0195
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0195
+dx.doi.org/10.1111/j.1467-8306.1987.tb00149.x
+dx.doi.org/10.1111/j.1467-8306.1987.tb00149.x
+dx.doi.org/10.1111/j.1467-8306.1987.tb00149.x
+dx.doi.org/10.1111/j.1467-8306.1987.tb00149.x
+dx.doi.org/10.1111/j.1467-8306.1987.tb00149.x
+dx.doi.org/10.1111/j.1467-8306.1987.tb00149.x
+dx.doi.org/10.1111/j.1467-8306.1987.tb00149.x
+dx.doi.org/10.1111/j.1467-8306.1987.tb00149.x
+dx.doi.org/10.1111/j.1467-8306.1987.tb00149.x
+dx.doi.org/10.1111/j.1467-8306.1987.tb00149.x
+dx.doi.org/10.1111/j.1467-8306.1987.tb00149.x
+dx.doi.org/10.1111/j.1467-8306.1987.tb00149.x
+dx.doi.org/10.1016/j.landurbplan.2005.02.015
+dx.doi.org/10.1016/j.landurbplan.2005.02.015
+dx.doi.org/10.1016/j.landurbplan.2005.02.015
+dx.doi.org/10.1016/j.landurbplan.2005.02.015
+dx.doi.org/10.1016/j.landurbplan.2005.02.015
+dx.doi.org/10.1016/j.landurbplan.2005.02.015
+dx.doi.org/10.1016/j.landurbplan.2005.02.015
+dx.doi.org/10.1016/j.landurbplan.2005.02.015
+dx.doi.org/10.1016/j.landurbplan.2005.02.015
+dx.doi.org/10.1016/j.landurbplan.2005.02.015
+dx.doi.org/10.1016/j.landurbplan.2005.02.015
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0210
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0210
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0210
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0210
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0210
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0210
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0210
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0210
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0210
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0210
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0210
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0215
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0215
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0215
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0215
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0215
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0215
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0215
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0215
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0215
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0215
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0215
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0215
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0215
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0215
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0220
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0220
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0220
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0220
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0220
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0220
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0220
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0220
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0220
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0220
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0220
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0220
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0220
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0220
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0220
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0220
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0220
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0220
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0220
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0220
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0220
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0220
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0220
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0220
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0220
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0220
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0220
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0225
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0225
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0225
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0225
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0225
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0225
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0225
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0225
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0225
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0225
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0225
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0225
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0225
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0225
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0225
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0225
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0225
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0230
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0230
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0230
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0230
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0230
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0230
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0230
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0230
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0230
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0230
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0230
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0230
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0230
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0230
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0230
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0230
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0230
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0230
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0230
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0230
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0230
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0235
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0235
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0235
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0235
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0235
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0235
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0235
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0235
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0235
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0235
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0235
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0235
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0235
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0235
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0235
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0235
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0235
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0235
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0235
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0235
+dx.doi.org/10.1111/j.1523-1739.2006.00415.x
+dx.doi.org/10.1111/j.1523-1739.2006.00415.x
+dx.doi.org/10.1111/j.1523-1739.2006.00415.x
+dx.doi.org/10.1111/j.1523-1739.2006.00415.x
+dx.doi.org/10.1111/j.1523-1739.2006.00415.x
+dx.doi.org/10.1111/j.1523-1739.2006.00415.x
+dx.doi.org/10.1111/j.1523-1739.2006.00415.x
+dx.doi.org/10.1111/j.1523-1739.2006.00415.x
+dx.doi.org/10.1111/j.1523-1739.2006.00415.x
+dx.doi.org/10.1111/j.1523-1739.2006.00415.x
+dx.doi.org/10.1111/j.1523-1739.2006.00415.x
+dx.doi.org/10.1111/j.1523-1739.2006.00415.x
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0245
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0245
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0245
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0245
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0245
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0245
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0245
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0245
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0245
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0245
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0245
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0245
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0245
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0245
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0245
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0245
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0245
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0245
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0245
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0245
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0245
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0250
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0250
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0250
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0250
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0250
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0250
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0250
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0250
+dx.doi.org/10.1093/icc/11.3.427
+dx.doi.org/10.1093/icc/11.3.427
+dx.doi.org/10.1093/icc/11.3.427
+dx.doi.org/10.1093/icc/11.3.427
+dx.doi.org/10.1093/icc/11.3.427
+dx.doi.org/10.1093/icc/11.3.427
+dx.doi.org/10.1093/icc/11.3.427
+dx.doi.org/10.1093/icc/11.3.427
+dx.doi.org/10.1093/icc/11.3.427
+dx.doi.org/10.1093/icc/11.3.427
+dx.doi.org/10.1016/j.landurbplan.2007.03.005
+dx.doi.org/10.1016/j.landurbplan.2007.03.005
+dx.doi.org/10.1016/j.landurbplan.2007.03.005
+dx.doi.org/10.1016/j.landurbplan.2007.03.005
+dx.doi.org/10.1016/j.landurbplan.2007.03.005
+dx.doi.org/10.1016/j.landurbplan.2007.03.005
+dx.doi.org/10.1016/j.landurbplan.2007.03.005
+dx.doi.org/10.1016/j.landurbplan.2007.03.005
+dx.doi.org/10.1016/j.landurbplan.2007.03.005
+dx.doi.org/10.1016/j.landurbplan.2007.03.005
+dx.doi.org/10.1016/j.landurbplan.2007.03.005
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0275
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0275
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0275
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0275
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0275
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0275
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0275
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0275
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0275
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0275
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0275
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0275
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0275
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0275
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0275
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0275
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0275
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0280
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0280
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0280
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0280
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0280
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0280
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0280
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0280
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0280
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0280
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0280
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0280
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0280
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0280
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0280
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0280
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0280
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0280
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0280
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0280
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0280
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0280
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0280
+http://refhub.elsevier.com/S0169-2046(15)00217-0/sbref0280
+
+
