@@ -24,7 +24,7 @@ Imports:
 	cld2,
 	hunspell,
 	tidyr
-Remotes: brschmidt/wordVectors
+Remotes: cpeeples/wordVectors
 Suggests: knitr,
     rmarkdown
 VignetteBuilder: knitr
