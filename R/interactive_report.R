@@ -401,7 +401,7 @@ interactive_report <- function(country=NULL, query, data, embeddings = "embeddin
   
   wd <- getwd()
   ggplot2::ggsave(filename=paste0(wd, "/plot1.png"), ggplot2::last_plot(), width=7, height=5, units="in")
-  cat(paste0("\n", "Creating ", paste(query, collapse="_"), ".", as.character(type)), "\n"))
+  cat(paste0("\n", "Creating ", paste(query, collapse="_"), ".", as.character(type)), "\n")
   suppressWarnings(create_report(country))
   cat(paste0(paste(query, collapse="_"), ".", as.character(type)), " created", "\n")
   file.remove("plot1.png")
