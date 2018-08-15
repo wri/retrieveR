@@ -12,7 +12,7 @@ create_locations <- function(corpus, embedding) {
   data <- corpus
   data$sentences <- as.character(data$sentences)
   #data <- data[nchar(data$sentences) > 70,]
-  wv1 <- read.binary.vectors(embedding)
+  wv1 <- wordVectors::read.binary.vectors(embedding)
   df1 <- data.frame(wv1@.Data)
 
   data$sentences <- gsub("([A-z])-([A-z])", "\\1 \\2", data$sentences)
