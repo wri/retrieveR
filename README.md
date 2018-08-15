@@ -14,19 +14,18 @@ If you have not used devtools before in R, you must install it by running
 install.packages("devtools")
 ```
 
-Devtools relies on the most current version of Rtools to also be [installed](https://cran.r-project.org/bin/windows/Rtools/). I am currently working on a release update that will not depend on Rtools. 
-
 ```r
 library(devtools)
 install_github("wri/retrieveR")
 ```
 
-If the installation of retrieveR fails because R cannot find Rtools, try the below:
+Next, retrieveR relies on a few things that are windows- and mac- specific. The below functions will source and install the proper things for you (<5 mb).
 
 ```r
-library(devtools)
-assignInNamespace("version_info", c(devtools::version_info, list("3.5" = list(version_min = "3.3.0", version_max = "99.99.99", path = "bin"))), "devtools")
+install_mac()
+install_windows()
 ```
+
 
 
 ## Usage
@@ -41,10 +40,10 @@ run_ocr("path/to/folder")
 
 Splits each PDF into separate PDFs by page and then extracts text using the `rtika` interface to the open-source OCR toolkit with embedded page layout analysis.
 
-### make_corpus
+### create_corpus
 
 ```r
-corpus <- make_corpus("path/to/folder")
+corpus <- create_corpus("path/to/folder")
 ```
 
 This function does the following:
@@ -61,18 +60,18 @@ This function does the following:
 
 ```r
 download_embeddings()
-locations <- create_locations(corpus, "path/to/embeddings.bin")
+locations <- create_locations(corpus)
 ```
 
 This uses a pre-trained neural embedding to calculate weights for each paragraph. Calling `download_embeddings()` will download a pre-trained embedding to the working directory as `embeddings.bin`. This pre-trained embedding was trained on over 1,000 environmental policy documents from more than 40 nations and 50 NGOs and development aid agencies. 
 
 The `prep_wordvec` and `create_wordvec` functions may be used to create your own neural embedding, if need be.
 
-### interactive_report
+### create_report
 
 ```
-interactive_report(country = "Kenya", query = "barriers to restoration",
-  data = corpus, locations = locations)
+create_report(country = "Kenya", query = "barriers to restoration",
+  data = corpus)
 ```
 
 The format for querying the corpus and generating a report is interactive and iterative. RetrieveR prompts the user with a candidate set of relevant words and phrases. The ones for "barriers to restoration", for instance, are:
