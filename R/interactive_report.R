@@ -222,11 +222,12 @@ interactive_report <- function(country=NULL, query, data, embeddings = "embeddin
     title <- gsub("^([a-z])", "\\U\\1", perl=T, title)
     title <- paste(title, collapse = " ")
     if(type == "html") {
-      rend_type <- rmarkdown::pdf_document()
-    }
-    if(type == "pdf") {
       rend_type <- rmarkdown::html_document()
     }
+    if(type == "pdf") {
+      rend_type <- rmarkdown::pdf_document()
+    }
+    print(rend_type)
     cat("---", paste0('title: ', title), paste0('subtitle: Text extracted from ', target_country, ' documents'), "output:", "pdf_document:", "fig_caption: yes", "---", "!['Why won't this caption show up?'](plot1.png)", my_text, sep="  \n", file=filename)
     rmarkdown::render(filename, rend_type, quiet=T)
     file.remove(filename) #cleanup
@@ -400,9 +401,9 @@ interactive_report <- function(country=NULL, query, data, embeddings = "embeddin
   
   wd <- getwd()
   ggplot2::ggsave(filename=paste0(wd, "/plot1.png"), ggplot2::last_plot(), width=7, height=5, units="in")
-  cat(paste0("\n", "Creating ", paste(query, collapse="_"), ".pdf", "\n"))
+  cat(paste0("\n", "Creating ", paste(query, collapse="_"), ".", as.character(type)), "\n"))
   suppressWarnings(create_report(country))
-  cat(paste0(paste(query, collapse="_"), ".pdf"), "created", "\n")
+  cat(paste0(paste(query, collapse="_"), ".", as.character(type)), " created", "\n")
   file.remove("plot1.png")
   file.remove("toprint.txt")
   write.csv(data, "data-results.csv")

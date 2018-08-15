@@ -50,6 +50,6 @@ locations <- create_locations(corpus, "embeddings.bin")
 ```
 
 ```{r}
-interactive_report(query="market risks", locations="embeddings.rds", data=corpus)
+interactive_report(query="market risks", locations="embeddings.rds", data=corpus, type = "html")
 ```
 
