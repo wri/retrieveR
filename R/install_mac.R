@@ -9,6 +9,6 @@
 
 install_mac <- function() {
   download.file("https://github.com/wri/retrieveR/raw/master/data-raw/wordVectors_2.0.tar.gz", destfile="wordVectors_1.0.tar.gz", quiet=T, mode="wb")
-  install.packages("wordVectors_2.0.tar.gz", repos=NULL, type="source")
+  install.packages("wordVectors_2.0.tar.gz", repos=NULL)
   file.remove("wordVectors_2.0.tar.gz")
 }
