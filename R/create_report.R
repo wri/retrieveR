@@ -9,8 +9,9 @@
 #' @examples
 #' create_report()
 
-create_report <- function(country=NULL, query, data, embeddings = "embeddings.bin", locations, type="html") {
+create_report <- function(country=NULL, query, data, embeddings = "embeddings.bin", locations = "embeddings.rds", type="html") {
   library(magrittr)
+
   if(is.null(country) & length(unique(data$country)) == 1) {
     country <- data$country[1]
   }
@@ -408,4 +409,5 @@ create_report <- function(country=NULL, query, data, embeddings = "embeddings.bi
   file.remove("plot1.png")
   file.remove("toprint.txt")
   write.csv(data, "data-results.csv")
+  cat("Done")
 }

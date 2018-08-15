@@ -25,7 +25,8 @@ This vignette walks the user through applying the neural embedding NLP approach 
 
 ```{r}
 library(retrieveR)
-install()
+#install_mac()
+#install_windows()
 download_example()
 ```
 
@@ -41,16 +42,16 @@ run_ocr("pdfs")
 ## Make corpus
 
 ```{r}
-corpus <- make_corpus("pdfs")
+corpus <- create_corpus("pdfs")
 ```
 
 
 ```{r, fig.show='hold'}
 download_embeddings()
-locations <- create_locations(corpus, "embeddings.bin")
+create_locations(corpus)
 ```
 
 ```{r}
-interactive_report(query="market risks", locations="embeddings.rds", data=corpus, type = "html")
+create_report(query="land tenure", data = corpus)
 ```
 

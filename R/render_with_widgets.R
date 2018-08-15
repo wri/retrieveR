@@ -10,7 +10,10 @@ render_with_widgets <- function(input_file,
                                 output_file = sub("\\.Rmd$", ".html", input_file, ignore.case = TRUE),
                                 self_contained = TRUE,
                                 deps_path = file.path(dirname(output_file), "deps")) {
-
+  library(knitr)
+  library(htmltools)
+  library(base64enc)
+  library(markdown)
   # Read input and convert to Markdown
   input <- readLines(input_file)
   md <- knit(text = input)

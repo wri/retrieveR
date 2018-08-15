@@ -6,7 +6,7 @@
 #' @examples
 #' create_locations()
 
-create_locations <- function(corpus, embedding) {
+create_locations <- function(corpus, embedding = "embeddings.bin") {
   library(magrittr)
   cat("\nReading in data", "\n")
   data <- corpus
@@ -77,5 +77,4 @@ create_locations <- function(corpus, embedding) {
   cat("Saving the word embeddings to 'embeddings.rds'\n")
   saveRDS(locations, "embeddings.rds")
   cat("There are now", nrow(data), "observations!\n")
-  return(locations)
 }
