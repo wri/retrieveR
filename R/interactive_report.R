@@ -271,7 +271,7 @@ interactive_report <- function(country=NULL, query, data, embeddings = "embeddin
   cat("\n")
   cat("Top 50 related words \n")
   cat("If some are not relevant, add one or two of the relevant ones to the query \n\n")
-  similars <- unname(unlist(wv1 %>% wordVectors::closest_to(as.matrix(query_vector), n=50) %>% dplyr::select(word)))
+  similars <- unname(unlist(wv1 %>% wordVectors::nearest_to(as.matrix(query_vector), n=50) %>% dplyr::select(word)))
   print(similars, quote=F)
   cat("\n\n")
   
@@ -279,7 +279,7 @@ interactive_report <- function(country=NULL, query, data, embeddings = "embeddin
   ## Query expansion
   finalize_query <- function() {
     query_vector <- create_point(query)
-    similars <- unname(unlist(wv1 %>% wordVectors::closest_to(as.matrix(query_vector), n=50) %>% dplyr::select(word)))
+    similars <- unname(unlist(wv1 %>% wordVectors::nearest_to(as.matrix(query_vector), n=50) %>% dplyr::select(word)))
     cat("\n")
     print(similars, quote=F)
     cat("\n")
