@@ -1,0 +1,278 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+A network approach to assessing social capacity for landscape planning: The case of fire-prone forests in Oregon, USA
+
+
+A.P. Fischer et al. / Landscape and Urban Planning 147 (2016) 18–27 23
+
+Table  1
+Descriptive network statistics.
+
+Variables Number of organizations Number of reported ties Average indegree
+
+Networks Works with Info from Works with Info from Works with Info from
+
+Total 396 158 1270 355 3.2 2.1
+Forest restoration 133 68 417 126 3.1 1.9
+Fire  protection 225 76 374 105 1.7 1.4
+
+o
+p
+n
+f
+t
+o
+o
+s
+i
+w
+i
+c
+w
+a
+
+g
+n
+o
+t
+n
+o
+o
+r
+t
+a
+
+o
+o
+i
+s
+fi
+t
+s
+f
+o
+o
+f
+o
+b
+m
+n
+F
+C
+o
+t
+r
+a
+
+w
+d
+t
+a
+e
+w
+f
+
+Central Oregon (CO) 127 44 
+South central Oregon (SCO) 90 45 
+Central and south central Oregon (COSCO) 108 48 
+
+n average, while COSCO organizations were named as working
+artners and information sources less often by other COSCO orga-
+izations (Table 1). These findings indicate that the subnetwork of
+
+orest restoration organizations was more densely interconnected
+han the subnetwork of fire organizations, as were the subnetworks
+f CO and SCO organizations in comparison to the subnetwork
+f COSCO organizations. In other words, there was  more bonding
+ocial capital structure to foster communication and coordination
+n the forest restoration network than in the fire protection net-
+
+ork, there were similar levels of bonding social capital structure
+n the CO and SCO networks, and there was more bonding social
+apital structure in these subregional networks than in the subnet-
+ork of COSCO organizations that focused on the larger geographic
+
+rea.
+While bonding social capital is important for cooperation within
+
+roups of similar actors, bridging social capital creates opportu-
+ity for communication, coordination and joint-implementation
+f plans across geographic and social boundaries. Results from
+he blockmodel permutation tests indicate that in all cases orga-
+izations reported working with and seeking information from
+rganizations with the same goals and geographic focus more
+ften than expected by chance (Table 2). In contrast, organizations
+eported working with and seeking information from organiza-
+ions with different goals and geographic foci less often or with
+
+ frequency no different than expected based on chance (Table 2).
+We found several exceptions that could provide evidence of
+
+pportunities for ecoregion-scale planning. CO forest restoration
+rganizations reported that they both worked with and received
+nformation from SCO forest restoration organizations at a rate not
+ignificantly different from what would be expected by chance. This
+nding simply indicates that the proportion of cross-geography
+ies between forest restoration and fire protection organizations is
+imilar to that expected by chance given the distribution of the dif-
+erent types of organizations in the total network and the in- and
+utdegree of each organization. More notable, CO fire protection
+rganizations named COSCO fire protection organizations, and CO
+orest restoration organizations named COSCO forest restoration
+rganizations, as sources of information more often than expected
+y chance (Table 2). Most of the COSCO organizations were depart-
+ents or divisions within institutions that hold a statewide or
+
+ational focus (e.g., the state office of the Oregon Department of
+orestry, Oregon State University’s College of Forestry, The Nature
+onservancy’s Pacific Northwest Regional Office). The positioning
+f some of these organizations as brokers is evident in their loca-
+ion between the clusters of CO and SCO organizations and forest
+estoration and fire protection organizations in the “works with”
+nd “info from” network diagrams (Fig. 2a and b).
+
+We  found only one instance in which organizations reported
+orking with or seeking information from organizations that held
+ifferent goals more often than expected by chance: SCO fire pro-
+ection organizations named SCO forest restoration organizations
+
+s working partners and information sources more often than
+xpected (Table 2). We  found no examples in which organizations
+ith different goals and different geographic foci interacted more
+
+requently than expected by chance.
+429 100 3.4 2.3
+287 67 3.2 1.5
+
+74 23 0.7 0.5
+
+On the whole, the blockmodel permutation tests provide statis-
+tical indication that organizations concerned with wildfire risk in
+the forested landscape of the ECE do not comprise one cohesive net-
+work. At smaller sub-regional landscape scales, however, (i.e., CO
+and SCO) organizations displayed stronger network ties (Table 2).
+Overall, organizations demonstrated preferences for interacting
+with organizations that share similar goals and geographies.
+
+4. Discussion
+
+Organizations that share concern about a common landscape-
+scale natural resource problem in a common area arguably could
+benefit from cooperating on landscape planning. In the ECE,
+however, we found that in most cases, as we hypothesized, organi-
+zations with the same goals and geographic focus interacted more
+frequently among themselves than with others to get work done
+and to obtain information and expertise on the problem of wild-
+fire risk. These findings indicate that bonding social capital was not
+as strong across the network as a whole as it was within subnet-
+works of similar organizations, especially subnetworks of similar
+organization types, particularly forest restoration organizations. In
+other words, we  did not find evidence that shared concern about
+landscape-scale problems could counter homophily as an influence
+on the structure of a large organizational network.
+
+Our finding of homophily among forest restoration and fire
+protection organizations is not surprising. Only since 2000 has
+US federal wildfire policy-historically focused on fire suppression-
+broadened to include goals for restoration of forest structure and
+species composition (Dombeck, Williams, & Wood, 2004; Steelman
+& Burke, 2007). The less-than-frequent interaction between for-
+est restoration and fire protection organizations reflects the social
+distance between organizations with these different goals. Despite
+recent US policy initiatives and a growing advocacy movement to
+integrate protection and restoration goals and strategies (Butler &
+Goldstein, 2010; DellaSala et al., 2003; Wildland Fire Leadership
+Council, 2011), it appears that the institutional cultures of fire
+protection and forest restoration remain distinct, even in the ECE
+where great progress has been made in collaboration on forest and,
+separately, fire management (Davis et al., 2012; Oregon & Solutions,
+2013; Summers, 2014). Some organizations appeared to be bridging
+this cultural divide. For example, in SCO, fire protection organiza-
+tions named forest restoration organizations as working partners
+and information sources more often than expected by chance. Most
+often this took the form of state and local fire departments and
+fire-fighting agencies working with and seeking information and
+advice from federal or state natural resource management agen-
+cies, perhaps demonstrating attempts to communicate about and
+coordinate or jointly-implement wildfire mitigation and response
+efforts. In CO, forest restoration and fire protection organizations
+interacted as frequently as expected by chance, providing no indica-
+tion that these two types of organizations were reluctant to interact
+
+with each other.
+
+Our finding of geographic homophily is also not surprising.
+Ecoregions, due to their size, contain multiple overlapping and
+competing geographic, ecological and social territories. People, on
+
+acer
+Highlight
+
+
+

@@ -1,0 +1,290 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+A network approach to assessing social capacity for landscape planning: The case of fire-prone forests in Oregon, USA
+
+
+d Urb
+
+R
+O
+s
+m
+l
+
+2
+
+t
+t
+s
+(
+t
+a
+a
+&
+r
+fi
+w
+fi
+m
+a
+a
+w
+w
+t
+b
+t
+
+n
+o
+a
+w
+i
+t
+fi
+t
+c
+f
+d
+w
+fi
+g
+a
+s
+a
+m
+F
+d
+
+n
+r
+i
+p
+o
+o
+n
+s
+f
+C
+t
+p
+o
+F
+F
+
+A.P. Fischer et al. / Landscape an
+
+estoration Program, which was established under Title IV of the
+mnibus Public Land Management Act of 2009 on Forest Land-
+
+cape Restoration, has funded projects that engage local public land
+anagers and stakeholder groups in planning for management of
+
+andscapes on national forests.
+
+.2. Data collection
+
+We  conducted semi-structured interviews with representa-
+ives of organizations concerned with increasing wildfire risk in
+he fire-prone forests in the ECE to collect network data for this
+tudy. Network data are defined by (1) information about ties
+i.e., relationships, interactions) among actors (i.e., organizations)
+hrough which information and resources are shared, and (2) actor
+ttributes (e.g., type of organization). We  used a snowball sampling
+pproach to identify the individuals we would interview (Doreian
+
+ Woodard, 1992), beginning with 45 individuals members the
+esearch team considered key actors in the area of forest and wild-
+re management in the study area. We  asked interview informants
+ith whom in other organizations they had interacted in the past
+ve years to: (1) plan, fund, or implement work; (2) obtain infor-
+ation or expertise; (3) give advice; (4) gain exposure to new ideas,
+
+nd (5) influence planning and management regarding wildfire risk
+nd fire-prone forest management. We  conducted second and third
+aves of snowball sampling by contacting additional individuals
+ho were mentioned in response to these questions by at least
+
+hree interviewees in the preceding wave. The third wave of snow-
+all sampling did not identify any additional interview informants,
+herefore reaching saturation.
+
+In total, we interviewed 154 individuals representing 87 orga-
+izations. In the interviews we first asked informants about their
+rganizations’ institutional concerns about wildfire risk, beliefs
+bout the role fire should play in the forest landscape, and how
+ildfire and fire-prone forests should be managed. Then we  asked
+
+nformants to name individuals in other organizations with whom
+hey have had the five types of interactions listed above in the past
+ve years to address wildfire risk in the ECE. To ensure confiden-
+iality and create the desired unit of analysis (the organization), we
+ombined responses from individuals within the same organization
+or each of these questions. This process yielded a multi-relational
+ata set of ties among organizations concerned with increasing
+ildfire risk in the ECE. In total, 476 organizations were identi-
+ed through the interviews. In most cases, we  considered local
+overnment agencies, private businesses, and non-profit groups
+s organizations. For complex organizations, such as universities,
+tate and federal agencies, and non-profit groups operating at state
+nd national levels, we treated local and regional offices and depart-
+ents as unique organizations. For example, we  considered US
+
+orest Service (USFS) national forest supervisor offices and ranger
+istrict offices as separate organizations.
+
+We drew on qualitative interview data to classify the 87 orga-
+izations represented by interview informants as either forest
+estoration or fire protection organizations on the basis of their
+nstitutional beliefs about wildfire risk and how wildfire and fire-
+rone forests should be managed. We  used secondary data (i.e.,
+rganizations’ web pages and policy documents) to classify the
+rganizations identified by less than three informants and therefore
+ot interviewed. Forest restoration organizations included con-
+ervation groups, sustainability groups, US Forest Service national
+orests and ranger districts, watershed councils, Natural Resource
+onservation Service districts and other organizations fundamen-
+ally motivated to conserve or return ecological conditions and
+
+rocesses to their historic range of variability. Fire protection
+rganizations included rural and suburban fire departments, US
+orest Service fire and aviation units, Oregon Department of
+orestry units, timber companies, forestry and rangeland interest
+an Planning 147 (2016) 18–27 21
+
+groups and other organizations fundamentally motivated to pro-
+tect homes, property and other assets from loss to wildfire. We also
+classified organizations by their primary geographic focus: central
+Oregon (CO), the northern portion of the ecoregion, which includes
+Deschutes, Jefferson and Wasco Counties; south central Oregon
+(SCO), the southern portion of the ecoregion, which includes Kla-
+math and Lake Counties; and the area that includes both central
+and south central Oregon (COSCO), i.e., the entire ecoregion. We
+were unable to classify some organizations for which we did not
+interview representatives by their primary goals and geographic
+focus. We  treated these organizations as missing data and did not
+include them in the analysis.
+
+2.3. Data analysis
+
+We used social network analysis (Wasserman & Faust, 1994)
+to quantify the composition and distribution of ties among orga-
+nizations. We  limited our analysis to the sets of organizations
+that reported interacting for the purpose of (1) planning, fund-
+ing, or implementing work (hereafter referred to as the “works
+with” network) and (2) obtaining information or expertise (here-
+after referred to as the “info from” network), since cooperation
+and resource-seeking are two  primary types of interactions among
+organizations. For each of these two networks we divided the orga-
+nizations into separate groups, or subnetworks, according to their
+goals and geographic focus. We  compared the size (number of
+organizations) and average indegree (average number of times an
+organization was  named) of the subnetworks to each other and to
+the full network. We  used average indegree as an indicator of bond-
+ing social capital (Borgatti et al., 1998); a denser, more interactive
+community has greater potential for communication and coordi-
+nation and thus, the production of bonding social capital (Borgatti
+et al., 1998). We  used indegree instead of outdegree (i.e., average
+number of times the organizations named other organizations) to
+control for potential bias caused by interviewees who were able to
+recall large numbers of contacts.
+
+To examine how differences in organizations’ goals and geo-
+graphic focus structured the ties among them, we compared the
+number of ties within and between the subnetworks to the aver-
+age number of expected ties derived from 1000 simulations of the
+network structure controlling for the number of times an orga-
+nization named (outdegree) and was named (indegree) by other
+organizations. This method is referred to as blockmodeling in the
+social network analysis literature (Wasserman & Faust, 1994). We
+used ties among organizations of the same type (within-group)
+to indicate bonding social, and ties between actors of different
+types (between-group) to indicate bridging social capital. We  cal-
+culated all social network measures and produced their graphic
+representations with UCINET (Borgatti, Everett, & Freeman, 2002),
+and conducted permutation tests with the SNA package of R (Butts,
+2008; R.Development Core & Team, 2013).
+
+3. Results
+
+We identified 1270 ties among the 396 organizations in the
+“works with” network and 335 ties among 158 organizations in the
+“info from” network. Fig. 2a and b provides graphic depictions of the
+reported relationships among the organizations in these networks.
+
+Forest restoration organizations were identified more often on
+average as working partners and sources of information by other
+forest restoration organizations (i.e., had a higher average inde-
+
+gree) than fire protection organizations were named by other fire
+protection organizations (Table 1). CO and SCO organizations were
+named as working partners and information sources by a simi-
+lar number of other organizations in their respective subnetworks
+
+
+

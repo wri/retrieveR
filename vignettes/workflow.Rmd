@@ -25,6 +25,7 @@ This vignette walks the user through applying the neural embedding NLP approach 
 
 ```{r}
 library(retrieveR)
+install()
 download_example()
 ```
 

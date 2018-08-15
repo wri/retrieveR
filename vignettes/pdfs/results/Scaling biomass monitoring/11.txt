@@ -1,0 +1,144 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Propagating uncertainty to estimates of above-ground biomass for Kenyan mangroves: A scaling procedure from tree to landscape level
+
+
+Fig. 7. Estimated median above-ground biomass (AGB) of each plot within the forest inventory dataset (±95% PI). Plots have been grouped according to the eight regions
+identified in the inventory dataset. For each region plots appear in ranked order from low to high estimated AGB. The 95% PI is the difference between the 97.5% and 2.5%
+quantiles of the simulated distributions of possible values of median AGB for each plot.
+
+978 R. Cohen et al. / Forest Ecology and Management 310 (2013) 968–982
+highest estimates were used (‘Kenya High’). Lamu District (South
+Lamu + Kiunga) holds the highest proportion (�69–75% dependent
+on Kenya total) of mangrove AGB in Kenya (Table 5). Despite hav-
+ing one of the lowest estimates of mean AGB the estimated total
+AGB of mangroves at Mida Creek is more than double that of Gazi
+Bay due to the higher mangrove cover at Mida Creek.
+
+The uncertainty around the estimates of total AGB are generally
+well constrained for all regions (Table 5). However, the Low and
+High estimates of total AGB for Kilifi and Tana River differ by a fac-
+tor of �2.7. This constitutes another level of uncertainty for these
+regions and consequently the overall total for Kenya which differs
+by �8% between Low and High estimates.
+
+4. Discussion
+
+4.1. Applicability and interpretation of Model VIII
+
+This study used mixed-effects modelling to account for both
+species and site variability in the allometric relationship for man-
+groves producing a generic equation for Kenyan mangroves and a
+set of species-site specific equations. The procedure for uncertainty
+propagation employed in the current study ensures that estimates
+of AGB at different spatial scales are accompanied by a realistic
+measure of the total uncertainty. It is important to note that
+although mangroves have been used as a case study here, the kind
+of models and methodologies presented can be regarded as broadly
+applicable to forests in general.
+
+The practical application of the equations developed in the cur-
+rent study is dependent on the target of inference. The set of spe-
+cies-site specific equations are only applicable to four species
+within the Gazi Bay region and simulations using these equations
+account for the uncertainty in predicting the AGB of a new tree
+within a pre-existing group. In contrast, the generic equation has
+a much broader application as it can be used to predict the AGB
+of new trees where there is no pre-existing knowledge of the spe-
+cific species-site allometric relationship: the most commonly
+encountered scenario in practical biomass studies. The generic
+equation offers a far better solution than simply disregarding the
+additional uncertainty involved in applying an equation that was
+perhaps derived for a different species and/or a different site.
+
+The predictions of AGB from model VIII show good correspon-
+dence with the observed values of AGB used to fit the model
+(Fig. 3). Perhaps more importantly, the median fitted values of
+AGB (±95% PIs) from model VIII show good overall correspon-
+dence with the observed values of AGB for trees within the
+Mozambican validation dataset (Fig. 6). This would seem to indi-
+cate that accounting for variance due to species and site effects in
+biomass regression models is important if they are to be used
+effectively elsewhere to predict AGB. Indeed, a large proportion
+of the total variance in model VIII was attributed to between-
+group variability in the coefficients of the predictive variables
+diameter and height (Fig. 4). Both species and site specificity in
+the allometric relationship for mangroves is indicated by the
+group-specific random effects (Fig. 5). Most groups show some
+overlap in predicted random effects but there are some differ-
+ences between species at the same site (species_Gaz groups)
+and between sites for the same species (Rhiz_site groups). How-
+ever the use of a combined species_site grouping factor precludes
+any conclusion regarding the relative contribution of each factor
+(species and site) to the total variance in the allometric relation-
+ship. It is also not possible to formally assess the potential contri-
+bution of a study effect to the predicted random effects in this
+
+
+
