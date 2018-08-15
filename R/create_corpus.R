@@ -3,9 +3,9 @@
 #' @keywords creation
 #' @export
 #' @examples
-#' make_corpus()
+#' create_corpus()
 
-make_corpus <- function(folder) {
+create_corpus <- function(folder) {
   library(magrittr)
 
   added_words <- c("rangelands", "ers", "sra", "reverse", "operationalize", "operationalized", "pastoralism", "hydropower", "landuse", "smallscale", "largescale", "percent",

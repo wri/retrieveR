@@ -17,12 +17,15 @@ Imports:
 	combinat,
 	magrittr,
 	rmarkdown,
-	reticulate,
 	tabulizer,
 	rtika,
 	cld2,
 	hunspell,
-	tidyr
+	tidyr,
+	knitr,
+	htmltools,
+	base64enc,
+	markdown
 Suggests: knitr,
     rmarkdown
 VignetteBuilder: knitr
