@@ -1,0 +1,204 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Propagating uncertainty to estimates of above-ground biomass for Kenyan mangroves: A scaling procedure from tree to landscape level
+
+
+982 R. Cohen et al. / Forest Ecology and Management 310 (2013) 968–982
+Pendleton, L., Donato, D.C., Murray, B.C., Crooks, S., Jenkins, W.A., Sifleet, S., Craft, C.,
+Fourqurean, J.W., Kauffman, J.B., Marba, N., Megonigal, P., Pidgeon, E., Herr, D.,
+Gordon, D., Baldera, A., 2012. Estimating global ‘‘Blue Carbon’’ emissions from
+conversion and degradation of vegetated coastal ecosystems. PLoS ONE 7.
+
+Phillips, D.L., Brown, S.L., Schroeder, P.E., Birdsey, R.A., 2000. Toward error
+analysis of large-scale forest carbon budgets. Global Ecol. Biogeogr. 9, 305–
+313.
+
+Pinheiro, J.C., Bates, D.M., 2000. Mixed-effects Models in S and S-PLUS. Springer-
+Verlag, New York.
+
+Poungparn, S., Komiyama, A., Patanaponpaipoon, P., Jintana, V., Sangtiean, T.,
+Tanapermpool, P., Piriyayota, S., Maknual, C., Kato, S., 2002. Site-independent
+allometric relationships for estimating above-ground weights of mangroves.
+TROPICS 12, 147–158.
+
+Primavera, J.H., 2005. GLOBAL VOICES OF SCIENCE: mangroves, fishponds, and the
+quest for sustainability. Science 310, 57–59.
+
+Rideout, A., Joshi, N., Viergever, K., Huxham, M., Briers, R.A., 2013. Making
+predictions of mangrove deforestation: a comparison of two methods in
+Kenya. Glob. Change Biol. http://dx.doi.org/10.1111/gcb.12176.
+
+Ryan, C.M., 2009. Carbon cycling, fire and phenology in a tropical savanna woodland
+in Nhambita, Mozambique. Ph.D. Thesis. University of Edinburgh, Edinburgh,
+UK.
+
+Siikamaki, J., Sanchirico, J.N., Jardine, S.L., 2012. Global economic potential for
+reducing carbon dioxide emissions from mangrove loss. PNAS 109, 14369–
+14374.
+
+Slim, F.J., Gwada, P.M., Kodjo, M., Hemminga, M.A., 1996. Biomass and litterfall of
+Ceriops tagal and Rhizophora mucronata in the mangrove forest of Gazi Bay,
+Kenya. Mar. Freshwater Res. 47, 999–1007.
+
+Soares, M.L.G., Schaeffer-Novelli, Y., 2005. Above-ground biomass of mangrove
+species. I. Analysis of models. Estuar. Coast. Shelf Sci. 65, 1–18.
+Steele, F., 2008. Introduction to multilevel modelling concepts: module 5.
+University of Bristol Centre for Multilevel Modelling: [online] Learning
+Environment for Multilevel Methodology and Applications (LEMMA) <http://
+www.bristol.ac.uk/cmm/>.
+
+Steinke, T.D., Ward, C.J., Rajh, A., 1995. Forest structure and biomass of mangroves
+in the Mgeni Estuary, South-Africa. Hydrobiologia 295, 159–166.
+
+Tamooh, F., Kairo, J.G., Huxham, M., Kirui, B., Mencuccini, M., Karachi, M., 2009.
+Biomass accumulation in a rehabilitated mangrove forest at Gazi Bay. In:
+Hoorweg, J., Muthiga, N. (Eds.), African Studies Collection, vol. 20. African
+Studies Centre, Leiden, pp. 138–146.
+
+Valiela, I., Bowen, J.L., York, J.K., 2001. Mangrove forests: one of the world’s
+threatened major tropical environments. Bioscience 51, 807–815.
+
+van der Werf, G.R., Morton, D.C., DeFries, R.S., Olivier, J.G.J., Kasibhatla, P.S., Jackson,
+R.B., Collatz, G.J., Randerson, J.T., 2009. CO2 emissions from forest loss. Nat.
+Geosci. 2, 737–738.
+
+Wickramasinghe, S., Borin, M., Kotagama, S.W., Cochard, R., Anceno, A.J., Shipin,
+O.V., 2009. Multi-functional pollution mitigation in a rehabilitated mangrove
+conservation area. Ecol. Eng. 35, 898–907.
+
+World Resources Institute. Poverty and ecosystems: Kenya GIS. <http://
+www.wri.org/>.
+
+Wutzler, T., Wirth, C., Schumacher, J., 2008. Generic biomass functions for Common
+beech (Fagus sylvatica) in Central Europe: predictions and components of
+uncertainty. Can. J. For. Res. 38, 1661–1675.
+
+Zhang, K.Q., Liu, H.Q., Li, Y.P., Xu, H.Z., Shen, J., Rhome, J., Smith, T.J., 2012. The role of
+mangroves in attenuating storm surges. Estuar. Coast. Shelf Sci. 102, 11–23.
+
+Zianis, D., 2008. Predicting mean aboveground forest biomass and its associated
+variance. For. Ecol. Manage. 256, 1400–1407.
+
+Zianis, D., Mencuccini, M., 2004. On simplifying allometric analyses of forest
+biomass. For. Ecol. Manage. 187, 311–332.
+
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0235
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0235
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0235
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0235
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0240
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0240
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0240
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0245
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0245
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0250
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0250
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0250
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0250
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0255
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0255
+http://dx.doi.org/10.1111/gcb.12176
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0265
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0265
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0265
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0270
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0270
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0270
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0275
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0275
+http://www.bristol.ac.uk/cmm/
+http://www.bristol.ac.uk/cmm/
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0280
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0280
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0285
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0285
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0285
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0285
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0290
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0290
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0295
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0295
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0295
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0295
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0300
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0300
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0300
+http://www.wri.org/
+http://www.wri.org/
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0305
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0305
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0305
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0310
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0310
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0315
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0315
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0320
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0320
+
+

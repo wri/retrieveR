@@ -1,0 +1,407 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Propagating uncertainty to estimates of above-ground biomass for Kenyan mangroves: A scaling procedure from tree to landscape level
+
+
+R. Cohen et al. / Forest Ecology and Management 310 (2013) 968–982 981
+Mwache was supported by the WIOMSA-MASMA regional project
+on ‘‘Resilience of mangroves and dependent communities in the
+WIO region to climate change’’, Grant No: MASMA/CC/2010/08.
+Satellite imagery was provided by Spot Image through the Planet
+Action initiative as part of a larger project funded by the Ecosystem
+Services for Poverty Alleviation (ESPA) programme [under the Swa-
+hili Seas NE/I003401/1 project]. The ESPA programme is funded by
+the Department for International Development (DFID), the Eco-
+nomic and Social Research Council (ESRC) and the Natural Environ-
+ment Research Council (NERC) of the UK. Additional SPOT imagery
+was provided under the European Space Agency (ESA) Category-1
+scheme (Project ID: 8177). All processing of satellite imagery was
+carried out by Dr. Karin Viergever at ecometrica (Edinburgh, UK)
+and Neha Joshi to whom we are very grateful for lending their
+expertise. We wish to thank all those involved for their hard work
+in collecting the inventory data for the current study, in particular
+Mr Bernard Kivyatu. Many thanks to Mr Luke Smallman (Univer-
+sity of Edinburgh, UK) for help with programming in R and to Dr
+Giles T. Innocent (Biomathematics and Statistics Scotland (BioSS))
+for providing statistical advice. Finally, we wish to thank two anon-
+ymous reviewers for their comments and suggestions for improve-
+ment to the manuscript.
+References
+
+Aburto-Oropeza, O., Ezcurra, E., Danemann, G., Valdez, V., Murray, J., Sala, E., 2008.
+Mangroves in the Gulf of California increase fishery yields. PNAS 105, 10456–
+10459.
+
+Akaike, H., 1987. Factor analysis and AIC. Psychometrika 52, 317–332.
+Alongi, D.M., 2002. Present state and future of the world’s mangrove forests.
+
+Environ. Conserv. 29, 331–349.
+Amarasinghe, M.D., Balasubramaniam, S., 1992. Structural properties of two types
+
+of mangrove stands on the northwestern coast of Sri Lanka. Hydrobiologia 247,
+17–27.
+
+Bates, D., Maechler, M., Bolker, B., 2011. lme4: Linear mixed-effects models using S4
+classes. R package version 0.999375-42. <http://CRAN.R-project.org/
+package=lme4>.
+
+Bosire, J.O., Bandeira, S., Rafael, J., unpublished results. Coastal climate change
+mitigation and adaptation through REDD+ carbon programs in mangroves in
+Mozambique: pilot in the Zambezi Delta. Determination of carbon stocks
+through localized allometric equations component. WWF report.
+
+Bouillon, S., Borges, A.V., Castaneda-Moya, E., Diele, K., Dittmar, T., Duke, N.C.,
+Kristensen, E., Lee, S.Y., Marchand, C., Middelburg, J.J., Rivera-Monroy, V.H.,
+Smith, T.J., Twilley, R.R., 2008. Mangrove production and carbon sinks: a
+revision of global budget estimates. Global Biogeochem. Cycles 22.
+
+Brown, S., 2002. Measuring carbon in forests: current status and future challenges.
+Environ. Pollut. 116, 363–372.
+
+Brown, S., Gillespie, A.J.R., Lugo, A.E., 1989. Biomass estimation methods for tropical
+forests with applications to forest inventory data. For. Sci. 35, 881–902.
+
+Chave, J., Condit, R., Salomon, A., Hernandez, A., Lao, S., Perez, R., 2004. Error
+propagation and scaling for tropical forest biomass estimates. Philos. Trans. Roy.
+Soc. B 359, 409–420.
+
+Chave, J., Andalo, C., Brown, S., Cairns, M.A., Chambers, J.Q., Eamus, D., Fölster, H.,
+Fromard, F., Higuchi, N., Kira, T., Lescure, J.P., Nelson, B.W., Ogawa, H., Puig, H.,
+Riéra, B., Yamakura, T., 2005. Tree allometry and improved estimation of carbon
+stocks and balance in tropical forests. Oecologia 145, 87–99.
+
+Chmura, G.L., Anisfeld, S.C., Cahoon, D.R., Lynch, J.C., 2003. Global carbon
+sequestration in tidal, saline wetland soils. Global Biogeochem. Cycles 17.
+
+Clough, B.F., Scott, K., 1989. Allometric relationships for estimating above-ground
+biomass in 6 mangrove species. For. Ecol. Manage. 27, 117–127.
+
+Clough, B.F., Dixon, P., Dalhaus, O., 1997. Allometric relationships for estimating
+biomass in multi-stemmed mangrove trees. Aust. J. Bot. 45, 1023–1031.
+
+Dahdouh-Guebas, F., Mathenge, C., Kairo, J.G., Koedam, N., 2000. Utilization of
+mangrove wood products around Mida Creek (Kenya) amongst subsistence and
+commercial users. Econ. Bot. 54, 513–527.
+
+Dietze, M.C., Wolosin, M.S., Clark, J.S., 2008. Capturing diversity and interspecific
+variability in allometries: a hierarchical approach. For. Ecol. Manage. 256,
+1939–1948.
+
+Donato, D.C., Kauffman, J.B., Murdiyarso, D., Kurnianto, S., Stidham, M., Kanninen,
+M., 2011. Mangroves among the most carbon-rich forests in the tropics. Nat.
+Geosci. 4, 293–297.
+
+Donato, D.C., Kauffman, J.B., Mackenzie, R.A., Ainsworth, A., Pfleeger, A.Z., 2012.
+Whole-island carbon stocks in the tropical Pacific: implications for mangrove
+conservation and upland restoration. J. Environ. Manage. 97, 89–96.
+
+Duarte, C.M., Middelburg, J.J., Caraco, N., 2005. Major role of marine vegetation on
+the oceanic carbon cycle. Biogeosciences 2, 1–8.
+
+Fatoyinbo, T.E., Simard, M., Washington-Allen, R.A., Shugart, H.H., 2008. Landscape-
+scale extent, height, biomass, and carbon estimation of Mozambique’s
+mangrove forests with Landsat ETM+ and Shuttle Radar Topography Mission
+elevation data. J. Geophys. Res.-Biogeo. 113.
+
+Fromard, F., Puig, H., Mougin, E., Marty, G., Betoulle, J.L., Cadamuro, L., 1998.
+Structure, above-ground biomass and dynamics of mangrove ecosystems: new
+data from French Guiana. Oecologia 115, 39–53.
+
+Gang, P.O., Agatsiva, J.L., 1992. The current status of mangroves along the Kenyan
+coast – a case-study of Mida Creek mangroves based on remote-sensing.
+Hydrobiologia 247, 29–36.
+
+Gelman, A., Hill, J., 2007. Data Analysis Using Regression and Multilevel/
+Hierarchical Models. Cambridge University Press, New York.
+
+Gelman, A., Pardoe, L., 2006. Bayesian measures of explained variance and pooling
+in multilevel (hierarchical) models. Technometrics 48, 241–251.
+
+Giri, C., Ochieng, E., Tieszen, L.L., Zhu, Z., Singh, A., Loveland, T., Masek, J., Duke, N.,
+2011. Status and distribution of mangrove forests of the world using earth
+observation satellite data. Global Ecol. Biogeogr. 20, 154–159.
+
+Gregoire, T.G., Zedaker, S.M., Nicholas, N.S., 1990. Modeling relative error in stem
+basal area estimates. Can. J. For. Res. 20, 496–502.
+
+Heath, L.S., Smith, J.E., 2000. An assessment of uncertainty in forest carbon budget
+projections. Environ. Sci. Policy 3, 73–82.
+
+Held, A., Ticehurst, C., Lymburner, L., Williams, N., 2003. High resolution mapping of
+tropical mangrove ecosystems using hyperspectral and radar remote sensing.
+Int. J. Remote Sens. 24, 2739–2759.
+
+Hogarth, P.J., 1999. The Biology of Mangroves. Oxford University Press, Oxford.
+IPCC, 2006. Guidelines for National Greenhouse Gas Inventories. IGES, Japan.
+Johnson, J.B., Omland, K.S., 2004. Model selection in ecology and evolution. Trends
+
+Ecol. Evol. 19, 101–108.
+Kaino, J., 2013. Structure, biomass and cover change of a peri-urban mangrove
+
+forest in Kenya: a case study of Mwache Creek, Mombasa. MSc Thesis. Egerton
+University, Kenya.
+
+Kairo, J.G., Dahdouh-Guebas, F., Gwada, P.O., Ochieng, C., Koedam, N., 2002.
+Regeneration status of mangrove forests in Mida Creek, Kenya: a
+compromised or secured future? Ambio 31, 562–568.
+
+Kairo, J.G., Lang’at, J.K.S., Dahdouh-Guebas, F., Bosire, J., Karachi, M., 2008. Structural
+development and productivity of replanted mangrove plantations in Kenya. For.
+Ecol. Manage. 255, 2670–2677.
+
+Kairo, J.G., Bosire, J., Langat, J., Kirui, B., Koedam, N., 2009. Allometry and biomass
+distribution in replanted mangrove plantations at Gazi Bay, Kenya. Aquat.
+Conserv.-Mar. Freshw. Ecosyst. 19, S63–S69.
+
+Kathiresan, K., Bingham, B.L., 2001. Biology of mangroves and mangrove
+ecosystems. Adv. Mar. Biol. 40, 81–251.
+
+Kauffman, J.B., Heider, C., Cole, T.G., Dwire, K.A., Donato, D.C., 2011. Ecosystem
+carbon stocks of Micronesian mangrove forests. Wetlands 31, 343–352.
+
+Ketterings, Q.M., Coe, R., van Noordwijk, M., Ambagau, Y., Palm, C.A., 2001. Reducing
+uncertainty in the use of allometric biomass equations for predicting above-
+ground tree biomass in mixed secondary forests. For. Ecol. Manage. 146, 199–209.
+
+Kirui, B., 2006. Allometric relations for estimating aboveground biomass of
+naturally growing mangroves, Avicennia marina FORSK (VIERH). and
+Rhizophora mucronata LAM. along the Kenya coast. MSc. Thesis. Egerton
+University, Kenya.
+
+Kirui, B., Kairo, J.G., Karachi, M., 2006. Allometric equations for estimating above
+ground biomass of Rhizophora mucronata Lamk. (Rhizophoraceae) mangroves at
+Gazi Bay, Kenya. WIOJMS 5, 27–34.
+
+Kirui, K.B., Kairo, J.G., Bosire, J., Viergever, K.M., Rudra, S., Huxham, M., Briers, R.A.,
+2012. Mapping of mangrove forest land cover change along the Kenya coastline
+using Landsat imagery. Ocean Coast. Manage. http://dx.doi.org/10.1016/
+j.ocecoaman.2011.12.004.
+
+Kitheka, J.U., Ongwenyi, G.S., Mavuti, K.M., 2002. Dynamics of suspended sediment
+exchange and transport in a degraded mangrove creek in Kenya. Ambio 31,
+580–587.
+
+Komiyama, A., Jintana, V., Sangtiean, T., Kato, S., 2002. A common allometric
+equation for predicting stem weight of mangroves growing in secondary
+forests. Ecol. Res. 17, 415–418.
+
+Komiyama, A., Poungparn, S., Kato, S., 2005. Common allometric equations for
+estimating the tree weight of mangroves. J. Trop. Ecol. 21, 471–477.
+
+Komiyama, A., Ong, J.E., Poungparn, S., 2008. Allometry, biomass, and productivity
+of mangrove forests: a review. Aquat. Bot. 89, 128–137.
+
+Kuenzer, C., Bluemel, A., Gebhardt, S., Quoc, T.V., Dech, S., 2011. Remote sensing of
+mangrove ecosystems: a review. Remote Sensing 3, 878–928.
+
+Lang’at, J.K.S., 2008. Assessment of forest structure, regeneration and biomass
+accumulation of replanted mangroves in Kenya. MSc. Thesis. Egerton
+University, Kenya.
+
+Lucas, R.M., Mitchell, A.L., Rosenqvist, A., Proisy, C., Melius, A., Ticehurst, C., 2007.
+The potential of L-band SAR for quantifying mangrove characteristics and
+change: case studies from the tropics. Aquat. Conserv.-Mar. Freshw. Ecosyst. 17,
+245–264.
+
+Maniatis, D., Mollicone, D., 2010. Options for sampling and stratification for national
+forest inventories to implement REDD+ under the UNFCCC. Carbon Balance
+Manage. 5, 9.
+
+McKee, K.L., Cahoon, D.R., Feller, I.C., 2007. Caribbean mangroves adjust to rising sea
+level through biotic controls on change in soil elevation. Global Ecol. Biogeogr.
+16, 545–556.
+
+Okello, J.A., unpublished results. Mangrove wood formation as a basis of sustainable
+wood production in its climate context: The effect of increased sediment
+accumulation. Ph.D Thesis. Vrije Universiteit, Belgium.
+
+Parresol, B.R., 1999. Assessing tree and stand biomass: a review with examples and
+critical comparisons. For. Sci. 45, 573–593.
+
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0005
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0005
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0005
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0010
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0015
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0015
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0020
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0020
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0020
+http://www.CRAN.R-project.org/package=lme4
+http://www.CRAN.R-project.org/package=lme4
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0025
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0025
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0025
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0025
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0030
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0030
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0035
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0035
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0040
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0040
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0040
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0045
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0045
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0045
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0045
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0050
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0050
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0055
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0055
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0060
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0060
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0065
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0065
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0065
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0070
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0070
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0070
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0075
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0075
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0075
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0080
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0080
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0080
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0085
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0085
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0090
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0090
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0090
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0090
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0095
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0095
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0095
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0100
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0100
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0100
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0105
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0105
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0110
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0110
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0115
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0115
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0115
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0120
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0120
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0125
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0125
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0130
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0130
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0130
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0135
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0140
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0145
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0145
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0150
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0150
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0150
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0155
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0155
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0155
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0160
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0160
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0160
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0165
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0165
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0170
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0170
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0175
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0175
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0175
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0180
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0180
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0180
+http://dx.doi.org/10.1016/j.ocecoaman.2011.12.004
+http://dx.doi.org/10.1016/j.ocecoaman.2011.12.004
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0190
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0190
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0190
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0195
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0195
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0195
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0200
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0200
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0205
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0205
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0210
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0210
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0215
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0215
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0215
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0215
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0220
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0220
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0220
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0225
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0225
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0225
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0230
+http://refhub.elsevier.com/S0378-1127(13)00661-0/h0230
+
+

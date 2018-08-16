@@ -1,0 +1,170 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Using markets to leverage investment in forest and landscape restoration in the tropics
+
+
+Contents lists available at ScienceDirect
+
+Forest Policy and Economics
+
+journal homepage: www.elsevier.com/locate/forpol
+
+Using markets to leverage investment in forest and landscape restoration in
+the tropics
+
+Pedro H.S. Brancaliona,⁎, David Lambb,c, Eliane Ceccond, Doug Bouchere, John Herbohnc,
+Bernardo Strassburgf,g, David P. Edwardsh,⁎
+
+a Department of Forest Sciences, “Luiz de Queiroz” College of Agriculture, University of São Paulo, Av. Pádua Dias 11, Piracicaba, SP, 13418-260, Brazil
+b School of Agriculture and Food Sciences, Centre for Mined Land Rehabilitation, University of Queensland, Queensland, Australia
+c Tropical Forest and People Research Centre, University of the Sunshine Coast, Maroochydore, Queensland, Australia
+d Regional Center of Multidisciplinary Research, National Autonomous University of Mexico, Mexico City, Mexico
+e Climate and Energy Program, Union of Concerned Scientists, 1825 K Street NW, Washington, DC 20006, USA
+f International Institute for Sustainability, Estrada Dona Castorina 124, 22460-320, Rio de Janeiro, Brazil
+g Rio Conservation and Sustainability Science Centre, Department of Geography and the Environment, Pontificia Universidade Catolica, 22453-900, Rio de Janeiro, Brazil
+h Department of Animal and Plant Sciences, University of Sheffield, Sheffield S10 2TN, United Kingdom
+
+A R T I C L E I N F O
+
+Keywords:
+Ecological economics
+Ecosystem services
+Forest governance
+Large-scale restoration
+Tropical forest restoration
+Tropical reforestation
+Wood production
+
+A B S T R A C T
+
+Governments and international organizations are promoting or drafting programs to undertake Forest and
+Landscape Restoration (FLR) of hundreds of millions of hectares of degraded tropical landscapes to support the
+provision of ecosystem goods and services. But the challenge to recover economic and ecological functionality
+could be far beyond their financial capacity. Here, we explore the potential of markets and their interaction with
+policies to leverage investment for FLR in the tropics. We first review the challenges and opportunities of ex-
+ploiting market forces for FLR, which can be essential for kick-starting the implementation of programs globally.
+We identify four key opportunities for regulating markets to promote FLR: economic mechanisms; technological,
+educational or infrastructural investment; legal and enforcement mechanisms; and market-led standards and
+certification schemes. Finally, we present five pitfalls that may arise when relying on markets to promote FLR.
+Governments will need to play a critical role in establishing appropriate policy frameworks and institutional
+arrangements to leverage investments when market signals are not strong enough to initiate changes in tradi-
+tional land use or farming practices, or to regulate reforestation activities when market signals become so strong
+that they overwhelm all other land-use activities, leading to a transformed and homogenized landscape.
+
+1. The scale of restoration potential in the tropics
+
+The extent of degraded land around the world poses a growing
+concern. Although degradation is used to describe a range of contexts
+(Ghazoul et al., 2015; Gibbs and Salmon, 2015; Hobbs, 2016), wide
+consensus holds that anthropogenic impacts have remarkably changed
+Earth's natural processes and compromised the capacity of ecosystems
+to supply benefits to humanity (Lewis et al., 2015). The short-term
+profits of unsustainable exploitation of natural resources are largely
+uncompensated by the negative economic consequences of longer-term
+restrictions on the capacity of ecosystems to provide goods and services
+to people (Costanza et al., 1997; Balmford et al., 2002). Reducing
+perverse incentives for degrading activities and instead promoting
+those that support ecosystem recovery are thus key issues to be ad-
+dressed by the global economy to provide a better future to all
+
+(Hoekstra and Wiedmann, 2014; Diaz et al., 2015; Newbold et al.,
+2016).
+
+Throughout human history, population densities have normally
+been sufficiently low to ensure that environmental resources are
+available and accessible to people, and that the future provision of
+natural benefits was safeguarded. However, the large expansion of in-
+tensive agriculture, urbanization, and global population in the 20th
+century means that ecosystem goods and services (EGS) are no longer
+freely available for a large share of humans. Harvesting forest products
+from natural ecosystems is no longer an option for supplying the high
+and still growing demand. Land scarcity and concentration of popula-
+tion in large urban centers mean that migration is unable to improve
+access to EGS essential for human wellbeing. Today, large regions of the
+globe face water security risks (Vorosmarty et al., 2010), are threatened
+by climate change (Heltberg et al., 2009), and/or have agricultural
+
+http://dx.doi.org/10.1016/j.forpol.2017.08.009
+Received 30 November 2016; Received in revised form 24 July 2017; Accepted 19 August 2017
+
+⁎ Corresponding authors.
+E-mail addresses: pedrob@usp.br (P.H.S. Brancalion), david.edwards@sheffield.ac.uk (D.P. Edwards).
+
+Forest Policy and Economics 85 (2017) 103–113
+
+1389-9341/ © 2017 Elsevier B.V. All rights reserved.
+
+MARK
+
+http://www.sciencedirect.com/science/journal/13899341
+https://www.elsevier.com/locate/forpol
+http://dx.doi.org/10.1016/j.forpol.2017.08.009
+http://dx.doi.org/10.1016/j.forpol.2017.08.009
+mailto:pedrob@usp.br
+mailto:david.edwards@sheffield.ac.uk
+http://dx.doi.org/10.1016/j.forpol.2017.08.009
+http://crossmark.crossref.org/dialog/?doi=10.1016/j.forpol.2017.08.009&domain=pdf
+
+

@@ -2,7 +2,7 @@
 title: "Workflow for using retrieveR"
 author: "John Brandt"
 date: "`r Sys.Date()`"
-output: rmarkdown::html_vignette
+output: html_document
 vignette: >
   %\VignetteIndexEntry{Workflow}
   %\VignetteEngine{knitr::rmarkdown}
@@ -30,15 +30,15 @@ install_mac()
 download_example()
 ```
 
-```{r, warning = F, message = F, echo=FALSE}
+```{r, warning = F, message = F, echo=FALSE, eval=F}
 corpus <- prep_documents("pdfs")
 ```
 
-```{r, warning = F, message = F, echo = F}
+```{r, warning = F, message = F, echo = F, eval=F}
 create_report(query="land tenure", data = corpus, interactive = F, thresh = 0.51)
 ```
 
 
-```{r, echo=FALSE, warning = F, message = F}
+```{r, echo=FALSE, warning = F, message = F, eval=F}
 htmltools::includeHTML("land_tenure.html")
 ```

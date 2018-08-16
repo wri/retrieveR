@@ -1,0 +1,143 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Propagating uncertainty to estimates of above-ground biomass for Kenyan mangroves: A scaling procedure from tree to landscape level
+
+
+Table 1
+Provenance and summary of the tree harvest dataset used in this study to develop and validate biomass equations for Kenyan mangroves.a
+
+Study Location Forest type Species Stem diameter range (cm) Height range (m) Above-ground biomass (kg DW) Sample size
+
+Lang’at (2008) Ramisi, Kenya Plantation (12 yrs old) Bruguiera gymnorrhiza 1.1–4.8 2.7–6.6 0.5–7.3 15
+Kairo et al. (2008) Kinondo (Gazi Bay), Kenya Plantation (12 yrs old) Rhizophora mucronata 2.4–11.5 3.5–8.9 0.6–68.9 50
+Kirui et al. (2006) Gazi (Gazi Bay), Kenya Natural Rhizophora mucronata 5.7–21.4 4.3–11.3 13.4–269.5 15
+Kirui (2006) Kipini, Kenya Natural Rhizophora mucronata 2.3–23.6 2.8–16.1 0.6–383.7 15
+
+Avicennia marina 2.5–15.8 3.9–11.7 4.6–71.4 28 (19)
+Gazi (Gazi Bay), Kenya Natural Avicennia marina 3.7–21.8 2.1–11.3 7.2–127.3 51 (15)
+
+Tamooh et al. (2009) Gazi (Gazi Bay), Kenya Plantation (6yrs old) Rhizophora mucronata 0.9–6.4 0.8–3.9 0.08–16.2 12
+Kairo et al. (2009) Gazi (Gazi Bay), Kenya Plantationb Avicennia marina 5.2–10.2 4–5.8 6.8–22.5 10
+
+Sonneratia alba 5.3–11.3 4–5 3.8–9.4 10
+Ceriops tagal 5–5.5 1.8–2.6 1.5–6.1 10
+Rhizophora mucronata 3–8 2.8–5 3–25.8 58
+
+Steinke et al. (1995) Mgeni estuary, South Africa Natural Bruguiera gymnorrhiza 3.4–11.5 4.6–13.5 3.2–107.2 12
+Avicennia marina 5.4–9.9 4.9–7.7 5.3–31.9 4
+
+Poungparn et al. (2002) Thailand Natural Sonneratia alba 4.2–12.7 3.4–13.4 3.1–79.3 10
+Bruguiera gymnorrhiza 4.8–33.4 9.2–24.9 8.3–943.5 10
+Rhizophora mucronata 4.7–11.2 6.9–16 7.7–73.7 11
+Xylocarpus granatum 3.7–12.7 4.1–8 3.2–66.8 8
+
+Indonesia Natural Sonneratia alba 6.7–21.7 7.3–22.6 13.1–256 2
+Bruguiera gymnorrhiza 9.7–48.9 11.1–30.6 54.7–1411.1 4
+Xylocarpus granatum 18.6 13.4 162.2 1
+Xylocarpus moluccensis 11.8 13.5 47.4 1
+
+WWF/KMFRI
+(Validation Dataset)
+
+Zambezi Delta, Mozambique Natural Ceriops tagal 5.3–15.4 3.6–6.5 6.55–68.2 3
+Bruguiera gymnorrhiza 5.6–24.6 5.5–8.1 11.7–161.8 4
+Xylocarpus granatum 5.2–14.9 4–7.8 6.7–49 3
+Sonneratia alba 5.9–35 5.9–13.5 8.8–453.4 6
+Avicennia marina 8–28 5.3–13.5 14.9–248 4
+Heritiera littoralis 5–22.5 4.9–9.5 3.9–121.2 3
+
+a Above-ground biomass is given in kg dry weight (kg DW) and includes stem, branch, leaf and prop root (in the case of Rhizophora sp.) components. An exception is the study by Lang’at (2008) where above-ground biomass
+comprises stem weight only. In the study by Kirui (2006) sample sizes for Avicennia sp. are the total number of stems (treated separately during analysis) and numbers in parentheses are the actual number of harvested trees. The
+study by Poungparn et al. (2002) included data sourced from other studies; see original paper for details.
+
+b Plantation age at time of harvest in Kairo et al. (2009) was 5 years old for R. mucronata and S. alba and 8 years old for C. tagal and A. marina.
+
+R
+.Cohen
+
+et
+al./Forest
+
+Ecology
+and
+
+M
+anagem
+
+ent
+310
+
+(2013)
+968–
+
+982
+971
+
+
+

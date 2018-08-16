@@ -1,0 +1,217 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Propagating uncertainty to estimates of above-ground biomass for Kenyan mangroves: A scaling procedure from tree to landscape level
+
+
+980 R. Cohen et al. / Forest Ecology and Management 310 (2013) 968–982
+Gang and Agatsiva (1992) the estimate of AGB from Slim et al.
+(1996) was based on the application of their allometric equation
+to Rhizophora trees within one 20 � 20 m mono-specific plot and
+therefore cannot reasonably be assumed to represent the variabil-
+ity of Rhizophora forest within Gazi Bay. The highest estimate from
+Kirui et al. (2006) is more akin to the level of AGB found in man-
+groves in South East Asia (Komiyama et al., 2008) and it is not clear
+how their mean estimate was derived. In contrast to previous stud-
+ies, this study has focused on providing estimates of mangrove AGB
+at varying spatial scales. This different approach means that the
+estimates provided here are not readily comparable with those
+from previous biomass studies conducted in Kenya. However, to
+facilitate some kind of comparison the outputs of the simulation
+procedure (Section 2.2.4) were sub-set to provide an estimate of
+mean AGB for just Rhizophora forest at Gazi Bay of 134.5 Mg ha�1
+
+(95% PI range 125.1–146.8 Mg ha�1).
+Estimates of biomass density (mean Mg ha�1) at large spatial
+
+scales such as those produced in the current study can be regarded
+as a comparative tool by which to assess the level of AGB at differ-
+ent sites/regions or between countries or forest types. Levels of
+mean AGB have been found to vary considerably between man-
+grove forests across the globe (see review by Komiyama et al.,
+2008) ranging between 31.5 Mg ha�1 (± s.d. 2.9) for pioneer man-
+grove forest in French Guiana (Fromard et al., 1998) to
+536.6 Mg ha�1 (95% CI range 327.6–743.5 Mg ha�1) for mangroves
+in Micronesia (Donato et al., 2012). Such broad-scale variability can
+be attributed to differences in floristic composition, climatic condi-
+tions, hydrology, geomorphology, successional stage and distur-
+bance history (Fromard et al., 1998).
+
+The regional estimates of mean AGB (±95% PI) shown in Fig. 8.
+represent a best attempt at summarising the level of AGB within
+different mangrove regions in Kenya. The two regions with the
+lowest estimated mean AGB were Mtwapa Creek (72.8 Mg ha�1,
+95% PI range 61.4–91.9 Mg ha�1) and Mida Creek (77.1 Mg ha�1,
+95% PI range 69.9–86.2 Mg ha�1) and are comparable to the level
+of AGB (71–85 Mg ha�1) found in mixed mangrove forests domi-
+nated by R. mucronata and A. marina in Sri Lanka (Amarasinghe
+and Balasubramaniam, 1992). The estimate for Mida Creek is
+somewhat lower than expected and could be due to insufficient
+inventory data from this region (n = 14 plots) but it is also likely
+reflective of the level of forest degradation in this area due to illegal
+and poorly managed logging practices (Kairo et al., 2002). The re-
+gion with the highest estimate of mean AGB was Kiunga NMR
+(199.6 Mg ha�1, 95% PI range 178.6–225.3 Mg ha�1). This level of
+AGB is comparable to that reported for mangroves in Micronesia
+(Donato et al., 2012; Kauffman et al., 2011) and mature coastal
+mangroves in French Guiana (Fromard et al., 1998) and exceeds
+the estimate by Donato et al. (2011) of 169.9 Mg ha�1 for oceanic
+mangroves in the Indo-Pacific region.
+
+Although the estimates of AGB produced in this study are statis-
+tically robust, it is important to note the underlying assumption
+that estimates at large spatial scales have been obtained using a
+sample which is representative of the variability in forest compo-
+sition and structure within the area in question (Chave et al.,
+2004). The estimates of mean AGB in this study were derived using
+all available current inventory data for each region. It seems rea-
+sonable to assume that due to the sampling strategy employed
+(stratified random) and the comparatively large sampling effort
+(total number of plots sampled) that the mangrove areas in the
+South of Kenya (Gazi Bay, Mwache, Mtwapa Creek, South Coast
+and Vanga) have been adequately sampled. In addition, the large
+within-region variability in estimates of median AGB at the plot le-
+vel (Fig. 7) would suggest that there has been no sampling bias in
+terms of plot location, for example by preferentially locating plots
+in areas likely to yield high biomass and that the range of possible
+biomass values within each region has been adequately captured.
+The regional estimates for Mida Creek and Lamu District (South
+Lamu and Kiunga) are based on relatively small inventory datasets
+(n = 14 plots in Mida Creek, 25 in South Lamu and 16 in Kiunga)
+due to the larger resource requirement and practical difficulties
+(e.g. accessibility) associated with sampling areas in the North.
+While the sampling strategies employed in these regions (random
+and stratified random) are appropriate from a statistical point of
+view; it is recommended that further data collection is undertaken
+in order to increase sample size and ensure representivity in these
+regions. This is particularly important in the case of Lamu District
+which covers a large geographical area and is worthy of further
+division into smaller sub-regions. For example, the mangroves of
+Dodori Creek (Dodori National Reserve, Lamu District) were not
+sampled in the current study but should probably be considered
+as a distinct mangrove system.
+
+In considering the regional and Kenya-wide estimates of total
+AGB provided in Table 5 it is acknowledged that: (1) the estimates
+of mean AGB (±95% PIs) used in up-scaling are assumed to be
+regionally representative as discussed above and (2) the uncer-
+tainty associated with the estimates of mangrove cover derived
+from the remote sensing data has not been accounted for. Bearing
+in mind these caveats the estimates (±95% PIs) shown in Table 5
+can still be viewed as a useful comparative overview of the level
+of total AGB stocks currently held within each region. There is
+undoubtedly scope for large-scale estimates to be further refined
+in the future. In particular there is a need for current inventory
+data to be collected within the regions Kilifi and Tana River (as de-
+fined in this study) not only to constrain the regional estimates but
+also the Kenya-wide estimate of total AGB. In addition, if and when
+future remote sensing work allows for the detailed mapping of
+mangrove cover and structural characteristics in each region it
+may become possible (and desirable) to produce large-scale esti-
+mates of AGB based on up-scaling by forest strata.
+
+The stratification of forest cover is recommended for the report-
+ing of forest carbon pools (IPCC, 2006) and there are a variety of
+stratification options still under consideration for future REDD
+reporting (Maniatis and Mollicone, 2010). Mangroves are generally
+considered to display species zonation and have traditionally been
+stratified by such ‘zones’ (Hogarth, 1999). However, not all man-
+groves display well-defined patterns of zonation (e.g. Mida Creek)
+and other options for stratification for example based on structural
+characteristics may be more appropriate in some situations. Vari-
+ous remote sensing techniques have been used in recent years to
+map mangroves at fine to large spatial scales (see review by
+Kuenzer et al., 2011). Such techniques offer the potential for fast
+and repeatable estimates of cover, and in the case of radar remote
+sensing above-ground biomass to be made based on mangrove
+structural parameters (Fatoyinbo et al., 2008; Held et al., 2003;
+Lucas et al., 2007).
+
+It is anticipated that if required and pending any further collec-
+tion of new harvest data, the model and methodology for uncer-
+tainty propagation presented in the current study could be used
+to produce estimates of mean AGB for use in future up-scaling
+exercises based on some stratification system with only minor
+modification to the existing procedures.
+
+Acknowledgements
+
+This research was funded by the Natural Environment Research
+Council (NERC), UK to which we are very grateful. We are also very
+grateful for the support provided by our collaborating partner Ken-
+ya Marine and Fisheries Research Institute (KMFRI) and additional
+support in the field provided by Kenya Forest Service (KFS). Many
+thanks to all those who provided the raw data used for model
+development and application and to WWF, Mozambique/KMFRI
+for providing us with a validation dataset. Data collection in
+
+acer
+Highlight
+
+
+

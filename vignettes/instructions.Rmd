@@ -1,0 +1,73 @@
+---
+title: "Workflow for installing and using retrieveR"
+author: "John Brandt"
+date: "8/16/2018"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Info
+
+This vignette walks the user through applying the neural embedding NLP approach to a novel set of PDF documents. We use a sample corpus of eight peer-reviewed academic journal articles about restoration. 
+
+
+## Installation instructions
+
+R can be downloaded from [this link](https://cran.r-project.org/bin/windows/base/). Once it is downloaded, open up the 32-bit version (i386, as WRI computers only seem to have 32-bit version of Java). Then, you can proceed to installing the package by running the following lines of code. Copy and paste them one at a time and press enter.
+
+```{r, eval = F}
+install.packages("devtools")
+library(devtools)
+install_github("wri/retrieveR")
+```
+
+## Downloading data
+
+Next, we load up the package into R using `library`. Depending on your operating system, you then need to run either `install_mac` or `install_windows` - these functions will get the Java dependencies to extract text from images, as well as install the necessary components to run neural networks.
+
+Finally, the `download_example` function will 
+
+```{r, eval=F}
+library(retrieveR)
+install_mac()
+install_windows()
+download_example()
+```
+
+## Prepping documents for querying
+
+The `prep_documents` function will strip text from the PDFs, clean up the results, and calculate neural weights. These can be turned off by specifying `ocr = F`, `clean = F`, or `weights = F`. The function takes a path to the folder of documents - in this case they are stored in a folder called `pdfs`. This pathing is local to the directory that R is running in - this can be printed with `getwd()` and changed with `setwd()`. 
+
+```{r, warning = F, message = F, eval=F}
+corpus <- prep_documents("pdfs")
+```
+
+## Querying documents for paragraphs related to land tenure
+
+The `create_report` function takes the following arguments:
+
+1. query: Query phrase within quotations.
+2. data: name that the output of `prep_documents` is stored to.
+
+
+```{r, eval = F}
+create_report(query = "land tenure", data = corpus)
+```
+
+```{r, warning = F, message = F, echo = F, eval=F}
+create_report(query="land tenure", data = corpus, interactive = F, thresh = 0.51)
+```
+
+## Results
+
+The results of the `create_report` function are stored in an html file in the working directory. I have included the results within this file for ease of example. 
+
+```{r, echo=FALSE, warning = F, message = F}
+htmltools::includeHTML("land_tenure.html")
+```

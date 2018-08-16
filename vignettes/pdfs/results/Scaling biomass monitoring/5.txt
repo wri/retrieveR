@@ -1,0 +1,220 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Propagating uncertainty to estimates of above-ground biomass for Kenyan mangroves: A scaling procedure from tree to landscape level
+
+
+Mombasa
+
+Malindi
+
+Lamu Island
+
+Pate Island
+
+Mida Creek
+
+Gazi Bay
+
+Mtwapa Creek
+
+Mwache
+
+Kiunga NMR
+
+South Coast
+
+41°0’0"E
+
+41°0’0"E
+
+40°0’0"E
+
+40°0’0"E
+
+2°
+0’
+
+0"
+S
+
+2°
+0’
+
+0"
+S
+
+3°
+0’
+
+0"
+S
+
+3°
+0’
+
+0"
+S
+
+4°
+0’
+
+0"
+S
+
+4°
+0’
+
+0"
+S
+
+5°
+0’
+
+0"
+S
+
+5°
+0’
+
+0"
+S
+
+0 20 4010 Kilometers
+
+Kenya
+
+Vanga
+
+Tana River
+
+Kilifi
+
+Mangrove regions
+
+Regions not featured in the inventory dataset
+
+Main urban areas
+
+West Indian Ocean
+
+Fig. 1. Kenya coastline showing areas of mangrove forest where inventory data has been collected (dots). Inventory data collected within the general area of Lamu Island and
+Pate Island constitute the ‘‘South Lamu’’ study region. Kiunga NMR stands for Kiunga National Marine Reserve. Please note that the mangrove area defined as the "Tana River"
+region in this study spans the official districts of Kilifi and Tana River in Kenya and encompasses the mangroves just North of Malindi to the border of Lamu District. Kenya GIS
+base-map and mangrove shape-file obtained from the World Resources Institute (available at: <http://www.wri.org/>).
+
+972 R. Cohen et al. / Forest Ecology and Management 310 (2013) 968–982
+factor due to the unbalanced nature of the harvest dataset which
+has insufficient replication of species data at each site to allow sep-
+aration of any possible variation in AGB attributable solely to either
+factor. In addition, Zianis and Mencuccini (2004) showed that
+within-species variability in allometric coefficients across sites is
+just as large as the variability in coefficients across species. Given
+that the harvest dataset comprises data from various studies any
+differences between the species_site groupings could also poten-
+tially incorporate an effect of study origin. However, harvest meth-
+odologies are broadly consistent across studies therefore it is likely
+the case that the random effects predictions are largely reflective of
+the differences across groups due to species and site effects.
+
+Linear mixed-effects models were fitted using the lme4 package
+within R statistical software version 2.15.0 (Bates et al., (2011),
+http://CRAN.R-project.org/package=lme4). Prior to model fitting
+the logged predictive variables were centred at their mean to re-
+duce any correlation between intercept and slope coefficients.
+Models were initially fitted using maximum likelihood (ML) esti-
+mation and compared using the Deviance Information Criterion
+(DIC) as outlined in Gelman and Hill (2007). In order to identify
+the best fixed and random effects terms for inclusion in the final
+model eight candidate models were fitted to the data (Table 2).
+Model notation follows that of Gelman and Hill (2007) where ln(yi)
+is the response (AGB in this study) for the ith individual, a is the
+intercept, b represents the coefficients for the predictive variables
+diameter (ln(xi)) and height (ln(zi)) and r2y is the residual or the
+unexplained ‘within-group’ variance. The subscript term j[i] in-
+dexes the ith individual within the jth group and denotes where
+the intercept or a coefficient has been allowed to vary across
+groups (j = 1, ..., J) as a random effect.
+
+Model I was the simplest model and included a random effects
+term for the intercept only whilst the slopes of both predictive
+variables were kept constant across groups (Table 2). The inclusion
+of a random effects term for ln(xi) and ln(zi) coefficients in models
+II and III respectively led to a reduction in the DIC value in compar-
+ison with model I. In order to ascertain if both diameter and height
+were needed as predictive variables within the model; models IV
+and V excluded each variable as a fixed effect (and hence as a ran-
+dom effect) in turn. As shown in Table 2 there is clearly a need to
+include both variables as fixed effects within the model. This is
+especially evident in the case of model V where exclusion of diam-
+eter from the model had a large impact on the DIC value. Models
+
+http://www.CRAN.R-project.org/package=lme4
+http://www.wri.org/
+
+

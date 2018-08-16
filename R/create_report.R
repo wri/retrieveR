@@ -232,6 +232,8 @@ create_report <- function(country=NULL, query, data, embeddings = "embeddings.bi
     cat("---", paste0('title: ', title), paste0('subtitle: Text extracted from ', target_country, ' documents'), "output:", "pdf_document:", "fig_caption: yes", "---", "!['Why won't this caption show up?'](plot1.png)", my_text, sep="  \n", file=filename)
     #rmarkdown::render(filename, rend_type, quiet=T)
     l <- suppressMessages(render_with_widgets(filename))
+    openHTML <- function(x) browseURL(paste0('file://', file.path(getwd(), x)))
+    openHTML(filename)
     file.remove(filename) #cleanup
     write.csv(topn, paste0(country, ".csv"))
     cat("Done \n")

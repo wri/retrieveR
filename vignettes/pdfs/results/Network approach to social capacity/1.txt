@@ -1,0 +1,244 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+A network approach to assessing social capacity for landscape planning: The case of fire-prone forests in Oregon, USA
+
+
+A
+p
+
+A
+
+a
+
+b
+
+c
+
+d
+
+e
+
+h
+
+•
+•
+•
+•
+•
+
+a
+
+A
+R
+R
+A
+A
+
+K
+O
+S
+S
+L
+W
+F
+
+(
+(
+
+h
+0
+0
+
+Landscape and Urban Planning 147 (2016) 18–27
+
+Contents lists available at ScienceDirect
+
+Landscape  and  Urban  Planning
+
+j o ur na l ho me pag e: www.elsev ier .com/ locate / landurbplan
+
+ network  approach  to  assessing  social  capacity  for  landscape
+lanning:  The  case  of  fire-prone  forests  in  Oregon,  USA
+
+.  Paige  Fischera,∗,  Ken  Vance-Borlandb,  Lorien  Jasnyc, Kerry  E.  Grimmd, Susan  Charnleye
+
+School of Natural Resources and Environment, University of Michigan, 440 Church Street, Ann Arbor, MI 48109, United States
+Conservation Planning Institute, United States
+Department of Politics, University of Exeter, United Kingdom
+School of Earth Sciences and Environmental Sustainability, Northern Arizona University, United States
+US Forest Service Pacific Northwest, Research Station, United States
+
+ i g  h  l  i  g  h  t  s
+
+We  analyzed  the  social  network  structure  for  ecoregion-scale  planning.
+Despite  shared  concern  about  wildfire,  organizations  comprised  distinct  networks.
+Organizations  with  different  goals  and  geographic  foci  comprised  distinct  networks.
+Social  network  ties  among  organizations  were  stronger  at  the  sub-ecoregion  scale.
+Network  analysis  can  quantify  social  capacity  for  landscape  planning.
+
+ r  t  i  c  l e  i  n  f  o
+
+rticle history:
+eceived 1 October 2014
+eceived in revised form 13 October 2015
+ccepted 27 October 2015
+vailable online 11 December 2015
+
+eywords:
+rganizational networks
+ocial network analysis
+ocial capital
+andscape planning
+
+ildfire management
+orest restoration
+
+a  b  s  t  r  a  c  t
+
+Management  of  ecological  conditions  and  processes  in  multiownership  landscapes  requires  cooperation
+by  diverse  stakeholder  groups.  The  structure  of  organizational  networks  –  the  extent  to which  networks
+allow  for  interaction  among  organizations  within  and  across  ideological  and  geographic  boundaries  –
+can indicate  potential  opportunities  for cooperation  on  landscape-scale  problems.  In  the  arid  landscapes
+of  the  western  United  States,  where  increasingly  large  wildfires  burn  irrespective  of  property  boundaries
+and  land  designations,  organizations  involved  in  the  restoration  of  forests  and  the protection  of property
+from  wildfire  could  benefit  from  working  together  to share  information  and  coordinate  strategies.  We
+investigated  patterns  of  interaction  among  organizations  concerned  with  increasingly  uncharacteristic
+wildfire  risk  in  the Eastern  Cascades  Ecoregion  of  Oregon  for  evidence  of  structural  conditions  that  create
+opportunity  for  cooperation.  Through  social  network  analysis  of interview  data,  we  found  that  despite
+sharing  concern  about  wildfire  risk  in an  area  with  a  common  set  of  ecological  conditions,  organizations
+with  forest  restoration  and  fire  protection  goals  comprised  distinct  networks,  as  did  organizations  that
+
+focused  on  different  geographic  areas  of  the  ecoregion.  When  interpreted  through  the  lens  of social  capital
+and  organizational  theory  these  findings  raise  questions  about  the  extent  to  which  the  structure  of  the
+organizational  network  reflects  capacity  to address  wildfire  risk  in fire-prone  forests  on  the ecoregion-
+scale.  This  study  provides  insights  on the  utility  of  a structural  approach  for  investigating  social  capacity
+for  landscape-scale  planning.
+
+©  2015  The  Authors.  Published  by  Elsevier  B.V. This  is  an  open  access  article  under  the  CC  BY-NC-ND
+∗ Corresponding author. Tel.: +1 734 763 3830.
+E-mail addresses: apfisch@umich.edu (A.P. Fischer), kenvb@consplan.org
+
+K. Vance-Borland), L.Jasny@exeter.ac.uk (L. Jasny), kerry.grimm@nau.edu
+K.E. Grimm), scharnley@fs.fed.us (S. Charnley).
+
+ttp://dx.doi.org/10.1016/j.landurbplan.2015.10.006
+169-2046/© 2015 The Authors. Published by Elsevier B.V. This is an open access article 
+/).
+license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+
+1. Introduction
+
+The need to plan natural resources management at the land-
+scape scale is well-recognized because many environmental
+
+processes occur across large areas (Knight & Landres, 1998). The
+probability and potential severity of a wildfire, for example, is a
+function of the composition and distribution of flammable vegeta-
+tion sometimes quite distant from the location of a forested stand
+
+under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.
+
+dx.doi.org/10.1016/j.landurbplan.2015.10.006
+http://www.sciencedirect.com/science/journal/01692046
+http://www.elsevier.com/locate/landurbplan
+http://crossmark.crossref.org/dialog/?doi=10.1016/j.landurbplan.2015.10.006&domain=pdf
+http://creativecommons.org/licenses/by-nc-nd/4.0/
+http://creativecommons.org/licenses/by-nc-nd/4.0/
+http://creativecommons.org/licenses/by-nc-nd/4.0/
+http://creativecommons.org/licenses/by-nc-nd/4.0/
+http://creativecommons.org/licenses/by-nc-nd/4.0/
+http://creativecommons.org/licenses/by-nc-nd/4.0/
+http://creativecommons.org/licenses/by-nc-nd/4.0/
+http://creativecommons.org/licenses/by-nc-nd/4.0/
+http://creativecommons.org/licenses/by-nc-nd/4.0/
+http://creativecommons.org/licenses/by-nc-nd/4.0/
+mailto:apfisch@umich.edu
+mailto:kenvb@consplan.org
+mailto:L.Jasny@unhbox voidb@x {special {ps:12 TD$DIFF}}exeter.unhbox voidb@x {special {ps:13 TD$DIFF}}ac.uk
+mailto:kerry.grimm@nau.edu
+mailto:scharnley@fs.fed.us
+dx.doi.org/10.1016/j.landurbplan.2015.10.006
+http://creativecommons.org/licenses/by-nc-nd/4.0/
+http://creativecommons.org/licenses/by-nc-nd/4.0/
+http://creativecommons.org/licenses/by-nc-nd/4.0/
+http://creativecommons.org/licenses/by-nc-nd/4.0/
+http://creativecommons.org/licenses/by-nc-nd/4.0/
+http://creativecommons.org/licenses/by-nc-nd/4.0/
+http://creativecommons.org/licenses/by-nc-nd/4.0/
+http://creativecommons.org/licenses/by-nc-nd/4.0/
+http://creativecommons.org/licenses/by-nc-nd/4.0/
+http://creativecommons.org/licenses/by-nc-nd/4.0/
+acer
+Highlight
+
+acer
+Highlight
+
+
+
