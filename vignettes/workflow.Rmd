@@ -25,23 +25,20 @@ This vignette walks the user through applying the neural embedding NLP approach 
 
 ```{r}
 library(retrieveR)
-#install_mac()
+install_mac()
 #install_windows()
 download_example()
 ```
 
-```{r, warning = F, message = F}
+```{r, warning = F, message = F, echo=FALSE}
 corpus <- prep_documents("pdfs")
 ```
 
-```{r, warning = F, message = F}
+```{r, warning = F, message = F, echo = F}
 create_report(query="land tenure", data = corpus, interactive = F, thresh = 0.51)
 ```
 
-<<insertHTML:[land_tenure.html]
 
-etc, etc, etc
-
-```{r, echo=FALSE}
+```{r, echo=FALSE, warning = F, message = F}
 htmltools::includeHTML("land_tenure.html")
 ```
