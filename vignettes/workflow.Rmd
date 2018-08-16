@@ -30,11 +30,18 @@ library(retrieveR)
 download_example()
 ```
 
-```{r}
+```{r, warning = F, message = F}
 corpus <- prep_documents("pdfs")
 ```
 
-```{r}
+```{r, warning = F, message = F}
 create_report(query="land tenure", data = corpus, interactive = F, thresh = 0.51)
 ```
 
+<<insertHTML:[land_tenure.html]
+
+etc, etc, etc
+
+```{r, echo=FALSE}
+htmltools::includeHTML("land_tenure.html")
+```

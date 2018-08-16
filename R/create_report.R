@@ -231,9 +231,10 @@ create_report <- function(country=NULL, query, data, embeddings = "embeddings.bi
     print(rend_type)
     cat("---", paste0('title: ', title), paste0('subtitle: Text extracted from ', target_country, ' documents'), "output:", "pdf_document:", "fig_caption: yes", "---", "!['Why won't this caption show up?'](plot1.png)", my_text, sep="  \n", file=filename)
     #rmarkdown::render(filename, rend_type, quiet=T)
-    render_with_widgets(filename)
+    l <- render_with_widgets(filename)
     file.remove(filename) #cleanup
     write.csv(topn, paste0(country, ".csv"))
+    cat("Done \n")
   }
   
   cat("\n", paste0("Querying ", country, "'s", " documents for ", paste(query, collapse=" "), "\n"))
@@ -309,12 +310,17 @@ create_report <- function(country=NULL, query, data, embeddings = "embeddings.bi
     cat(paste0("Running query on ", length(locations), " documents", "\n"))
     pb <- txtProgressBar(min = 0, max=length(locations), style = 3)
     run_query2 <- function(x, input) {
-      setTxtProgressBar(pb, x)
+      if(interactive == T) {
+        setTxtProgressBar(pb, x)
+      }
       vector <- unlist(locations[x])
       wordVectors::cosineSimilarity(t(as.matrix(vector)), as.matrix(input))
     }
     results <- lapply(c(1:length(locations)), run_query2, query_vector)
     cat("\n\n")
+    if(interactive == F) {
+      setTxtProgressBar(pb, length(locations))
+    }
     return(results)
     close(pb)
   }
@@ -413,5 +419,4 @@ create_report <- function(country=NULL, query, data, embeddings = "embeddings.bi
   file.remove("plot1.png")
   file.remove("toprint.txt")
   write.csv(data, "data-results.csv")
-  cat("Done")
 }
