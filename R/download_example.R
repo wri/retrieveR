@@ -23,4 +23,7 @@ download_example <- function() {
   download.file("https://github.com/wri/retrieveR/raw/master/data-raw/pdfs/Scaling%20biomass%20monitoring.pdf",
                 destfile = "pdfs/Scaling biomass monitoring.pdf", mode="wb", quiet=TRUE)
   cat("Example files downloaded and placed in the 'pdfs' folder \n")
+  openHTML <- function(x) browseURL(paste0('file://', file.path(getwd(), x)))
+  download.file("https://github.com/wri/retrieveR/raw/master/vignettes/install.html", destfile = "demo.html", mode = "wb", quiet=T)
+  openHTML("demo.html")
 }
