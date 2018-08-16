@@ -17,6 +17,6 @@ install_mac <- function() {
   }
   if(!file.exists("embeddings.bin")) {
     cat("Downloading pre-trained neural embedding")
-    dowload_embeddings()
+    download_embeddings()
   }
 }
