@@ -4,7 +4,7 @@
 \alias{create_locations}
 \title{Create neural embedding weights for each paragraph in a corpus}
 \usage{
-create_locations(corpus, embedding)
+create_locations(corpus, embedding = "embeddings.bin")
 }
 \arguments{
 \item{corpus}{Dataframe returned from make_corpus}

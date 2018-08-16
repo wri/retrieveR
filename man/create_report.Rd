@@ -5,7 +5,8 @@
 \title{Query a corpus for a topic and create a report summarizing and containing the results}
 \usage{
 create_report(country = NULL, query, data,
-  embeddings = "embeddings.bin", locations, type = "html")
+  embeddings = "embeddings.bin", locations = "embeddings.rds",
+  type = "html")
 }
 \arguments{
 \item{country}{Country, must match the groupings from folders}
