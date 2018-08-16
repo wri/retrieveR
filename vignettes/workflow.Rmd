@@ -30,28 +30,11 @@ library(retrieveR)
 download_example()
 ```
 
-
-## Running OCR
-
-The figure sizes have been customised so that you can easily put two images side-by-side. 
-
 ```{r}
-run_ocr("pdfs")
-```
-
-## Make corpus
-
-```{r}
-corpus <- create_corpus("pdfs")
-```
-
-
-```{r, fig.show='hold'}
-download_embeddings()
-create_locations(corpus)
+corpus <- prep_documents("pdfs")
 ```
 
 ```{r}
-create_report(query="land tenure", data = corpus)
+create_report(query="land tenure", data = corpus, interactive = F, thresh = 0.51)
 ```
 

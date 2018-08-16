@@ -9,7 +9,7 @@
 #' @examples
 #' create_report()
 
-create_report <- function(country=NULL, query, data, embeddings = "embeddings.bin", locations = "embeddings.rds", type="html") {
+create_report <- function(country=NULL, query, data, embeddings = "embeddings.bin", locations = "embeddings.rds", type="html", interactive=TRUE, thresh = 0.55) {
   library(magrittr)
 
   if(is.null(country) & length(unique(data$country)) == 1) {
@@ -287,20 +287,23 @@ create_report <- function(country=NULL, query, data, embeddings = "embeddings.bi
     cat("\n")
   }
   finalized <- 0
-  while(finalized == 0) {
-    cat("\n", "The current query words are", query, "\n")
-    id <- readline(prompt = "Do you want to add words to the query? (Yes/No) ")
-    if(id == "No") {
-      finalized <- 1
-    }
-    if(id == "Yes") {
-      to_add <- as.character(readline(prompt = "Words to add, separated by a space "))
-      to_add <- unlist(strsplit(to_add, split=" "))
-      query <- append(query, to_add)
-      finalize_query()
-      finalized <- 0
+  if(interactive == T) {
+    while(finalized == 0) {
+      cat("\n", "The current query words are", query, "\n")
+      id <- readline(prompt = "Do you want to add words to the query? (Yes/No) ")
+      if(id == "No") {
+        finalized <- 1
+      }
+      if(id == "Yes") {
+        to_add <- as.character(readline(prompt = "Words to add, separated by a space "))
+        to_add <- unlist(strsplit(to_add, split=" "))
+        query <- append(query, to_add)
+        finalize_query()
+        finalized <- 0
+      }
     }
   }
+  
   
   create_results <- function() {
     cat(paste0("Running query on ", length(locations), " documents", "\n"))
@@ -354,7 +357,6 @@ create_report <- function(country=NULL, query, data, embeddings = "embeddings.bi
   }
   
   corrected <- 0
-  thresh <- 0.55
   test_length <- sum(data$results > thresh)
   while(test_length > 75) {
     before <- test_length
@@ -365,15 +367,17 @@ create_report <- function(country=NULL, query, data, embeddings = "embeddings.bi
   }
   print_margin(thresh, country)
   
-  while(corrected == 0) {
-    cat("\n")
-    id <- readline(prompt = "Are these relevant? (Yes / No) ")
-    if(id == "No") {
-      corrected <- 1
-    }
-    if(id == "Yes") {
-      thresh <- thresh - 0.01
-      print_margin(thresh, country)
+  if(interactive == T) {
+    while(corrected == 0) {
+      cat("\n")
+      id <- readline(prompt = "Are these relevant? (Yes / No) ")
+      if(id == "No") {
+        corrected <- 1
+      }
+      if(id == "Yes") {
+        thresh <- thresh - 0.01
+        print_margin(thresh, country)
+      }
     }
   }
   
