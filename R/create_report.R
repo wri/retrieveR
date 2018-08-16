@@ -121,7 +121,7 @@ create_report <- function(country=NULL, query, data, embeddings = "embeddings.bi
     return(topn)
   }
   
-  create_report <- function(target_country) {
+  create_report_helper <- function(target_country) {
     calc_append <- function() {
       grouped <- rep(NA, length(topn$name))
       for(i in seq_along(topn$name)) {
@@ -414,7 +414,7 @@ create_report <- function(country=NULL, query, data, embeddings = "embeddings.bi
   wd <- getwd()
   ggplot2::ggsave(filename=paste0(wd, "/plot1.png"), ggplot2::last_plot(), width=7, height=5, units="in")
   cat(paste0("\n", "Creating ", paste(query, collapse="_"), ".", as.character(type)), "\n")
-  suppressWarnings(create_report(country))
+  suppressWarnings(create_report_helper(country))
   cat(paste0(paste(query, collapse="_"), ".", as.character(type)), " created", "\n")
   file.remove("plot1.png")
   file.remove("toprint.txt")
