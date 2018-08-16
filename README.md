@@ -30,7 +30,14 @@ install_windows()
 
 ## Usage
 
-There are four main functions that comprise the bulk of the functionality of retrieveR: `run_ocr`, `make_corpus`, `create_locations`, and `interactive_report`. 
+There are four main functions that comprise the bulk of the functionality of retrieveR: `run_ocr`, `make_corpus`, `create_locations`, and `create_report`. All of these are wrapped into the main function `prep_documents`
+
+## prep_documents
+
+```r
+corpus <- prep_documents("path/to/folder")
+create_report(query = "land tenure", data = corpus)
+```
 
 ### run_ocr
 
@@ -59,8 +66,7 @@ This function does the following:
 ### create_locations
 
 ```r
-download_embeddings()
-locations <- create_locations(corpus)
+create_locations(corpus)
 ```
 
 This uses a pre-trained neural embedding to calculate weights for each paragraph. Calling `download_embeddings()` will download a pre-trained embedding to the working directory as `embeddings.bin`. This pre-trained embedding was trained on over 1,000 environmental policy documents from more than 40 nations and 50 NGOs and development aid agencies. 
