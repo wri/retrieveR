@@ -31,7 +31,7 @@ install_github("wri/retrieveR")
 
 Next, we load up the package into R using `library`. Depending on your operating system, you then need to run either `install_mac` or `install_windows` - these functions will get the Java dependencies to extract text from images, as well as install the necessary components to run neural networks.
 
-Finally, the `download_example` function will 
+Finally, the `download_example` function will download the example PDFs.
 
 ```{r, eval=F}
 library(retrieveR)
