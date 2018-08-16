@@ -233,7 +233,8 @@ create_report <- function(country=NULL, query, data, embeddings = "embeddings.bi
     #rmarkdown::render(filename, rend_type, quiet=T)
     l <- suppressMessages(render_with_widgets(filename))
     openHTML <- function(x) browseURL(paste0('file://', file.path(getwd(), x)))
-    openHTML(filename)
+    html_name <- paste0(paste(query[1], query[2], sep="_"), ".html")
+    openHTML(html_name)
     file.remove(filename) #cleanup
     write.csv(topn, paste0(country, ".csv"))
     cat("Done \n")
