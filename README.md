@@ -29,7 +29,7 @@ download_example()
 
 ## Prepping documents for querying
 
-The `prep_documents` function will strip text from the PDFs, clean up the results, and calculate neural weights. These can be turned off by specifying `ocr = F`, `clean = F`, or `weights = F`. The function takes a path to the folder of documents - in this case they are stored in a folder called `pdfs`. This pathing is local to the directory that R is running in - this can be printed with `getwd()` and changed with `setwd()`. 
+The `prep_documents` function will strip text from the PDFs, clean up the results, and calculate neural weights. These can be turned off by specifying `ocr = F`, `clean = F`, or `weights = F`. retrieveR can process html documents by setting `type = "html"`.The function takes a path to the folder of documents - in this case they are stored in a folder called `pdfs`. This pathing is local to the directory that R is running in - this can be printed with `getwd()` and changed with `setwd()`. 
 
 ```r
 corpus <- prep_documents("pdfs")
@@ -42,16 +42,9 @@ The `create_report` function takes the following arguments:
 1. query: Query phrase within quotations.
 2. data: name that the output of `prep_documents` is stored to.
 
-
-```
-create_report(query = "land tenure", data = corpus)
-```r
-
 This uses a pre-trained neural embedding to calculate weights for each paragraph. Calling `download_embeddings()` will download a pre-trained embedding to the working directory as `embeddings.bin`. This pre-trained embedding was trained on over 1,000 environmental policy documents from more than 40 nations and 50 NGOs and development aid agencies. 
 
 The `prep_wordvec` and `create_wordvec` functions may be used to create your own neural embedding, if need be.
-
-### create_report
 
 ```r
 create_report(country = "Kenya", query = "barriers to restoration",
@@ -76,13 +69,11 @@ solutions                    landscape_restoration        overcome
 removing                     identify                    
 ```
 
-At this stage, you can add words that you find relevant to your query. It is important to note that adding words to your query at this point is preferred. It is easier to draw a plane in 300 dimensional space with 6 points than it is with 2 or 1.
-
-After finalizing a query, the function returns all paragraphs ranked by their cosine similarity. The final step is to determine the cutoff threshold for inclusion. This varies widely between queries - broad queries have a lower threshold than narrow queries - and thus requires user input. 
+At this stage, you can add words that you find relevant to your query. After finalizing a query, paragraphs are ranked by their cosine similarity. The final step is to determine the cutoff threshold for inclusion. This varies widely between queries - broad queries have a lower threshold than narrow queries - and thus requires user input. 
 
 To do this, the algorithm begins with a high threshold (only retaining very similar paragraphs). The user is presented with the two paragraphs that are just barely not retained, and then prompted to determine whether they are relevant. If they are, the threshold is lowered and the process is repeated until no relevant paragraphs are missed.
 
-Finally, `interactive_report` makes use of `rmarkdown` and `ggplot2` to create a heatmap of topic density by document and a report listing each relevant paragraph sorted by document and labelled with its page number. 
+Finally, `create_report` makes use of `rmarkdown` and `ggplot2` to create a heatmap of topic density by document and a report listing each relevant paragraph sorted by document and labelled with its page number. 
 
 ## Examples
 
