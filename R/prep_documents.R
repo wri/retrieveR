@@ -8,15 +8,23 @@
 #' @examples
 #' corpus <- prep_documents("path/to/files")
 
-prep_documents <- function(path, ocr = TRUE, clean = TRUE, weights = TRUE) {
-  if(ocr == T) {
-    run_ocr(path)
+prep_documents <- function(path, ocr = TRUE, clean = TRUE, weights = TRUE, type = "pdf") {
+  if(type == "pdf") {
+    if(ocr == T) {
+      run_ocr(path)
+    }
+    if(clean == T) {
+      corpus <- create_corpus(path)
+    }
+    if(weights == T) {
+      create_locations(corpus)
+    }
+    return(corpus)
   }
-  if(clean == T) {
-    corpus <- create_corpus(path)
-  }
-  if(weights == T) {
+  if(type == "html") {
+    corpus <- prep_htmls(path)
+    corpus <- create_corpus_html(corpus)
     create_locations(corpus)
+    return(corpus)
   }
-  return(corpus)
 }

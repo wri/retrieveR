@@ -9,14 +9,16 @@
 #' @examples
 #' create_report()
 
-create_report <- function(country=NULL, query, data, embeddings = "embeddings.bin", locations = "embeddings.rds", type="html", interactive=TRUE, thresh = 0.55) {
+create_report <- function(country=NULL, query, data, embeddings = "embeddings.bin", locations = "embeddings.rds", type="html", interactive=TRUE, thresh = 0.55, class = "html") {
   library(magrittr)
 
   if(is.null(country) & length(unique(data$country)) == 1) {
     country <- data$country[1]
   }
   data$page <- unname(data$page)
-  data$page <- data$page[,1]
+  if(class != "html") {
+    data$page <- data$page[,1]
+  }
   count_dig <- function(s) {
     s2 <- gsub("[0-9]","", data$legible[s])
     perc <- round(((1-(nchar(s2)/nchar(data$legible[s])))*100),1)
@@ -101,7 +103,7 @@ create_report <- function(country=NULL, query, data, embeddings = "embeddings.bi
       dplyr::group_by(name) %>%
       dplyr::summarise(density=n())
     
-    topn$name <- gsub("[0-9]{1,}[.]txt", "", topn$name)
+    topn$name <- gsub("\\d{1,}[.]txt", "", topn$name)
     topn$name <- gsub("[\\.]{1,}", "", topn$name)
     
     allnames <- data %>%
@@ -110,7 +112,7 @@ create_report <- function(country=NULL, query, data, embeddings = "embeddings.bi
       dplyr::summarise(total=n())
     
     
-    allnames$name <- gsub("[0-9]{1,}[.]txt", "", allnames$name)
+    allnames$name <- gsub("\\d{1,}[.]txt", "", allnames$name)
     allnames$name <- gsub("[\\.]{1,}", "", allnames$name)
     
     topn <- dplyr::left_join(allnames, topn, by = "name")
@@ -229,7 +231,6 @@ create_report <- function(country=NULL, query, data, embeddings = "embeddings.bi
     if(type == "pdf") {
       rend_type <- rmarkdown::pdf_document()
     }
-    print(rend_type)
     cat("---", paste0('title: ', title), paste0('subtitle: Text extracted from ', target_country, ' documents'), "output:", "pdf_document:", "fig_caption: yes", "---", "!['Why won't this caption show up?'](plot1.png)", my_text, sep="  \n", file=filename)
     #rmarkdown::render(filename, rend_type, quiet=T)
     l <- suppressMessages(render_with_widgets(filename))
@@ -260,9 +261,12 @@ create_report <- function(country=NULL, query, data, embeddings = "embeddings.bi
   data$legible <- gsub("\\?\\s+([a-z])", "\\? \\U\\1", data$legible, perl=TRUE)
   data$legible <- gsub("([A-z])-\\s+([a-z])", "\\1\\2", data$legible)
   data$legible <- gsub("([A-z])\\s+-([a-z])", "\\1\\2", data$legible)
-  data$name <- stringr::str_match(data$name, "[^/][A-z 0-9]{1,}/[0-9]{1,}[.]txt$")
-  data$name <- data$name[,1]
-  data$name <- gsub("[0-9]{1,}[.]txt", "", data$name)
+  if(type != "html") {
+    data$name <- stringr::str_match(data$name, "[^/][A-z 0-9]{1,}/[0-9]{1,}[.]txt$")
+    data$name <- data$name[,1]
+  }
+  
+  data$name <- gsub("[\\d]{1,}[.]txt", "", data$name)
   data$name <- gsub("/", "", data$name)
   
   perc <- unlist(lapply(c(1:nrow(data)), count_dig))
@@ -332,9 +336,8 @@ create_report <- function(country=NULL, query, data, embeddings = "embeddings.bi
   
   results <- create_results()
   data$results <- unlist(results)
-  data <- data[-grep("\\d+$", data$sentences),]
-  data <- data[-grep("\\d+\\s+$", data$sentences),]
-  print(nrow(data))
+  #data <- data[-grep("\\d+$", data$sentences),]
+  #data <- data[-grep("\\d+\\s+$", data$sentences),]
   
   citation <- grepl("\\.,", data$sentences)
   eg <- grepl("e\\.g\\.", data$sentences)
@@ -392,6 +395,9 @@ create_report <- function(country=NULL, query, data, embeddings = "embeddings.bi
 
   corrected <- 0
   test_length <- sum(data$results > thresh)
+  if(is.na(test_length)) {
+    test_length <- 0
+  }
   while(test_length > 75) {
     before <- test_length
     thresh <- thresh + 0.01
@@ -447,7 +453,8 @@ create_report <- function(country=NULL, query, data, embeddings = "embeddings.bi
                    strip.text = ggplot2::element_text(size = ggplot2::rel(0.7)), axis.text.x=ggplot2::element_blank(), complete = FALSE)
   
   wd <- getwd()
-  ggplot2::ggsave(filename=paste0(wd, "/plot1.png"), ggplot2::last_plot(), width=7, height=5, units="in")
+  number <- max(0.35*length(unique(data$name)),5)
+  ggplot2::ggsave(filename=paste0(wd, "/plot1.png"), ggplot2::last_plot(), width=7, height=number, units="in", limitsize = FALSE)
   cat(paste0("\n", "Creating ", paste(query, collapse="_"), ".", as.character(type)), "\n")
   suppressWarnings(create_report_helper(country))
   cat(paste0(paste(query, collapse="_"), ".", as.character(type)), " created", "\n")
