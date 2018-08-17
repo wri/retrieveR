@@ -9,7 +9,7 @@
 #' @examples
 #' create_report()
 
-create_report <- function(country=NULL, query, data, embeddings = "embeddings.bin", locations = "embeddings.rds", type="html", interactive=TRUE, thresh = 0.55, class = "html") {
+create_report <- function(country=NULL, query, data, embeddings = "embeddings.bin", locations = "embeddings.rds", type="html", interactive=TRUE, thresh = 0.55, class = "pdf") {
   library(magrittr)
 
   if(is.null(country) & length(unique(data$country)) == 1) {
@@ -261,12 +261,12 @@ create_report <- function(country=NULL, query, data, embeddings = "embeddings.bi
   data$legible <- gsub("\\?\\s+([a-z])", "\\? \\U\\1", data$legible, perl=TRUE)
   data$legible <- gsub("([A-z])-\\s+([a-z])", "\\1\\2", data$legible)
   data$legible <- gsub("([A-z])\\s+-([a-z])", "\\1\\2", data$legible)
-  if(type != "html") {
+  if(class != "html") {
     data$name <- stringr::str_match(data$name, "[^/][A-z 0-9]{1,}/[0-9]{1,}[.]txt$")
     data$name <- data$name[,1]
   }
   
-  data$name <- gsub("[\\d]{1,}[.]txt", "", data$name)
+  data$name <- gsub("\\d{1,}[.]txt", "", data$name)
   data$name <- gsub("/", "", data$name)
   
   perc <- unlist(lapply(c(1:nrow(data)), count_dig))
