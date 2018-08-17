@@ -26,6 +26,7 @@ create_report <- function(country=NULL, query, data, embeddings = "embeddings.bi
   # Calculate weights for an input using l2 norm
   create_point <- function(query) {
     query <- unlist(strsplit(query, " "))
+    query <- tolower(query)
     query <- query[!query %in% corpus::stopwords_en]
     query <- gsub("[0-9]", "", query)
     query <- gsub("[,.!?:;$%]", "", query)
@@ -301,6 +302,7 @@ create_report <- function(country=NULL, query, data, embeddings = "embeddings.bi
       if(id == "Yes") {
         to_add <- as.character(readline(prompt = "Words to add, separated by a space "))
         to_add <- unlist(strsplit(to_add, split=" "))
+        to_add <- tolower(to_add)
         query <- append(query, to_add)
         finalize_query()
         finalized <- 0
@@ -352,6 +354,29 @@ create_report <- function(country=NULL, query, data, embeddings = "embeddings.bi
   cat("If the two sentences below are relevant, enter 'Yes' to expand the results", "\n\n")
   cat("----------------------------------", "\n")
   
+  test_thresh <- function(thresh, input_country) {
+    subs <- data[data$results < thresh,]
+    subs <- subs[subs$country == input_country,]
+    subs <- subs %>%
+      dplyr::group_by(sentences) %>%
+      dplyr::arrange(dplyr::desc(results))
+    return(subs$legible[1])
+  }
+
+  find_thresh <- function(thresh, input_country) {
+    found <- FALSE
+    while(found == F) {
+      thresh <- thresh - 0.01
+      test1 <- test_thresh(thresh, input_country)
+      test2 <- test_thresh(thresh - 0.01, input_country)
+      if(test1 != test2) {
+        found <- TRUE
+        print(thresh)
+        return(thresh)
+      }
+    }
+  }
+
   print_margin <- function(thresh, input_country) {
     change <- sum(data$results < thresh & data$results > thresh - 0.01)
     subs <- data[data$results < thresh,]
@@ -364,7 +389,7 @@ create_report <- function(country=NULL, query, data, embeddings = "embeddings.bi
       cat(subs$legible[i], "\n\n")
     }
   }
-  
+
   corrected <- 0
   test_length <- sum(data$results > thresh)
   while(test_length > 75) {
@@ -384,7 +409,14 @@ create_report <- function(country=NULL, query, data, embeddings = "embeddings.bi
         corrected <- 1
       }
       if(id == "Yes") {
+        before <- test_thresh(thresh, country)
         thresh <- thresh - 0.01
+        after <- test_thresh(thresh, country)
+        while(before == after) {
+          before <- test_thresh(thresh, country)
+          thresh <- thresh - 0.01
+          after <- test_thresh(thresh, country)
+        }
         print_margin(thresh, country)
       }
     }

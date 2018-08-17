@@ -57,7 +57,7 @@ The `create_report` function takes the following arguments:
 
 
 ```{r, eval = F}
-create_report(query = "land tenure", data = corpus)
+create_report(query = "food water waste", data = corpus)
 ```
 
 ```{r, warning = F, message = F, echo = F, eval=F}
