@@ -77,4 +77,4 @@ Finally, `create_report` makes use of `rmarkdown` and `ggplot2` to create a heat
 
 ## Examples
 
-See the vignette [here](https://github.com/wri/retrieveR/blob/master/vignettes/example.md).
+See the vignette [here](http://htmlpreview.github.io/?https://raw.githubusercontent.com/wri/retrieveR/master/demo.html).
