@@ -4,7 +4,8 @@
 \alias{prep_documents}
 \title{Preps documents for querying}
 \usage{
-prep_documents(path, ocr = TRUE, clean = TRUE, weights = TRUE)
+prep_documents(path, ocr = TRUE, clean = TRUE, weights = TRUE,
+  type = "pdf")
 }
 \arguments{
 \item{path}{Path to the folder containing PDFs}

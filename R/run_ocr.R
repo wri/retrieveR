@@ -19,7 +19,12 @@ run_ocr <- function(path) {
     dir <- gsub("[.]pdf", "", file)
     dir.create(paste0(output, "/", dir))
     file <- paste0(path, "/", file)
-    tabulizer::split_pdf(file, outdir=paste0(output, "/", dir))
+    tryCatch(
+      tabulizer::split_pdf(file, outdir=paste0(output, "/", dir)), error = function(e) {
+        pages <- pdftools::pdf_info(file)$pages
+        names <- seq(1:pages)
+        names <- paste0(output, "/", dir, "/", names, ".png")
+        pdftools::pdf_convert(file, filenames = names, dpi = 200, verbose = F) })
     gc()
   }
 
@@ -28,7 +33,7 @@ run_ocr <- function(path) {
     setTxtProgressBar(pb, id)
     pages <- list.files(name)
     pages <- paste0(name, "/", pages)
-    dir <- gsub("[0-9][.]pdf", "", name)
+    dir <- gsub("[0-9][.]pdf|[0-9][.]png", "", name)
     item <- rtika::tika_text(pages)
     for(i in c(1:length(item))) {
       file.remove(pages[i])

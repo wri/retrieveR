@@ -6,7 +6,7 @@
 \usage{
 create_report(country = NULL, query, data,
   embeddings = "embeddings.bin", locations = "embeddings.rds",
-  type = "html", interactive = TRUE, thresh = 0.55)
+  type = "html", interactive = TRUE, thresh = 0.55, class = "pdf")
 }
 \arguments{
 \item{country}{Country, must match the groupings from folders}

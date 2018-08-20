@@ -25,6 +25,7 @@ Imports:
 	knitr,
 	htmltools,
 	base64enc,
+	pdftools,
 	markdown
 Suggests: knitr,
     rmarkdown
