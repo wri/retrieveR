@@ -398,7 +398,7 @@ create_report <- function(country=NULL, query, data, embeddings = "embeddings.bi
   if(is.na(test_length)) {
     test_length <- 0
   }
-  while(test_length > 75) {
+  while(test_length > 500) {
     before <- test_length
     thresh <- thresh + 0.01
     test_length <- sum(data$results > thresh)
